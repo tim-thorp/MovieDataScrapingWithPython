@@ -1,12 +1,16 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
 from lxml import etree
 import csv
 
-def scrape_movie_info_from_summary_page(url):
+def scrape_movie_info_from_summary_page(url, num_clics=33):
     """
     Obtiene el código fuente HTML tras la ejecución de JavaScript y extrae los datos de las películas.
     Parámetros:
         url: La URL a buscar.
+        num_clics: El número de veces para hacer clic en la flecha para cargar más películas.
+                   Por defecto, hacemos clic 33 veces para cargar 1020 películas.
     Devoluciones:
         html: El código fuente HTML como una cadena de texto.
     """
@@ -20,6 +24,25 @@ def scrape_movie_info_from_summary_page(url):
     
     # Navegamos a la URL especificada
     browser.get(url)
+    
+    # Esperamos para que la página cargue
+    time.sleep(3)
+    
+    # Buscamos el botón «ACEPTO» y lo clicamos
+    button = browser.find_element(By.CLASS_NAME, "css-v43ltw")
+    button.click()
+    
+    for i in range(num_clics):
+        # Esperamos para evitar sobrecargar el servidor
+        time.sleep(3)
+
+        # Hacemos clic en la flecha para cargar más películas
+        button = browser.find_element(By.ID, "load-more-bt")
+        browser.execute_script("arguments[0].scrollIntoView(true);", button)
+        browser.execute_script("arguments[0].click();", button)
+    
+    # Esperamos para que las últimas 30 películas carguen
+    time.sleep(3)
     
     # Obtenemos el código fuente HTML de la página, incluidos los cambios realizados por JavaScript
     html = browser.page_source
@@ -75,12 +98,15 @@ def scrape_movie_info_from_summary_page(url):
     with open('movie_info_from_summary_page.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['Título', 'Año', 'País', 'Puntuación Media', 'Número de Puntuaciones', "Director", "Reparto"])
-        for title, year, country, rating, rating_count, director, cast in zip(movie_titles, movie_years, movie_countries, movie_ratings, movie_rating_counts, movie_directors, movie_cast):
+
+        for i, (title, year, country, rating, rating_count, director, cast) in enumerate(zip(movie_titles, movie_years, movie_countries, movie_ratings, movie_rating_counts, movie_directors, movie_cast)):
+            # Detenemos el proceso si hemos escrito 1000 filas
+            if i >= 1000:
+                break
             writer.writerow([title, year, country, rating, rating_count, director, cast])
-    
+
     return html
 
 # Ejecución
-# La URL corresponde a las películas mejores valoradas en Film Affinity (2013–2023)
 url = "https://www.filmaffinity.com/es/topgen.php?genres=&chv=0&orderby=avg&movietype=movie%7C&country=&fromyear=2013&toyear=2023&ratingcount=3&runtimemin=0&runtimemax=4"
 scrape_movie_info_from_summary_page(url)
