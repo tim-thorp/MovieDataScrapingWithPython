@@ -57,10 +57,11 @@ def scrape_movie_info_from_summary_page(url, num_clics=33):
     movie_titles = []
     movie_years = []
     movie_countries = []
-    movie_directors = []
-    movie_cast = []
     movie_ratings = []
     movie_rating_counts = []
+    movie_directors = []
+    movie_cast = []
+    movie_links = []
     
     # Recorremos todos los divs con la clase "mc-info-container"
     for div in root.xpath('//div[@class="mc-info-container"]'):
@@ -79,11 +80,15 @@ def scrape_movie_info_from_summary_page(url, num_clics=33):
         director = div.xpath('.//div[@class="mc-director"]/div[@class="credits"]/span/a/text()')
         cast = div.xpath('.//div[@class="mc-cast"]/div[@class="credits"]/span/a/text()')
         
+        # Obtenemos el enlace de la película
+        link = div.xpath('.//div[@class="mc-title"]/a/@href')[0]
+        
         movie_titles.append(title)
         movie_years.append(year)
         movie_countries.append(country)
         movie_directors.append(", ".join(director))
         movie_cast.append(", ".join(cast))
+        movie_links.append(link)
         
     # Recorremos todos los lis con la clase "data"
     for li in root.xpath('//li[@class="data"]'):
@@ -97,13 +102,13 @@ def scrape_movie_info_from_summary_page(url, num_clics=33):
     # Escribimos todo en un archivo CSV
     with open('movie_info_from_summary_page.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(['Título', 'Año', 'País', 'Puntuación Media', 'Número de Puntuaciones', "Director", "Reparto"])
+        writer.writerow(['Título', 'Año', 'País', 'Puntuación Media', 'Número de Puntuaciones', "Director", "Reparto", "Enlace"])
 
-        for i, (title, year, country, rating, rating_count, director, cast) in enumerate(zip(movie_titles, movie_years, movie_countries, movie_ratings, movie_rating_counts, movie_directors, movie_cast)):
+        for i, (title, year, country, rating, rating_count, director, cast, link) in enumerate(zip(movie_titles, movie_years, movie_countries, movie_ratings, movie_rating_counts, movie_directors, movie_cast, movie_links)):
             # Detenemos el proceso si hemos escrito 1000 filas
             if i >= 1000:
                 break
-            writer.writerow([title, year, country, rating, rating_count, director, cast])
+            writer.writerow([title, year, country, rating, rating_count, director, cast, link])
 
     return html
 
