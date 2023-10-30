@@ -58,7 +58,7 @@ def scrape_movie_data_from_summary_page(url):
     for li in root.xpath('//li[@class="data"]'):
         # Extraemos la puntuación media y el número de puntuaciones
         rating = li.xpath('.//div[@class="avg-rating"]/text()')[0]
-        rating_count = li.xpath('.//div[@class="rat-count"]/text()')[0]
+        rating_count = li.xpath('.//div[@class="rat-count"]/text()')[0].strip()
         
         movie_ratings.append(rating)
         movie_rating_counts.append(rating_count)
