@@ -2,7 +2,7 @@ from selenium import webdriver
 from lxml import etree
 import csv
 
-def scrape_movie_data_from_summary_page(url):
+def scrape_movie_info_from_summary_page(url):
     """
     Obtiene el código fuente HTML tras la ejecución de JavaScript y extrae los datos de las películas.
     Parámetros:
@@ -34,6 +34,8 @@ def scrape_movie_data_from_summary_page(url):
     movie_titles = []
     movie_years = []
     movie_countries = []
+    movie_directors = []
+    movie_cast = []
     movie_ratings = []
     movie_rating_counts = []
     
@@ -50,9 +52,15 @@ def scrape_movie_data_from_summary_page(url):
         # Obtenemos el país de origen
         country = title_div.xpath('.//img[@class="nflag"]/@alt')[0]
         
+        # Obtenemos el director y el reparto
+        director = div.xpath('.//div[@class="mc-director"]/div[@class="credits"]/span/a/text()')
+        cast = div.xpath('.//div[@class="mc-cast"]/div[@class="credits"]/span/a/text()')
+        
         movie_titles.append(title)
         movie_years.append(year)
         movie_countries.append(country)
+        movie_directors.append(", ".join(director))
+        movie_cast.append(", ".join(cast))
         
     # Recorremos todos los lis con la clase "data"
     for li in root.xpath('//li[@class="data"]'):
@@ -64,15 +72,15 @@ def scrape_movie_data_from_summary_page(url):
         movie_rating_counts.append(rating_count)
     
     # Escribimos todo en un archivo CSV
-    with open('movie_titles_years_countries_ratings.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('movie_info_from_summary_page.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(['Título', 'Año', 'País', 'Puntuación Media', 'Número de Puntuaciones'])
-        for title, year, country, rating, rating_count in zip(movie_titles, movie_years, movie_countries, movie_ratings, movie_rating_counts):
-            writer.writerow([title, year, country, rating, rating_count])
+        writer.writerow(['Título', 'Año', 'País', 'Puntuación Media', 'Número de Puntuaciones', "Director", "Reparto"])
+        for title, year, country, rating, rating_count, director, cast in zip(movie_titles, movie_years, movie_countries, movie_ratings, movie_rating_counts, movie_directors, movie_cast):
+            writer.writerow([title, year, country, rating, rating_count, director, cast])
     
     return html
 
 # Ejecución
 # La URL corresponde a las películas mejores valoradas en Film Affinity (2013–2023)
 url = "https://www.filmaffinity.com/es/topgen.php?genres=&chv=0&orderby=avg&movietype=movie%7C&country=&fromyear=2013&toyear=2023&ratingcount=3&runtimemin=0&runtimemax=4"
-scrape_movie_data_from_summary_page(url)
+scrape_movie_info_from_summary_page(url)
