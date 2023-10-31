@@ -7,7 +7,7 @@ from dtos import ClasePeliculaDTO
 
 
 
-def login_FillmAffinity_And_Navegation_To_TopFA(url, usuario, password):
+def login_FillmAffinity_And_Navegation_To_TopFA(url):
     # Abrir navegador Firefox y acceder a URL general
     options = webdriver.FirefoxOptions()
     options.headless = True
@@ -21,25 +21,11 @@ def login_FillmAffinity_And_Navegation_To_TopFA(url, usuario, password):
     button = browser.find_element(By.CLASS_NAME, "css-v43ltw")
     button.click()
 
-    # Clic en el elemento que me lleva al login
-    browser.find_element(By.XPATH, '/html/body/header/div[1]/div/div[3]/div/a[1]/strong').click()
-
-    # usuario login
-    usuarioForm = browser.find_element(By.XPATH, '/html/body/div[2]/div/div/main/div[2]/div[1]/form/div[1]/input')
-    usuarioForm.send_keys(usuario)
-    
-    # password login
-    passwordForm = browser.find_element(By.XPATH, '/html/body/div[2]/div/div/main/div[2]/div[1]/form/div[2]/input')
-    passwordForm.send_keys(password)
-
-    # envio login
-    entrar = browser.find_element(By.XPATH, '/html/body/div[2]/div/div/main/div[2]/div[1]/form/input[3]').click()
-    time.sleep(3)
-
     # navegación a la sección "TopFA"
     irTopFA = browser.find_element(By.XPATH, '/html/body/header/div[2]/div/ul/li[1]/a').click()
     time.sleep(3)
     
+    # Cargo la página "TopFA" con filtro de búsqueda concreto
     browser.get("https://www.filmaffinity.com/es/topgen.php?genres=&chv=0&orderby=avg&movietype=movie%7C&country=&fromyear=2013&toyear=2023&ratingcount=3&runtimemin=0&runtimemax=4")
     return browser
     
@@ -78,6 +64,9 @@ def return_html_after_scrape_movie_info_from_summary_page(browser, num_clics):
     browser.quit()
 
     return html
+
+
+
 
 def write_in_file_the_dataset(obj):
     """
@@ -138,7 +127,6 @@ def write_in_file_the_dataset(obj):
         movie_ratings.append(rating)
         movie_rating_counts.append(rating_count)
 
-
     # Escribimos todo en un archivo CSV
     with open('movie_info_from_summary_page.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
@@ -161,9 +149,7 @@ def write_in_file_the_dataset(obj):
 obj_detalles_peliculas = ClasePeliculaDTO("",[])
 t0 = time.perf_counter_ns()
 url = "https://www.filmaffinity.com/"
-usuario = "jtoracanouoc"
-password = "1234aA"
-current_url = login_FillmAffinity_And_Navegation_To_TopFA(url, usuario, password)
+current_url = login_FillmAffinity_And_Navegation_To_TopFA(url)
 html = return_html_after_scrape_movie_info_from_summary_page(current_url, 33)
 obj_detalles_peliculas.set_html(html)
 t1 = time.perf_counter_ns()
@@ -175,12 +161,9 @@ objeto_devuelto= write_in_file_the_dataset(obj_detalles_peliculas)
 t2 = time.perf_counter_ns()
 tiempo_escribiendo_csv = (t2 - t1) / 10**9
 print("El tiempo que tardamos en volcar los datos raspados a fichero CSV: ",tiempo_escribiendo_csv," (segundos)")
-obj_detalles_peliculas.get_movie_links()
+links_peliculas = obj_detalles_peliculas.get_movie_links()
 
-print("links de películas recuperados: ")
-for pelicula in obj_detalles_peliculas.get_movie_links():
-    print(pelicula)
-
+print("links de películas recuperados: ", links_peliculas[0])
 
 
 
