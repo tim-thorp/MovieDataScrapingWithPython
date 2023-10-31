@@ -4,8 +4,7 @@ import time
 from lxml import etree
 import csv
 from dtos import ClasePeliculaDTO
-import libreria_funciones_propias 
-
+from libreria_funciones_propias import captura_detalle_pelicula_HTML, consigueCodigoFuente_si_noHTML
 
 
 def login_FillmAffinity_And_Navegation_To_TopFA(url):
@@ -140,7 +139,6 @@ def write_in_file_the_dataset(obj):
             if i >= 1000:
                 break
             writer.writerow([title, year, country, rating, rating_count, director, cast, link])
-
     return obj
 
 
@@ -165,6 +163,7 @@ t2 = time.perf_counter_ns()
 tiempo_escribiendo_csv = (t2 - t1) / 10**9
 print("El tiempo que tardamos en volcar los datos raspados a fichero CSV: ",tiempo_escribiendo_csv," (segundos)")
 
-html = libreria_funciones_propias.captura_detalle_pelicula_HTML(objeto_devuelto.get_movie_links[0], "0.txt")
+url = str(objeto_devuelto.get_movie_links()[0])
+html = captura_detalle_pelicula_HTML(url, "0.txt")
 
 

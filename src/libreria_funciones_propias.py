@@ -30,9 +30,12 @@ def captura_detalle_pelicula_HTML(url, nombre_txt):
     response = requests.get(url)
     html = BeautifulSoup(response.content, "html.parser")
 
-    with open(nombre_txt, "w") as f:
-        f.write(html.prettify())
-        f.close()
+    with open(str(nombre_txt), "w") as f:
+        for dd in html.find_all("dd", class_="", itemprop="description"):
+            print(dd.text)
+            f.write(str(dd.text))
+    
+    
 
-    for dd in html.find_all("dd", class_="", itemprop="description"):
-        print(dd.text)
+if __name__ == "__main__":
+    captura_detalle_pelicula_HTML("https://www.filmaffinity.com/es/film893369.html", "fichero.txt")
