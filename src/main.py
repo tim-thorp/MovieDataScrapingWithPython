@@ -4,7 +4,7 @@ import time
 from lxml import etree
 import csv
 from dtos import ClasePeliculaDTO
-
+from libreria_funciones_propias import captura_detalle_pelicula_HTML, consigueCodigoFuente_si_noHTML
 
 
 def login_FillmAffinity_And_Navegation_To_TopFA(url):
@@ -116,6 +116,8 @@ def write_in_file_the_dataset(obj):
         movie_directors.append(", ".join(director))
         movie_cast.append(", ".join(cast))
         movie_links.append(link)
+    
+    # Guardo el valor de "movie_links" para devolverlo en el RETURN
     obj.set_movie_links(movie_links)
 
     # Recorremos todos los lis con la clase "data"
@@ -137,8 +139,7 @@ def write_in_file_the_dataset(obj):
             if i >= 1000:
                 break
             writer.writerow([title, year, country, rating, rating_count, director, cast, link])
-
-    return obj_detalles_peliculas
+    return obj
 
 
 
@@ -161,9 +162,8 @@ objeto_devuelto= write_in_file_the_dataset(obj_detalles_peliculas)
 t2 = time.perf_counter_ns()
 tiempo_escribiendo_csv = (t2 - t1) / 10**9
 print("El tiempo que tardamos en volcar los datos raspados a fichero CSV: ",tiempo_escribiendo_csv," (segundos)")
-links_peliculas = obj_detalles_peliculas.get_movie_links()
 
-print("links de películas recuperados: ", links_peliculas[0])
-
+url = str(objeto_devuelto.get_movie_links()[0])
+html = captura_detalle_pelicula_HTML(url, "0.txt")
 
 

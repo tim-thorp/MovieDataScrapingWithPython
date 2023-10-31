@@ -1,0 +1,2489 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>
+   Coco  (2017) - FilmAffinity
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="Coco es una película dirigida por Lee Unkrich, Adrián Molina con Animación, &lt;i&gt; Voz:&lt;/i&gt; Anthony Gonzalez, Gael García Bernal, Benjamin Bratt .... Año: 2017. Título original: Coco. Sinopsis: Miguel es un joven con el sueño de convertirse en leyenda de la música a pesar de la prohibición de su familia. Su ídolo es Ernesto de la Cruz, el músico y cantante más famoso de México. La pasión de ...Puedes ver Coco mediante Suscripción,Alquiler,Compra en las plataformas: Disney Plus,Google Play Movies,Apple TV,Rakuten TV,Microsoft Store,Amazon Video" name="description"/>
+  <meta content="FilmAffinity" property="og:site_name"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="video.movie" property="og:type"/>
+  <meta name="twitter:site" value="@Filmaffinity"/>
+  <meta content="https://www.filmaffinity.com/es/film893369.html" property="og:url">
+   <meta content="Coco  (2017)" property="og:title">
+    <meta content="Género: Animación | Sinopsis: Miguel es un joven con el sueño de convertirse en leyenda de la música a pesar de la prohibición de su familia. Su ídolo es Ernesto de la Cruz, el músico y cantante más famoso de México. La pasión de ..." property="og:description">
+     <meta content="https://pics.filmaffinity.com/coco-155051069-mmed.jpg" property="og:image">
+      <link href="https://www.filmaffinity.com/es/film893369.html" rel="canonical"/>
+      <link href="https://m.filmaffinity.com/es/film893369.html" media="only screen and (max-width: 640px)" rel="alternate"/>
+      <link href="/favicon.png" rel="icon" type="image/png"/>
+      <link href="/manifest.json" rel="manifest"/>
+      <link href="/style/film.1692620486.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/share.1539096291.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/jquery/fa-ui-theme/jquery-ui.min.1539096306.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/jquery/fa-ui-theme/jquery-ui.structure.min.1539096306.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/jquery/fa-ui-theme/jquery-ui.theme.min.1539096306.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/jquery/slick/slick.1651839967.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/jquery/slick/slick-theme.1651839967.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/jquery/colorbox/colorbox-1.6.1539096305.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/jquery/colorbox/colorbox-fa.1539096305.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/main3.1698766619.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/moviecards3.1690375080.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/all.1676891643.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/fa-icons.1676894187.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/magic-check.min.1539096291.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/rating2.1634296683.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/jquery/new-autocomplete/fa-autocomplete.1681384913.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/jquery/autocomplete/easy-autocomplete.min.1585727670.css" rel="stylesheet" type="text/css"/>
+      <link href="/style/jquery/autocomplete/easy-autocomplete.themes.min.1585727670.css" rel="stylesheet" type="text/css"/>
+      <script src="/js/local_es.1539096293.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/jquery-3.1.0.min.1539096302.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/jquery-migrate-1.4.1.min.1539096302.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/ui/jquery-ui-1.12.1.min.1539096308.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/plugin/slick/slick.min.1651839936.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/plugin/jquery.colorbox-1.6.1539096308.js" type="text/javascript">
+      </script>
+      <script src="/js/foto.1635495347.js" type="text/javascript">
+      </script>
+      <script src="/js/crc32.1539096293.js" type="text/javascript">
+      </script>
+      <script src="/js/translate-context.1539096293.js" type="text/javascript">
+      </script>
+      <script src="/js/locale/friends-texts-es_ES.1667924119.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/plugin/jquery.cookie.1539096308.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/plugin/rating-bars.1539096309.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/plugin/chartjs/chart.min.1568363825.js" type="text/javascript">
+      </script>
+      <script src="/js/locale/texts-es_ES.1697636815.js" type="text/javascript">
+      </script>
+      <script src="/js/ads.1539096293.js" type="text/javascript">
+      </script>
+      <script src="/js/main.1692702743.js" type="text/javascript">
+      </script>
+      <script src="/js/pagetop.1668696477.js" type="text/javascript">
+      </script>
+      <script src="/js/z-index-fix.1539096292.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/plugin/lazysizes/lazysizes.min.1602068375.js" type="text/javascript">
+      </script>
+      <script src="/js/fa-lists-tip.1539096292.js" type="text/javascript">
+      </script>
+      <script src="/js/fa_rating2.1539096293.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/plugin/new-autocomplete/fa-autocomplete.1674044187.js" type="text/javascript">
+      </script>
+      <script src="/js/jquery/plugin/autocomplete/jquery.easy-autocomplete.1671723118.js" type="text/javascript">
+      </script>
+      <link href="https://www.filmaffinity.com/es/film893369.html" hreflang="es" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/en/film893369.html" hreflang="en" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/mx/film893369.html" hreflang="es-MX" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/ar/film893369.html" hreflang="es-AR" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/cl/film893369.html" hreflang="es-CL" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/co/film893369.html" hreflang="es-CO" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/uy/film893369.html" hreflang="es-UY" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/py/film893369.html" hreflang="es-PY" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/pe/film893369.html" hreflang="es-PE" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/ec/film893369.html" hreflang="es-EC" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/ve/film893369.html" hreflang="es-VE" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/cr/film893369.html" hreflang="es-CR" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/hn/film893369.html" hreflang="es-HN" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/gt/film893369.html" hreflang="es-GT" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/bo/film893369.html" hreflang="es-BO" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/do/film893369.html" hreflang="es-DO" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/us/film893369.html" hreflang="en-US" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/uk/film893369.html" hreflang="en-GB" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/ie/film893369.html" hreflang="en-IE" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/au/film893369.html" hreflang="en-AU" rel="alternate"/>
+      <link href="https://www.filmaffinity.com/ca/film893369.html" hreflang="en-CA" rel="alternate"/>
+      <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+      <script async="true" type="text/javascript">
+       (function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.quantcast.com'
+    .concat('/choice/', 'LBBrF-bdAtkuF', '/', host, '/choice.js?tag_version=V2');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = Object.assign(args[3], { tag_version: 'V2' });
+        }
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+      </script>
+      <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+      <script>
+       $(function(){
+            sessPing("0165415f895261aa0b7abd58e07f9dd46c0dc6cfed", 2400);
+            var tcTexts = TranslateContext.getInstance(commonTextsJs);
+        });
+      </script>
+      <script async="async" src="https://sc-devel.s3.eu-central-1.amazonaws.com/sc-tagmanager/sc_gpt_lstapc.js">
+      </script>
+      <script>
+       var googletag = googletag || {};
+
+        googletag.cmd = googletag.cmd || [];
+      </script>
+      <script src="https://sc-devel.s3.eu-central-1.amazonaws.com/Skins/SMCService.js">
+      </script>
+      <script src="https://sc-devel.s3.eu-central-1.amazonaws.com/sc-tagmanager/filmaffinity.js">
+      </script>
+      <script async="async" src="https://cdn.smartclip-services.com/v1/Storage-a482323/smartclip-services/HeaderBidding/js/SmartclipConfig.js">
+      </script>
+      <script>
+       var sc = document.createElement ("script")
+  sc.src="https://cdn.smartclip-services.com/v1/Storage-a482323/smartclip-services/wrappers/sc__sync.js"
+  sc.onload = function(){
+  __sc__sync(["e40c3a8c-532f-469b-8e2a-1cc44f47c967"]) // id de la zona
+  }
+  document.head.appendChild(sc)
+      </script>
+      <script>
+       var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "13181121" });
+        (function() {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+      </script>
+      <noscript>
+       <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=13181121&amp;cv=2.0&amp;cj=1"/>
+      </noscript>
+      <script>
+       $(function(){sendpv("096541ae6f5196a2ea7b9080d60c00a5");});
+      </script>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TZX5NYMKZC">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TZX5NYMKZC');
+  </script>
+  <header id="page-header">
+   <div id="header-top">
+    <div class="cpanel top-wrapper">
+     <div id="logo-container">
+      <a href="https://www.filmaffinity.com/es/main.html">
+       <img alt="logo" src="/images/logo4.png"/>
+       <div class="logo-siteloc">
+        España
+       </div>
+      </a>
+     </div>
+     <!-- logo-container -->
+     <div class="search-box">
+      <div class="s-large" id="topsearch-ac">
+       <form accept-charset="UTF-8" action="https://www.filmaffinity.com/es/search.php" method="get">
+        <input class="s-large" id="top-search-input-2" name="stext" placeholder="Buscar" size="20" tabindex="1" type="text" value=""/>
+       </form>
+       <div class="s-load fa-3x">
+        <i class="far fa-spinner-third fa-spin">
+        </i>
+       </div>
+       <i class="fal fa-times clear-search" style="display: none;">
+       </i>
+       <div class="advsearch">
+        <a href="https://www.filmaffinity.com/es/advsearch.php">
+         Búsqueda avanzada
+         <i class="fas fa-angle-double-right">
+         </i>
+        </a>
+       </div>
+      </div>
+      <!-- topsearch -->
+     </div>
+     <!--search-box -->
+     <div id="user-login-container">
+      <div id="login-register">
+       <a class="sign-in" href="https://www.filmaffinity.com/es/login.php">
+        <strong>
+         Iniciar sesión
+        </strong>
+       </a>
+       /
+       <a class="register" href="https://www.filmaffinity.com/es/register.php">
+        Registrarse
+       </a>
+      </div>
+     </div>
+     <!-- user-login -container -->
+    </div>
+   </div>
+   <!-- header-top -->
+   <div id="header-bottom">
+    <div class="cpanel news-wrapper">
+     <ul id="awardsmenu">
+      <li>
+       <a href="https://www.filmaffinity.com/es/topgen.php">
+        Top FA
+       </a>
+      </li>
+      <li class="sep">
+       |
+      </li>
+      <li>
+       <a href="https://www.filmaffinity.com/es/rankings.php">
+        Rankings FA
+       </a>
+      </li>
+      <li class="sep">
+       |
+      </li>
+      <li>
+       <a href="https://www.filmaffinity.com/es/category.php?id=2023films">
+        Año 2023
+       </a>
+      </li>
+      <li class="sep">
+       |
+      </li>
+      <li>
+       <a href="https://www.filmaffinity.com/es/calendar-tv.php">
+        Calendario Series
+       </a>
+      </li>
+      <li class="sep">
+       |
+      </li>
+      <li>
+       <a href="https://www.filmaffinity.com/es/category.php?id=latest_reviews">
+        Últ. críticas
+       </a>
+      </li>
+      <li class="sep">
+       |
+      </li>
+      <li>
+       <a href="https://www.filmaffinity.com/es/category.php?id=TRAILERS">
+        Tráilers
+       </a>
+      </li>
+      <li class="sep">
+       |
+      </li>
+      <li>
+       <a href="https://www.filmaffinity.com/es/all_awards.php">
+        Premios
+       </a>
+      </li>
+      <li class="sep">
+       |
+      </li>
+     </ul>
+     <div id="trmenu">
+      <div class="social-logo" id="tw-top-logo">
+       <a href="https://twitter.com/Filmaffinity" target="_BLANK" title="Sigue a FA en Twitter (60.000 followers)">
+        <i class="fab fa-twitter">
+        </i>
+       </a>
+      </div>
+      <div class="social-logo" id="in-top-logo">
+       <a href="https://www.instagram.com/filmaffinity/" target="_BLANK" title="Sigue a FA en Instagram (155.000 followers)">
+        <i class="fab fa-instagram">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div class="version-selector">
+      <ul class="version">
+       <li class="fixed" data-version="es" title="Cambiar de versión">
+        España
+        <i class="fas fa-chevron-down">
+        </i>
+       </li>
+      </ul>
+     </div>
+     <!-- version-selector -->
+     <div class="page-versions-pop fa-shadow">
+      <div class="country-names">
+       <ul class="continents">
+        <li data-continent="america-north">
+         <div class="header">
+          Norteamérica
+          <i class="fas fa-search-plus map-zoom">
+          </i>
+         </div>
+         <ul class="countries">
+          <li data-country-id="us" data-version="us">
+           <img alt="Estados Unidos" class="nflag" src="/imgs/countries2/US.png"/>
+           US
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="ca" data-version="ca">
+           <img alt="Canadá" class="nflag" src="/imgs/countries2/CA.png"/>
+           Canadá
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="mx" data-version="mx">
+           <img alt="México" class="nflag" src="/imgs/countries2/MX.png"/>
+           México
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+         </ul>
+        </li>
+        <li data-continent="europe">
+         <div class="header">
+          Europa
+          <i class="fas fa-search-plus map-zoom">
+          </i>
+         </div>
+         <ul class="countries">
+          <li data-country-id="es" data-version="es">
+           <img alt="España" class="nflag" src="/imgs/countries2/ES.png"/>
+           España
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="gb" data-version="uk">
+           <img alt="Reino Unido" class="nflag" src="/imgs/countries2/GB.png"/>
+           UK
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="ie" data-version="ie">
+           <img alt="Irlanda" class="nflag" src="/imgs/countries2/IE.png"/>
+           Irlanda
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+         </ul>
+        </li>
+        <li data-continent="oceania">
+         <div class="header">
+          Oceanía
+          <i class="fas fa-search-plus map-zoom">
+          </i>
+         </div>
+         <ul class="countries">
+          <li data-country-id="au" data-version="au">
+           <img alt="Australia" class="nflag" src="/imgs/countries2/AU.png"/>
+           Australia
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="continents">
+        <li data-continent="america-south">
+         <div class="header">
+          América del sur
+          <i class="fas fa-search-plus map-zoom">
+          </i>
+         </div>
+         <ul class="countries">
+          <li data-country-id="ar" data-version="ar">
+           <img alt="Argentina" class="nflag" src="/imgs/countries2/AR.png"/>
+           Argentina
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="cl" data-version="cl">
+           <img alt="Chile" class="nflag" src="/imgs/countries2/CL.png"/>
+           Chile
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="co" data-version="co">
+           <img alt="Colombia" class="nflag" src="/imgs/countries2/CO.png"/>
+           Colombia
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="uy" data-version="uy">
+           <img alt="Uruguay" class="nflag" src="/imgs/countries2/UY.png"/>
+           Uruguay
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="py" data-version="py">
+           <img alt="Paraguay" class="nflag" src="/imgs/countries2/PY.png"/>
+           Paraguay
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="pe" data-version="pe">
+           <img alt="Perú" class="nflag" src="/imgs/countries2/PE.png"/>
+           Perú
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="ec" data-version="ec">
+           <img alt="Ecuador" class="nflag" src="/imgs/countries2/EC.png"/>
+           Ecuador
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="ve" data-version="ve">
+           <img alt="Venezuela" class="nflag" src="/imgs/countries2/VE.png"/>
+           Venezuela
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="cr" data-version="cr">
+           <img alt="Costa Rica" class="nflag" src="/imgs/countries2/CR.png"/>
+           Costa Rica
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="hn" data-version="hn">
+           <img alt="Honduras" class="nflag" src="/imgs/countries2/HN.png"/>
+           Honduras
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="gt" data-version="gt">
+           <img alt="Guatemala" class="nflag" src="/imgs/countries2/GT.png"/>
+           Guatemala
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="bo" data-version="bo">
+           <img alt="Bolivia" class="nflag" src="/imgs/countries2/BO.png"/>
+           Bolivia
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+          <li data-country-id="do" data-version="do">
+           <img alt="Rep. Dominicana" class="nflag" src="/imgs/countries2/DO.png"/>
+           Rep. Dominicana
+           <i class="fas fa-arrow-right go-to-version">
+           </i>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <a class="more-info" href="https://www.filmaffinity.com/es/fa-international.php">
+        <i class="fas fa-info-circle">
+        </i>
+        Más información
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- cpanel news-wrapper -->
+   </div>
+   <!-- header-bottom second-nav -->
+  </header>
+  <!-- header -->
+  <div class="cpanel adver-wrapper">
+   <div class="adver-fix" id="top-ad">
+    <div class="sc-top" id="sc-top">
+     <script>
+      googletag.cmd.push(function() {
+
+                        googletag.display('sc-top');
+
+                 });
+     </script>
+    </div>
+    <!-- sc-oop-->
+    <div class="sc-oop" id="sc-oop">
+     <script>
+      googletag.cmd.push(function() {
+
+                        googletag.display('sc-oop');
+
+                 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="cpanel main-panel">
+   <div id="main-content-table">
+    <nav id="mt-left-cell">
+     <div id="lsmenu">
+      <div class="cat-container">
+       <div class="lsmheader">
+        Usuarios
+       </div>
+       <ul>
+        <li>
+         <a class="rate-tours" href="https://www.filmaffinity.com/es/tours.php">
+          Votar los tours
+         </a>
+        </li>
+        <li>
+         <a class="sign-in" href="https://www.filmaffinity.com/es/login.php">
+          Iniciar sesión
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/register.php">
+          Registrarse
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="cat-container">
+       <div class="lsmheader">
+        España
+       </div>
+       <ul>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_th_es.html">
+          Películas en cartelera
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cityTheaters.php">
+          Cines España
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/rdcat.php?id=upc_th_es">
+          Próximos estrenos
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_sa_es.html">
+          Estrenos Blu-ray venta
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/rdcat.php?id=upc_sa_es">
+          Próximos Blu-ray venta
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_re_es.html">
+          Ya para alquilar
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/rdcat.php?id=upc_re_es">
+          Próximamente alquiler
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_netflix.html">
+          Netflix
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/rdcat.php?id=upc_netflix">
+          Netflix (próx)
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_amazon_es.html">
+          Amazon Prime
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_movistar_f.html">
+          Movistar Plus+
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_upc_movistar_f.html">
+          Movistar Plus+ (próx)
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_hbo_es.html">
+          HBO Max
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_disneyplus.html">
+          Disney+
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_filmin.html">
+          Filmin
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_apple_tv_plus.html">
+          Apple TV+
+         </a>
+        </li>
+        <li style="position: relative;">
+         <strong>
+          <a href="https://www.filmaffinity.com/es/cat_skyshowtime.html">
+           SkyShowtime
+          </a>
+         </strong>
+         <div id="tooltip-new-menu" style="background: linear-gradient(to bottom, #FFA84C 52%, #FF7B0D 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); border-radius: 5px; color: #FFFFFF; font-size: 11px; line-height: 0.8; padding: 2px 3px; position: absolute; right: 2px; text-shadow: 0.2em 0.2em 0.2em #BBBBBB; bottom: 2px; font-style: italic;">
+          <strong>
+           N
+          </strong>
+         </div>
+        </li>
+       </ul>
+      </div>
+      <div class="cat-container">
+       <div class="lsmheader">
+        USA - UK - FR
+       </div>
+       <ul>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_th_us.html">
+          Estrenos USA
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_th_uk.html">
+          Estrenos Reino Unido
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_new_th_fr.html">
+          Estrenos Francia
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="cat-container">
+       <div class="lsmheader">
+        Rankings FA
+       </div>
+       <ul>
+        <li>
+         <a class="Rankings" href="https://www.filmaffinity.com/es/rankings.php">
+          Todos los rankings
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/ranking.php?rn=ranking_fa_movies">
+          El Top 1000 de FA
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="cat-container">
+       <div class="lsmheader">
+        Secciones
+       </div>
+       <ul>
+        <li>
+         <a href="https://www.filmaffinity.com/es/boxoffice.php">
+          Taquilla
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/trailers.php">
+          Trailers
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/latestevideos.php">
+          Últimos trailers
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/latestreviews.php">
+          Últimas críticas users
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/category.php?id=latest_reviews">
+          Qué dice la crítica
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/topics.php">
+          Películas por temas
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/movie-groups-all.php">
+          Sagas &amp; Franquicias
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="cat-container">
+       <div class="lsmheader">
+        Series de TV
+       </div>
+       <ul>
+        <li>
+         <a href="https://www.filmaffinity.com/es/cat_current_tv.html">
+          Series de actualidad
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/topgen.php?genres=-DO&amp;chv=1&amp;orderby=avg&amp;movietype=serie%7Conly-serie&amp;country=&amp;fromyear=1874&amp;toyear=2021&amp;ratingcount=3&amp;runtimemin=0&amp;runtimemax=4">
+          Top series
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/tour.php?idtour=26">
+          Vota Series de TV
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="cat-container">
+       <div class="lsmheader">
+        TOPs
+       </div>
+       <ul>
+        <li>
+         <a href="https://www.filmaffinity.com/es/topgen.php">
+          Top Filmaffinity
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/best_tops.php">
+          Lo mejor del TOP
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/topcat_new_th_es.html">
+          Top Estrenos
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/topcat_new_sa_es.html">
+          Top Estrenos Blu-ray
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/listsrank.php">
+          Ranking de listas
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="cat-container">
+       <div class="lsmheader">
+        Premios | Festivales
+       </div>
+       <ul>
+        <li>
+         <a href="https://www.filmaffinity.com/es/all_awards.php">
+          Premios y Festivales
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/oscar_data.php">
+          Todos los Oscar
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/best_2022.php">
+          Resumen 2022
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="cat-container">
+       <div class="lsmheader">
+        Información
+       </div>
+       <ul>
+        <li>
+         <a href="https://www.filmaffinity.com/es/site-guide.php">
+          Acerca de FA
+         </a>
+        </li>
+        <li>
+         <a href="https://www.filmaffinity.com/es/contact_us.php">
+          Contacto
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </nav>
+    <div class="mt-content-wrapper">
+     <main id="mt-content-cell">
+      <div class="pt-in">
+       <div id="sh-pos-abs">
+        <div class="sh-header" title="compartir">
+         <i class="fas fa-share-alt">
+         </i>
+        </div>
+       </div>
+       <style>
+        #hidden-url {position: absolute; left: 65px; top: 2px; display: none; padding: 2px 6px 4px 6px; background: #fdcc1a; margin-top: 5px; width: 485px; border-radius: 5px; animation-duration: .3s; z-index: 100;}
+    #hidden-url input{ font-size: 14px; font-weight: bold; outline: none; border: 1px solid #DDDDDD; border-radius: 5px; padding: 8px 4px; width: 435px; margin-left: 5px; font-family: monospace;}
+    #hidden-url .hide-url {cursor: pointer; font-size: 22px; margin: 0 5px; color: #000; vertical-align: middle;}
+    #copy-clipboard {position: absolute; left: 0px; top: 31px; padding: 2px 6px; background: #fdcc1a; margin-top: 5px; animation-duration: .3s; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; width: 200px; cursor: pointer; padding-left: 15px;}
+       </style>
+       <script>
+        function hideOnClick( ){
+        $(document).click(function(event) {
+            if(!$(event.target).closest('.hd-sh-wrapper').length && !$(event.target).closest('#hidden-url').length) {
+                if($('.hd-sh-wrapper').is(":visible")) {
+                    //$('.hidden-share-wrapper').hide();
+                    $('.sh-header').trigger('click');
+                }
+            }
+        });
+    }
+
+    $(function() {
+        $('.hd-sh-wrapper').bind('animationEnd oAnimationEnd msAnimationEnd mozAnimationEnd webkitAnimationEnd', function(event){
+            if(  $(event.target).hasClass('nkoout') )
+            {
+                $('.hd-sh-wrapper').hide();
+            }
+
+        });
+
+        $('#sh-pos-abs').toggle( function(){
+                $('.sh-header').addClass('clicked');
+                $('.hd-sh-wrapper').removeClass('nkoout').addClass('nkoin').show();
+            }, function(){
+                $('.hd-sh-wrapper').removeClass('nkoin').addClass('nkoout');
+
+                $('.main-sh').removeClass('clicked');
+                if( $('#hidden-url').is(":visible") ) {
+                    $('#copy-to-clip').click();
+                }
+        });
+
+        var pathname = encodeURI('https://www.filmaffinity.com/es/film893369.html');
+        var slideOptions = { direction: 'left' };
+
+        $('#copy-to-clip').toggle(
+            function(){
+                $('#hidden-url').show();
+
+                    $('#hidden-url').find(':input').val(pathname);
+                    //$('#hidden-url').find(':input').select();
+                    var text = $('#hidden-url').find(':input').text();
+            },
+            function(){
+                    $('#hidden-url').hide();
+        });
+
+        $('#hidden-url').on('click', '#copy-clipboard', function(){
+            $(this).text( $('#copy-clipboard').attr('data-text') );
+            navigator.clipboard.writeText( pathname )
+                .then(() => {
+                    console.log( pathname );
+            }).catch(err => {
+                    console.error('Could not copy text: ', err);
+            });
+        })
+
+        $('#hidden-url').find('.hide-url').click(function()
+        {
+            $('#copy-to-clip').trigger('click')
+        });
+
+        hideOnClick();
+    });
+       </script>
+       <div class="hd-sh-main-wrapper">
+        <div class="hd-sh-wrapper">
+         <a href="#" id="copy-to-clip" title="Copia la URL para compartir">
+          <div class="share-icon" id="copy-to-clip-container">
+           <i class="fas fa-link">
+           </i>
+          </div>
+         </a>
+         <a class="fb-sh" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.filmaffinity.com%2Fes%2Ffilm893369.html&amp;t=Coco  (2017)" target="_BLANK" title="Comparte en Facebook">
+          <div class="share-icon">
+           <i class="fab fa-facebook-f">
+           </i>
+          </div>
+         </a>
+         <a class="tw-sh" href="https://twitter.com/intent/tweet?text=Coco%20%20%282017%29 en @filmaffinity https%3A%2F%2Fwww.filmaffinity.com%2Fes%2Ffilm893369.html" target="_BLANK" title="Comparte en Twitter">
+          <div class="share-icon">
+           <i class="fab fa-twitter">
+           </i>
+          </div>
+         </a>
+         <a class="wh-sh" href="https://api.whatsapp.com/send?text=Coco%20%20%282017%29 en @filmaffinity https%3A%2F%2Fwww.filmaffinity.com%2Fes%2Ffilm893369.html" target="_BLANK" title="Comparte en WhatsApp">
+          <div class="share-icon">
+           <i class="fab fa-whatsapp">
+           </i>
+          </div>
+         </a>
+        </div>
+       </div>
+       <div id="hidden-url">
+        <input size="55" type="text"/>
+        <i class="fas fa-times-circle hide-url">
+        </i>
+        <div data-text="Copiado" id="copy-clipboard">
+         Haz click aquí para copiar la URL
+        </div>
+       </div>
+      </div>
+      <!-- pt-in -->
+      <div itemscope="" itemtype="http://schema.org/Movie">
+       <h1 id="main-title">
+        <span itemprop="name">
+         Coco
+        </span>
+       </h1>
+       <script>
+        $(document).ready(function(){
+    $("#show-all-pro").click(function(event){
+        $(this).parent('li').css('display', 'none');
+        event.preventDefault();
+        $(".hidden").slideDown('slow');
+    });
+
+    $("#show-all-awards").click(function(event){
+        $(this).parent('div').css('display', 'none');
+        event.preventDefault();
+        $(".hidden-awards").slideDown('slow');
+    });
+
+    $('.z-movie .credits').on('click', '.see-more-credits' ,function(){
+        $(this).closest('div').find('.hidden-credit').css('display', 'inline-block');
+        var $last = $(this).closest('div').find('.nb:last a');
+        if( $last.length == 0 ){
+            var $last = $(this).closest('div').find('.nb:last span');
+        }
+
+        $(this).closest('div').find('.nb:last').html($last[0].outerHTML);
+        $(this).closest('div').find('.t-p').hide();
+
+        //$(this).html("ver menos").addClass('see-less-credits').removeClass('see-more-credits');
+        $(this).remove();
+    })
+/*
+    $('.z-movie .credits').on('click', '.see-less-credits' , function(){
+        $(this).closest('div').find('.hidden-credit').css('display', 'none');
+        $(this).html("Mostrar todos").addClass('see-more-credits').removeClass('see-less-credits');
+        $(this).closest('div').find('.t-p').show();
+    })
+*/
+    $("#cboxOverlay").on('click', function(){
+        return false;
+    });
+
+    $('.show-akas').on('click', function()
+    {
+        var icon = $(this).find('i');
+        if(icon.hasClass('fa-caret-down'))
+        {
+            $('.akas').slideDown();
+            icon.removeClass('fa-caret-down').addClass('fa-caret-up');
+        }
+        else
+        {
+            $('.akas').slideUp();
+            icon.removeClass('fa-caret-up').addClass('fa-caret-down');
+        }
+
+    });
+    $('.credits-scroller').slick({
+          infinite: false,
+          speed: 300,
+          slidesToShow: 5,
+          slidesToScroll: 4,
+          prevArrow: '<span class="arrow-left"><i class="fa-light fa-chevron-left"></i></span>',
+          nextArrow: '<span class="arrow-right"><i class="fa-light fa-chevron-right"></i></span>',
+          arrows: true,
+          variableWidth: true,
+
+    });
+    $('.movie-info').find('.skeleton').fadeOut('slow');
+    $('.movie-info').find('.cast-wrapper').fadeIn('slow');
+
+    if( $('#stream-wrapper .justwatch-logo').length > 0 ){
+        $('#stream-wrapper .justwatch-logo').on('click', function(){
+            navigator.sendBeacon( pageUrl('jwredirect.php?movieid=893369&jwsite=es') )
+        })
+
+    }
+        
+
+});
+       </script>
+       <script>
+        $(document).ready(function(){
+                new RatingBars($('#rat-disp'), [29,71,100,62,21,6,1,1,0,0]);
+            });
+       </script>
+       <div class="z-movie">
+        <script>
+         $(document).ready(function(){
+    $("#more-categories").click(function(e){
+         e.stopPropagation();
+        $(".hidden-menu").toggle();
+    });
+
+    if( $('.margin-ntabs ul li').length > 5 )
+        $('.margin-ntabs ul li').addClass('no-margin');
+});
+
+$(document).click(function() {
+    $(".hidden-menu").css('display', 'none');
+});
+        </script>
+        <div class="margin-ntabs movie-tabs">
+         <ul class="ntabs">
+          <li class="active">
+           <a href="https://www.filmaffinity.com/es/film893369.html">
+            Ficha
+           </a>
+          </li>
+          <li>
+           <a href="https://www.filmaffinity.com/es/fullcredits.php?movie_id=893369">
+            Créditos
+           </a>
+          </li>
+          <li>
+           <a href="https://www.filmaffinity.com/es/reviews/1/893369.html">
+            Críticas
+            <em>
+             [286]
+            </em>
+           </a>
+          </li>
+          <li>
+           <a href="https://www.filmaffinity.com/es/evideos.php?movie_id=893369">
+            Tráilers
+            <em>
+             [5]
+            </em>
+           </a>
+          </li>
+          <li>
+           <a href="https://www.filmaffinity.com/es/filmimages.php?movie_id=893369">
+            Imágenes
+            <em>
+             [30]
+            </em>
+           </a>
+          </li>
+          <li class="new">
+           <a href="https://www.filmaffinity.com/es/buymovie.php?movie_id=893369">
+            Blu-ray
+            <em>
+             [5]
+            </em>
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div id="right-column">
+         <div id="movie-main-image-container">
+          <a class="lightbox" data-movie-id="893369" data-t="&lt;p style=font-size:9px;font-family:arial;color:#666666;&gt;El copyright de las imágenes pertenece a sus respectivos autores y/o productoras/distribuidoras.&lt;/p&gt;" href="https://pics.filmaffinity.com/coco-155051069-large.jpg" style="display: block;" title="Coco ">
+           <img alt="Coco " height="238" itemprop="image" src="https://pics.filmaffinity.com/coco-155051069-mmed.jpg" width="160"/>
+           <span class="see-trailer" title="Ver trailer">
+            <i class="fas fa-play-circle">
+            </i>
+           </span>
+          </a>
+         </div>
+         <div id="rat-container">
+          <div id="rat-avg-count" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+           <div id="movie-rat-image">
+            <span id="stars">
+             <img alt="Votación" src="https://filmaffinity.com/images/ratings/8.png"/>
+            </span>
+           </div>
+           <div id="rat-avg-container">
+            <div content="8" id="movie-rat-avg" itemprop="ratingValue">
+             8,0
+            </div>
+            <meta content="10" itemprop="bestRating">
+             <meta content="1" itemprop="worstRating">
+              <meta content="286" itemprop="reviewCount"/>
+              <div id="movie-count-rat">
+               <span content="53862" itemprop="ratingCount">
+                53.862
+               </span>
+               <div id="movie-count-rat-text">
+                votos
+               </div>
+              </div>
+              <div class="clearfix">
+              </div>
+             </meta>
+            </meta>
+           </div>
+          </div>
+          <div id="rat-graph">
+           <canvas height="81" id="rat-disp" style="padding: 3px; background: #fff; border: 1px solid #CDDCEB" width="120">
+            Plugin no soportado
+           </canvas>
+          </div>
+          <div id="review-container">
+           <div id="movie-reviews-box">
+            286
+            <a href="https://www.filmaffinity.com/es/reviews/1/893369.html">
+             críticas
+            </a>
+            -
+            <a href="https://www.filmaffinity.com/es/reviews2/1/893369.html">
+             títulos
+            </a>
+           </div>
+          </div>
+          <div class="clearfix">
+          </div>
+         </div>
+         <div class="rate-movie-box" data-movie-id="893369" data-user-rating="">
+          <div class="rate-wrapper">
+           <div class="rt-box">
+            <a class="sign-in" href="https://www.filmaffinity.com/es/login.php">
+             Vota esta película
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="add-movie-list-cont">
+          <div class="add-text-content">
+           <div class="add-movie-list-info add-to-list-button">
+            <a href="https://www.filmaffinity.com/es/edtmovielists.php?movie_id=893369">
+             Añadir a listas
+            </a>
+           </div>
+          </div>
+          <div class="lists-box">
+          </div>
+         </div>
+         <div class="film-right-box vod-wrapper" data-movie-id="893369" id="stream-wrapper">
+          <div class="title">
+           Disponible en
+          </div>
+          <div class="body">
+           <div class="sub-title">
+            Suscripción
+           </div>
+           <div class="prov-offers-wrapper big-offers">
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=897a7f7c259fdab5f1f326721b0ba2c512f64c00" target="_blank">
+             <img alt="Disney Plus" class="icon-5" src="https://images.justwatch.com/icon/147638351/s100" title="Disney Plus"/>
+            </a>
+           </div>
+           <div class="sub-title">
+            Alquiler
+           </div>
+           <div class="prov-offers-wrapper big-offers">
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=dab89681c393dcce37fa45234d2867f972b142d8" target="_blank">
+             <img alt="Google Play Movies" class="icon-5" src="https://images.justwatch.com/icon/169478387/s100" title="Google Play Movies"/>
+            </a>
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=4a0b32cb5e0af04ae5924d7b28746e518b6ceffd" target="_blank">
+             <img alt="Apple TV" class="icon-5" src="https://images.justwatch.com/icon/190848813/s100" title="Apple TV"/>
+            </a>
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=9ced0012dcd467909267dba80a10daa0dad8ff77" target="_blank">
+             <img alt="Rakuten TV" class="icon-5" src="https://images.justwatch.com/icon/128599720/s100" title="Rakuten TV"/>
+            </a>
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=f69da7cb9b1862daf2017d5087a1ac20c51d66df" target="_blank">
+             <img alt="Microsoft Store" class="icon-5" src="https://images.justwatch.com/icon/820542/s100" title="Microsoft Store"/>
+            </a>
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=14c09a7fdb2fba20a7c4a14c99b20c8fefe8f2c5" target="_blank">
+             <img alt="Amazon Video" class="icon-5" src="https://images.justwatch.com/icon/430993/s100" title="Amazon Video"/>
+            </a>
+           </div>
+           <div class="sub-title">
+            Compra
+           </div>
+           <div class="prov-offers-wrapper big-offers">
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=74a6a89032694db0314a9aba8da736e860a1a8d1" target="_blank">
+             <img alt="Google Play Movies" class="icon-5" src="https://images.justwatch.com/icon/169478387/s100" title="Google Play Movies"/>
+            </a>
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=6f3c8c37a38029c9d2673803ce12db47e53000a3" target="_blank">
+             <img alt="Apple TV" class="icon-5" src="https://images.justwatch.com/icon/190848813/s100" title="Apple TV"/>
+            </a>
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=26ce757e630adc6e336d020238725b5dbd72e7f1" target="_blank">
+             <img alt="Rakuten TV" class="icon-5" src="https://images.justwatch.com/icon/128599720/s100" title="Rakuten TV"/>
+            </a>
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=cd8ec5e3ab330aa0b565768196cf53f4edb5d6b5" target="_blank">
+             <img alt="Microsoft Store" class="icon-5" src="https://images.justwatch.com/icon/820542/s100" title="Microsoft Store"/>
+            </a>
+            <a href="https://www.filmaffinity.com/es/jwredirect.php?link=e014a6b57c6fc31633436e83bde6ae6634f2bb54" target="_blank">
+             <img alt="Amazon Video" class="icon-5" src="https://images.justwatch.com/icon/430993/s100" title="Amazon Video"/>
+            </a>
+           </div>
+          </div>
+          <div class="justwatch-logo">
+           <a href="https://www.justwatch.com/es/pelicula/coco" target="_BLANK">
+            <img alt="justwatch-logo" src="/images/justwatch2.png"/>
+           </a>
+          </div>
+         </div>
+         <a href="https://www.filmaffinity.com/es/pro-reviews.php?movie-id=893369">
+          <div class="film-right-box pro-reviews-chart">
+           <div class="title">
+            Críticas profesionales
+           </div>
+           <div class="body">
+            <div class="pro-reviews-chart-wrapper">
+             <div class="total-abs" title="41 críticas profesionales">
+              41
+              <small>
+               <i class="fa fa-simple-user-o-fa">
+               </i>
+              </small>
+             </div>
+             <canvas id="myChart" style="position: absolute; left: 10px; width: 70px; height: 70px;">
+             </canvas>
+             <div class="legend-wrapper">
+              <div class="leg">
+               37
+               <i class="fa fa-simple-user-o-fa">
+               </i>
+               <i class="fas fa-circle pos" style="color: #4CAF50" title="tendencia de la crítica: positiva">
+               </i>
+              </div>
+              <div class="leg">
+               4
+               <i class="fa fa-simple-user-o-fa">
+               </i>
+               <i class="fas fa-circle neu" style="color: #FFBF00" title="tendencia de la crítica: neutral">
+               </i>
+              </div>
+              <div class="leg">
+               0
+               <i class="fa fa-simple-user-o-fa">
+               </i>
+               <i class="fas fa-circle neg" style="color: #F44336" title="tendencia de la crítica: negativa">
+               </i>
+              </div>
+             </div>
+            </div>
+           </div>
+           <!-- body -->
+          </div>
+         </a>
+         <script>
+          var randomScalingFactor = function() {
+            return Math.round(Math.random() * 100);
+        };
+
+    var ctx = document.getElementById('myChart');
+        var config = {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [
+                        360,
+                        40,
+                        0,
+                    ],
+                    backgroundColor: [
+                        '#008000',
+                        '#FFA500',
+                        '#FF0000',
+                    ],
+                    label: 'Dataset 1'
+                }],
+                labels: [
+                    'Positivas',
+                    'Neutras',
+                    'Negativas',
+                ]
+            },
+            options: {
+                responsive: false,
+                legend: {
+                    display: false,
+                },
+                title: {
+                    display: false,
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                },
+                cutoutPercentage: 75,
+                tooltips: {
+                    enabled: false,
+                },
+            }
+        };
+    var myChart = new Chart(ctx, config);
+         </script>
+         <div class="film-right-box film-ext-links">
+          <div class="title">
+           Links
+          </div>
+          <div class="body">
+           <div>
+            <a href="https://es.wikipedia.org/wiki/Coco_(pel%C3%ADcula)" target="_BLANK" title="https://es.wikipedia.org/wiki/Coco_(pel%C3%ADcula)">
+             <i class="fa-brands fa-wikipedia-w">
+             </i>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="film-right-box">
+          <div class="title" style="position: relative;">
+           <a href="https://www.filmaffinity.com/es/movie-relations.php?movie-id=893369" title="Relaciones">
+            5 relaciones
+            <i class="fas fa-angle-double-right">
+            </i>
+           </a>
+          </div>
+          <div class="body">
+           <div class="poster-rels">
+            <div class="poster-rel">
+             <div class="rel-title">
+              <div class="sep sep-0">
+              </div>
+              <div class="title">
+               Relacionada con:
+              </div>
+             </div>
+             <a href="https://www.filmaffinity.com/es/film628725.html" title="El libro de la vida ">
+              <img alt="El libro de la vida " height="149" src="https://pics.filmaffinity.com/the_book_of_life-733755442-msmall.jpg" width="100"/>
+             </a>
+             <div class="movie-title">
+              <a href="https://www.filmaffinity.com/es/film628725.html">
+               El libro de la vida
+              </a>
+             </div>
+            </div>
+            <div class="poster-rel">
+             <div class="rel-title">
+              <div class="sep sep-1">
+              </div>
+              <div class="title">
+               documental asociado:
+              </div>
+             </div>
+             <a href="https://www.filmaffinity.com/es/film828850.html" title="Una celebración de la música de Coco ">
+              <img alt="Una celebración de la música de Coco " height="149" src="https://pics.filmaffinity.com/a_celebration_of_the_music_from_coco-640462063-msmall.jpg" width="100"/>
+             </a>
+             <div class="movie-title">
+              <a href="https://www.filmaffinity.com/es/film828850.html">
+               Una celebración de la música de Coco
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div id="left-column">
+         <dl class="movie-info">
+          <dt>
+           Título original
+          </dt>
+          <dd>
+           Coco
+          </dd>
+          <dt>
+           Año
+          </dt>
+          <dd itemprop="datePublished">
+           2017
+          </dd>
+          <dt>
+           Duración
+          </dt>
+          <dd itemprop="duration">
+           109 min.
+          </dd>
+          <dt>
+           País
+          </dt>
+          <dd>
+           <span id="country-img">
+            <img alt="Estados Unidos" class="nflag" src="/imgs/countries2/US.png"/>
+           </span>
+           Estados Unidos
+          </dd>
+          <dt>
+           Dirección
+          </dt>
+          <dd class="directors">
+           <div class="credits">
+            <span class="nb" itemprop="director" itemscope="" itemtype="http://schema.org/Person">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=187690454" itemprop="url" title="Lee Unkrich">
+              <span itemprop="name">
+               Lee Unkrich
+              </span>
+             </a>
+             ,
+            </span>
+            <span class="nb" itemprop="director" itemscope="" itemtype="http://schema.org/Person">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=872805842" itemprop="url" title="Adrián Molina">
+              <span itemprop="name">
+               Adrián Molina
+              </span>
+             </a>
+            </span>
+           </div>
+          </dd>
+          <dt>
+           Guion
+          </dt>
+          <dd>
+           <div class="credits">
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=872805842" title="Adrián Molina">
+              Adrián Molina
+             </a>
+             ,
+            </span>
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=258263477" title="Matthew Aldrich">
+              Matthew Aldrich
+             </a>
+             .
+            </span>
+            <i>
+             Historia original:
+            </i>
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=187690454" title="Lee Unkrich">
+              Lee Unkrich
+             </a>
+             ,
+            </span>
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=412500542" title="Jason Katz">
+              Jason Katz
+             </a>
+             ,
+            </span>
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=258263477" title="Matthew Aldrich">
+              Matthew Aldrich
+             </a>
+             ,
+            </span>
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=872805842" title="Adrián Molina">
+              Adrián Molina
+             </a>
+            </span>
+           </div>
+          </dd>
+          <dt>
+           Reparto
+          </dt>
+          <dd class="card-cast-debug">
+           <div class="cast-wrapper">
+            <ul class="credits-scroller nav nav-tabs">
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=438430045" itemprop="url" title="Anthony Gonzalez">
+               <img alt="Anthony Gonzalez" height="120" src="https://pics.filmaffinity.com/anthony_gonzalez-200137976148239-nm_200.jpg" width="80"/>
+               <div class="name" itemprop="name">
+                Anthony Gonzalez
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=810579491" itemprop="url" title="Gael García Bernal">
+               <img alt="Gael García Bernal" height="120" src="https://pics.filmaffinity.com/gael_garcia_bernal-239893553074473-nm_200.jpg" width="80"/>
+               <div class="name" itemprop="name">
+                Gael García Bernal
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=593383009" itemprop="url" title="Benjamin Bratt">
+               <img alt="Benjamin Bratt" height="120" src="https://pics.filmaffinity.com/benjamin_bratt-246121995045795-nm_200.jpg" width="80"/>
+               <div class="name" itemprop="name">
+                Benjamin Bratt
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=206198717" itemprop="url" title="Alanna Ubach">
+               <img alt="Alanna Ubach" height="120" src="https://pics.filmaffinity.com/alanna_ubach-220432342059250-nm_200.jpg" width="80"/>
+               <div class="name" itemprop="name">
+                Alanna Ubach
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=529172210" itemprop="url" title="Renee Victor">
+               <div alt="No image " class="no-picture no-picture-200" style="width: 80px; height: 120px; line-height: 144px; text-align: center;">
+                <i class="fas fa-user" style="font-size: 40px; color: #CCC;">
+                </i>
+               </div>
+               <div class="name" itemprop="name">
+                Renee Victor
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=499251342" itemprop="url" title="Jaime Camil">
+               <img alt="Jaime Camil" height="121" src="https://pics.filmaffinity.com/jaime_camil-115717663929133-nm_200.jpg" width="80"/>
+               <div class="name" itemprop="name">
+                Jaime Camil
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=814583045" itemprop="url" title="Alfonso Arau">
+               <img alt="Alfonso Arau" height="121" src="https://pics.filmaffinity.com/alfonso_arau-261525888079292-nm_200.jpg" width="80"/>
+               <div class="name" itemprop="name">
+                Alfonso Arau
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=803386457" itemprop="url" title="Herbert Siguenza">
+               <div alt="No image " class="no-picture no-picture-200" style="width: 80px; height: 120px; line-height: 144px; text-align: center;">
+                <i class="fas fa-user" style="font-size: 40px; color: #CCC;">
+                </i>
+               </div>
+               <div class="name" itemprop="name">
+                Herbert Siguenza
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=161528855" itemprop="url" title="Gabriel Iglesias">
+               <img alt="Gabriel Iglesias" height="120" src="https://pics.filmaffinity.com/gabriel_iglesias-264485109848855-nm_200.jpg" width="80"/>
+               <div class="name" itemprop="name">
+                Gabriel Iglesias
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=654659548" itemprop="url" title="Lombardo Boyar">
+               <img alt="Lombardo Boyar" height="120" src="https://pics.filmaffinity.com/lombardo_boyar-113567182372996-nm_200.jpg" width="80"/>
+               <div class="name" itemprop="name">
+                Lombardo Boyar
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=889520465" itemprop="url" title="Ana Ofelia Murguía">
+               <img alt="Ana Ofelia Murguía" height="120" src="https://pics.filmaffinity.com/ana_ofelia_murguia-177235905237360-nm_200.jpg" width="80"/>
+               <div class="name" itemprop="name">
+                Ana Ofelia Murguía
+               </div>
+              </a>
+             </li>
+             <li class="nb" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+              <a href="https://www.filmaffinity.com/es/name.php?name-id=838391182" itemprop="url" title="Natalia Cordova">
+               <div alt="No image " class="no-picture no-picture-200" style="width: 80px; height: 120px; line-height: 144px; text-align: center;">
+                <i class="fas fa-user" style="font-size: 40px; color: #CCC;">
+                </i>
+               </div>
+               <div class="name" itemprop="name">
+                Natalia Cordova
+               </div>
+              </a>
+             </li>
+             <li class="see-more-cre">
+              <a href="https://www.filmaffinity.com/es/fullcredits.php?movie_id=893369">
+               Ver todos los créditos
+              </a>
+             </li>
+            </ul>
+           </div>
+          </dd>
+          <dt>
+           Música
+          </dt>
+          <dd>
+           <div class="credits">
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=560395706" title="Michael Giacchino">
+              Michael Giacchino
+             </a>
+            </span>
+           </div>
+          </dd>
+          <dt>
+           Fotografía
+          </dt>
+          <dd>
+           <div class="credits">
+            Animación,
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=828814515" title="Matt Aspbury">
+              Matt Aspbury
+             </a>
+             ,
+            </span>
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=984475188" title="Danielle Feinberg">
+              Danielle Feinberg
+             </a>
+            </span>
+           </div>
+          </dd>
+          <style>
+           .card-producer .credits {display: inline;}
+          </style>
+          <dt>
+           Compañías
+          </dt>
+          <dd class="card-producer">
+           <div class="credits">
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=447434039" title="Pixar Animation Studios">
+              Pixar Animation Studios
+             </a>
+             ,
+            </span>
+            <span class="nb">
+             <a href="https://www.filmaffinity.com/es/name.php?name-id=256145813" title="Walt Disney Pictures">
+              Walt Disney Pictures
+             </a>
+            </span>
+           </div>
+          </dd>
+          <dt>
+           Género
+          </dt>
+          <dd class="card-genres">
+           <span itemprop="genre">
+            <a href="https://www.filmaffinity.com/es/moviegenre.php?genre=AN&amp;attr=rat_count&amp;nodoc">
+             Animación
+            </a>
+           </span>
+           .
+           <span itemprop="genre">
+            <a href="https://www.filmaffinity.com/es/moviegenre.php?genre=FAN&amp;attr=rat_count&amp;nodoc">
+             Fantástico
+            </a>
+           </span>
+           .
+           <span itemprop="genre">
+            <a href="https://www.filmaffinity.com/es/moviegenre.php?genre=CO&amp;attr=rat_count&amp;nodoc">
+             Comedia
+            </a>
+           </span>
+           .
+           <span itemprop="genre">
+            <a href="https://www.filmaffinity.com/es/moviegenre.php?genre=DR&amp;attr=rat_count&amp;nodoc">
+             Drama
+            </a>
+           </span>
+           |
+           <a href="https://www.filmaffinity.com/es/movietopic.php?topic=295727&amp;attr=rat_count&amp;nodoc">
+            Pixar
+           </a>
+           .
+           <a href="https://www.filmaffinity.com/es/movietopic.php?topic=865591&amp;attr=rat_count&amp;nodoc">
+            Sobrenatural
+           </a>
+           .
+           <a href="https://www.filmaffinity.com/es/movietopic.php?topic=279137&amp;attr=rat_count&amp;nodoc">
+            Familia
+           </a>
+           .
+           <a href="https://www.filmaffinity.com/es/movietopic.php?topic=630442&amp;attr=rat_count&amp;nodoc">
+            Música
+           </a>
+           .
+           <a href="https://www.filmaffinity.com/es/movietopic.php?topic=685184&amp;attr=rat_count&amp;nodoc">
+            Cine familiar
+           </a>
+          </dd>
+          <dt>
+           Grupos
+          </dt>
+          <dd style="position: relative;">
+           <span>
+            <a href="https://www.filmaffinity.com/es/movie-group.php?group-id=64" title="Pixar (Películas)">
+             Pixar (Películas)
+            </a>
+           </span>
+          </dd>
+          <dt>
+           Sinopsis
+          </dt>
+          <dd class="" itemprop="description">
+           Miguel es un joven con el sueño de convertirse en leyenda de la música a pesar de la prohibición de su familia. Su ídolo es Ernesto de la Cruz, el músico y cantante más famoso de México. La pasión de Miguel le llevará a adentrarse en la "Tierra de los Muertos", donde conocerá su verdadero legado familiar. (FILMAFFINITY)
+          </dd>
+         </dl>
+         <dl class="margin-top movie-info">
+          <dt>
+           Posición en rankings FA
+          </dt>
+          <dd class="no-padding" id="movie-rankings-pos">
+           <ul>
+            <li>
+             <strong>
+              1
+             </strong>
+             <a href="https://www.filmaffinity.com/es/ranking.php?rn=ranking_pixar">
+              Todo Pixar, de mejor a peor
+             </a>
+            </li>
+            <li>
+             <strong>
+              4
+             </strong>
+             <a href="https://www.filmaffinity.com/es/ranking.php?rn=ranking_animation">
+              Mejores películas de animación
+             </a>
+            </li>
+            <li>
+             <strong>
+              7
+             </strong>
+             <a href="https://www.filmaffinity.com/es/ranking.php?rn=ranking_fantasy">
+              Mejores películas de fantasía
+             </a>
+            </li>
+            <li style="display:none">
+             <strong>
+              14
+             </strong>
+             <a href="https://www.filmaffinity.com/es/ranking.php?rn=ranking_fa_xxi_movies">
+              Mejores películas del siglo XXI
+             </a>
+            </li>
+            <li style="display:none">
+             <strong>
+              33
+             </strong>
+             <a href="https://www.filmaffinity.com/es/ranking.php?rn=ranking_comedy">
+              Mejores películas de comedia
+             </a>
+            </li>
+            <li style="display:none">
+             <strong>
+              118
+             </strong>
+             <a href="https://www.filmaffinity.com/es/ranking.php?rn=ranking_movies_us">
+              Mejores películas estadounidenses de todos los tiempos
+             </a>
+            </li>
+            <li style="display:none">
+             <strong>
+              147
+             </strong>
+             <a href="https://www.filmaffinity.com/es/ranking.php?rn=ranking_drama">
+              Mejores películas de drama
+             </a>
+            </li>
+           </ul>
+           <div class="show-all">
+            <a href="https://www.filmaffinity.com/es/movie-rankings.php?movie-id=893369#rankings">
+             Mostrar los 7 rankings
+             <i class="fa-light fa-chevron-right">
+             </i>
+            </a>
+           </div>
+          </dd>
+         </dl>
+         <dl class="margin-top movie-info">
+          <dt>
+           Premios
+          </dt>
+          <dd class="award">
+           <div class="margin-bottom">
+            <a href="https://www.filmaffinity.com/es/awards.php?award_id=academy_awards&amp;year=2018">
+             2017
+            </a>
+            : 2 Premios Oscar: Mejor largometraje de animación y mejor canción
+           </div>
+           <div class="margin-bottom">
+            <a href="https://www.filmaffinity.com/es/awards.php?award_id=goldenglobes&amp;year=2018">
+             2017
+            </a>
+            : Globos de Oro: Mejor filme de animación
+           </div>
+           <div class="margin-bottom">
+            <a href="https://www.filmaffinity.com/es/awards.php?award_id=bafta&amp;year=2018">
+             2017
+            </a>
+            : Premios BAFTA: Mejor película de animación
+           </div>
+           <div class="margin-bottom">
+            <a href="https://www.filmaffinity.com/es/awards.php?award_id=annie&amp;year=2018">
+             2017
+            </a>
+            : Premios Annie: 11 premios incluyendo mejor película, dirección y guion
+           </div>
+           <div class="margin-bottom">
+            <a href="https://www.filmaffinity.com/es/awards.php?award_id=nyfcc&amp;year=2017">
+             2017
+            </a>
+            : Círculo de Críticos de Nueva York: Mejor film de animación
+           </div>
+           <div class="margin-bottom">
+            <a href="https://www.filmaffinity.com/es/awards.php?award_id=lafca&amp;year=2017">
+             2017
+            </a>
+            : Asociación de Críticos de Los Angeles: Nominada a mejor largometraje de animación
+           </div>
+           <div>
+            <em>
+             <a href="https://www.filmaffinity.com/es/movie-awards.php?movie-id=893369">
+              Mostrar todos
+              <i class="fa-light fa-chevron-right strip-down">
+              </i>
+             </a>
+            </em>
+           </div>
+          </dd>
+         </dl>
+         <dl class="margin-top movie-info">
+          <dt>
+           Críticas
+          </dt>
+          <dd>
+           <ul id="pro-reviews">
+            <li>
+             <div class="pro-review" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+              <a href="http://www.elmundo.es/metropoli/cine/2017/11/30/5a1ec94bca4741c65f8b45eb.html" target="_BLANK" title="Leer crítica completa">
+               <div itemprop="reviewBody">
+                "La factoría de John Lasseter agota cada uno de sus argumentos en la más pequeña (y blanda) de sus películas mayores (...) un esfuerzo tan descomunal como, admitámoslo, rutinario por repetir una a una cada de las recetas con éxito. (…) Puntuación: ★★★ (sobre 5)"
+                <i class="fa-light fa-arrow-up-right-from-square">
+                </i>
+               </div>
+              </a>
+              <div class="pro-crit-med" itemprop="author">
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=788102507" title="Luis Martínez">
+                Luis Martínez
+               </a>
+               :
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=133667826" title="Diario El Mundo">
+                Diario El Mundo
+               </a>
+               <i alt="tendencia de la crítica: neutral" class="fas fa-circle neu" title="tendencia de la crítica: neutral">
+               </i>
+              </div>
+             </div>
+            </li>
+            <li>
+             <div class="pro-review" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+              <a href="http://www.abc.es/play/cine/criticas/abci-critica-coco-combinado-perfecto-pixar-disney-y-mexico-201711301826_noticia.html" target="_BLANK" title="Leer crítica completa">
+               <div itemprop="reviewBody">
+                "Luz, colorido, musicalidad y alma (...) La milagrosa técnica de animación más impresionante del mundo se vuelca en un precioso argumento (…) Puntuación: ★★★★ (sobre 5)"
+                <i class="fa-light fa-arrow-up-right-from-square">
+                </i>
+               </div>
+              </a>
+              <div class="pro-crit-med" itemprop="author">
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=241392252" title="Oti Rodríguez Marchante">
+                Oti Rodríguez Marchante
+               </a>
+               :
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=450049432" title="Diario ABC">
+                Diario ABC
+               </a>
+               <i alt="tendencia de la crítica: positiva" class="fas fa-circle pos" title="tendencia de la crítica: positiva">
+               </i>
+              </div>
+             </div>
+            </li>
+            <li>
+             <div class="pro-review" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+              <a href="http://www.larazon.es/cultura/cine/coco--el-colorista-eden-de-nuestra-memoria-****-MO17085988" target="_BLANK" title="Leer crítica completa">
+               <div itemprop="reviewBody">
+                "Es una hermosa película sobre la memoria como depósito de la emoción pura. (...) Técnicamente, la película es un festín (…) Puntuación: ★★★★ (sobre 5)"
+                <i class="fa-light fa-arrow-up-right-from-square">
+                </i>
+               </div>
+              </a>
+              <div class="pro-crit-med" itemprop="author">
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=753706584" title="Sergi Sánchez">
+                Sergi Sánchez
+               </a>
+               :
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=294175420" title="Diario La Razón">
+                Diario La Razón
+               </a>
+               <i alt="tendencia de la crítica: positiva" class="fas fa-circle pos" title="tendencia de la crítica: positiva">
+               </i>
+              </div>
+             </div>
+            </li>
+            <li>
+             <div class="pro-review" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+              <a href="http://www.elperiodico.com/es/ocio-y-cultura/20171130/critica-pelicula-coco-pixar-disney-6461450" target="_BLANK" title="Leer crítica completa">
+               <div itemprop="reviewBody">
+                "Echa mano de una paleta visual deslumbrante para compensar una narración algo formularia (...) dada la mediocridad general de sus producciones más recientes [de Pixar], 'Coco' solo puede considerarse un resurgir. (…) Puntuación: ★★★ (sobre 5)"
+                <i class="fa-light fa-arrow-up-right-from-square">
+                </i>
+               </div>
+              </a>
+              <div class="pro-crit-med" itemprop="author">
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=828175627" title="Nando Salvá">
+                Nando Salvá
+               </a>
+               :
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=760656020" title="Diario El Periódico">
+                Diario El Periódico
+               </a>
+               <i alt="tendencia de la crítica: positiva" class="fas fa-circle pos" title="tendencia de la crítica: positiva">
+               </i>
+              </div>
+             </div>
+            </li>
+            <li>
+             <div class="pro-review" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+              <a href="http://www.fotogramas.es/Peliculas/Coco#critFG" target="_BLANK" title="Leer crítica completa">
+               <div itemprop="reviewBody">
+                "Fastuoso canto de amor al folclore y la cultura popular mexicanos (...) poderoso melodrama musical (…) Puntuación: ★★★★ (sobre 5)"
+                <i class="fa-light fa-arrow-up-right-from-square">
+                </i>
+               </div>
+              </a>
+              <div class="pro-crit-med" itemprop="author">
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=224355689" title="Jordi Costa">
+                Jordi Costa
+               </a>
+               :
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=516521574" title="Fotogramas">
+                Fotogramas
+               </a>
+               <i alt="tendencia de la crítica: positiva" class="fas fa-circle pos" title="tendencia de la crítica: positiva">
+               </i>
+              </div>
+             </div>
+            </li>
+            <li>
+             <div class="pro-review" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+              <a href="http://cinemania.elmundo.es/peliculas/coco/critica/" target="_BLANK" title="Leer crítica completa">
+               <div itemprop="reviewBody">
+                "El colorismo y riqueza mexicano le quedan padre a la técnica Pixar (…) Puntuación: ★★★★ (sobre 5)"
+                <i class="fa-light fa-arrow-up-right-from-square">
+                </i>
+               </div>
+              </a>
+              <div class="pro-crit-med" itemprop="author">
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=601784642" title="Irene Crespo">
+                Irene Crespo
+               </a>
+               :
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=869853694" title="Cinemanía">
+                Cinemanía
+               </a>
+               <i alt="tendencia de la crítica: positiva" class="fas fa-circle pos" title="tendencia de la crítica: positiva">
+               </i>
+              </div>
+             </div>
+            </li>
+            <li>
+             <div class="pro-review" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+              <a href="http://variety.com/2017/film/reviews/coco-review-pixar-1202595605/" target="_BLANK" title="Leer crítica completa">
+               <div itemprop="reviewBody">
+                "Aunque la película resulta algo aburrida en algunas partes, y presenta demasiados chistes infantiles (...) la sincera resolución emocional de la historia genera lágrimas que seguramente serán una inspiración."
+                <i class="fa-light fa-arrow-up-right-from-square">
+                </i>
+               </div>
+              </a>
+              <div class="pro-crit-med" itemprop="author">
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=871299525" title="Peter Debruge">
+                Peter Debruge
+               </a>
+               :
+               <a href="https://www.filmaffinity.com/es/name.php?name-id=336323637" title="Variety">
+                Variety
+               </a>
+               <i alt="tendencia de la crítica: positiva" class="fas fa-circle pos" title="tendencia de la crítica: positiva">
+               </i>
+              </div>
+             </div>
+            </li>
+            <li>
+             <em>
+              <a href="https://www.filmaffinity.com/es/pro-reviews.php?movie-id=893369">
+               Mostrar 34 críticas más
+               <i class="fa-light fa-chevron-right strip-down">
+               </i>
+              </a>
+             </em>
+            </li>
+           </ul>
+          </dd>
+         </dl>
+         <dl class="margin-top movie-info">
+          <a name="myreview">
+          </a>
+          <dt id="myreviewt">
+           Tu crítica
+          </dt>
+          <dd>
+           <div class="margin-bottom add-review-wrapper">
+            <div class="revtext" contenteditable="false" data-movie-id="893369">
+             <div>
+              Escribe tu opinión para que el resto de los usuarios la pueda leer.
+             </div>
+             <a href="https://www.filmaffinity.com/es/addreview.php?movie_id=893369">
+              <small>
+               Añade tu crítica
+              </small>
+             </a>
+            </div>
+           </div>
+          </dd>
+         </dl>
+         <dl class="margin-top movie-info">
+          <dt style="padding-bottom: 50px;">
+           Votaciones de almas gemelas
+          </dt>
+          <dd style="padding-bottom: 50px;">
+           <div class="margin-bottom" id="sm-m-rat">
+            <a href="https://www.filmaffinity.com/es/register.php">
+             Regístrate
+            </a>
+            y podrás acceder a recomendaciones personalizadas según tus gustos de cine
+           </div>
+          </dd>
+          <dt>
+           Votaciones de tus amigos
+          </dt>
+          <dd>
+           <div class="margin-bottom" id="fr-m-rat">
+            <div>
+             <a href="https://www.filmaffinity.com/es/register.php">
+              Regístrate
+             </a>
+             y podrás acceder a todas las votaciones de tus amigos, familiares, etc.
+            </div>
+           </div>
+          </dd>
+         </dl>
+         <script>
+          $(function(){
+            $('#list-top-rank li').each(function(indx, value){
+                $(value).attr('title', $(value).find('em').text().match(/\d+/) + ' apariciones en esta lista');
+            });
+        });
+         </script>
+         <dl class="margin-top movie-info">
+          <dt>
+           Posición rankings listas
+          </dt>
+          <dd class="no-padding" id="list-top-rank">
+           <ul>
+            <li>
+             <strong>
+              3
+             </strong>
+             <a href="https://www.filmaffinity.com/es/listtopmovies.php?list_id=122">
+              Mis 10 películas favoritas del  2017
+             </a>
+             <em>
+              (709)
+             </em>
+            </li>
+            <li>
+             <strong>
+              23
+             </strong>
+             <a href="https://www.filmaffinity.com/es/listtopmovies.php?list_id=150">
+              Mis 10 películas favoritas de la década (2010-2019)
+             </a>
+             <em>
+              (166)
+             </em>
+            </li>
+            <li>
+             <strong>
+              26
+             </strong>
+             <a href="https://www.filmaffinity.com/es/listtopmovies.php?list_id=511">
+              Mis películas "para toda la familia" preferidas
+             </a>
+             <em>
+              (52)
+             </em>
+            </li>
+            <li>
+             <strong>
+              28
+             </strong>
+             <a href="https://www.filmaffinity.com/es/listtopmovies.php?list_id=513">
+              Mis películas de animación favoritas
+             </a>
+             <em>
+              (534)
+             </em>
+            </li>
+            <li>
+             <strong>
+              41
+             </strong>
+             <a href="https://www.filmaffinity.com/es/listtopmovies.php?list_id=620">
+              Películas que más me han emocionado
+             </a>
+             <em>
+              (104)
+             </em>
+            </li>
+           </ul>
+          </dd>
+         </dl>
+         <div class="movie-disclaimer" style="margin-top: 60px; ">
+          <p>
+           Si alguna sinopsis cuenta demasiados detalles del argumento, si ves algún error que desees corregir o para completar datos de la ficha o añadir fechas de estreno en tu país- puedes mandarnos un
+           <a href="https://www.filmaffinity.com/es/imsendmsg.php?to=985462">
+            mensaje interno en la página
+           </a>
+           . Si no estás registrado/a puedes contactarnos vía Twitter, IG, FB o por email a info -arroba- filmaffinity -punto- com.
+           <p>
+            Los derechos de propiedad intelectual de las críticas corresponden a los correspondientes críticos y/o medios de comunicación de los que han sido extraídos. Filmaffinity no tiene relación alguna con el productor, productora o distribuidor/a de la película. El copyright del poster, carátula, fotogramas, fotografías e imágenes de cada DVD, VOD, Blu-ray, tráiler y banda sonora original (BSO) pertenecen a las correspondientes productoras y/o distribuidoras.
+           </p>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </main>
+     <!-- mt-content-cell -->
+     <div class="hb-wrapper">
+      <div class="skeleton-history">
+       <p class="line">
+       </p>
+       <p class="line">
+       </p>
+       <p class="line">
+       </p>
+       <p class="line">
+       </p>
+      </div>
+      <!-- skeleton -->
+      <div class="history-wrapper">
+       <h5>
+        Últimas películas visitadas
+       </h5>
+       <div class="history-scroll">
+        <div class="histmcard">
+         <div class="poster">
+          <a href="https://www.filmaffinity.com/es/film893369.html" title="Coco ">
+           <img alt="Coco " height="71" src="https://pics.filmaffinity.com/coco-155051069-mtiny.jpg" width="49"/>
+          </a>
+         </div>
+         <div class="mtitle">
+          <a href="https://www.filmaffinity.com/es/film893369.html" title="Coco ">
+           Coco
+          </a>
+         </div>
+         <div class="year">
+          2017
+         </div>
+         <div class="director">
+          <b>
+           Lee Unkrich, Adrián Molina
+          </b>
+         </div>
+         <div class="ratings">
+          <div class="avgrat-box">
+           8,0
+          </div>
+          (53.862)
+         </div>
+         <div style="clear:left">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- history-bottom -->
+    </div>
+    <!-- mt-content-wrapper -->
+   </div>
+   <!-- main-content-table -->
+  </div>
+  <!-- cpanel -->
+  <div class="cpanel adver-wrapper">
+  </div>
+  <script>
+   var sc_lg = 0
+  </script>
+  <div id="sc-sticky">
+  </div>
+  <footer id="bpanel">
+   <div style="text-align:center; padding: 10px">
+    <a href="https://www.filmaffinity.com/es/faq.php">
+     Preguntas más frecuentes
+    </a>
+    |
+    <a href="https://www.filmaffinity.com/es/private.php">
+     Política de privacidad / condiciones de uso
+    </a>
+    |
+    <a href="#" id="privacy-config-2" onclick="window.__tcfapi('displayConsentUi', 2, function() {} );">
+     Configuración de privacidad
+    </a>
+    |
+    <a href="https://m.filmaffinity.com/es/film893369.html">
+     <strong>
+      Ir a Versión MÓVIL
+     </strong>
+    </a>
+   </div>
+   <div style="text-align:center; padding: 10px 2px">
+    <span class="subtext">
+     © 2002-2023 Filmaffinity - Movieaffinity | Filmaffinity es una página de recomendación de películas y series, y es un medio totalmente independiente cuya principal prioridad es la privacidad y seguridad de los datos de sus usuarios.
+     <br/>
+     All Rights Reserved - Todos los derechos reservados
+    </span>
+   </div>
+  </footer>
+  <!-- bpanel -->
+  <div id="top-anch">
+   <a href="#header-top" title="Ir arriba">
+    <img alt="arrow" src="https://www.filmaffinity.com/images/arrow-up2.png"/>
+   </a>
+  </div>
+  <div class="main-search-template">
+   <div class="overflow-wrapper">
+    <div class="o-container animate__animated animate__fadeInDownBig">
+     <div class="close-modal">
+      <i class="fal fa-times-circle">
+      </i>
+     </div>
+     <div class="top-search-wrapper">
+      <div class="sticky-search-wrapper">
+       <div class="sticky-search-wrapper">
+        <a class="pills-search pills-movies" href="">
+         Título
+         <span class="badge">
+         </span>
+        </a>
+        <a class="pills-search pills-names" href="">
+         Personas
+         <span class="badge">
+         </span>
+        </a>
+        <a class="pills-search pills-theaters" href="">
+         Cines
+         <span class="badge">
+         </span>
+        </a>
+       </div>
+      </div>
+      <div class="st-wrapper">
+       <div class="loader">
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+       </div>
+      </div>
+      <div class="header-search">
+       <div class="separator sep-title">
+        <a class="sep" href="">
+         Título
+        </a>
+       </div>
+       <div class="see-all see-title">
+        <a href="#">
+         Ver todos
+         <i class="far fa-chevron-double-right">
+         </i>
+        </a>
+       </div>
+      </div>
+      <ul class="title-ac-wrapper">
+      </ul>
+      <div class="header-search">
+       <div class="separator sep-name">
+        <a class="sep" href="">
+         Personas
+        </a>
+       </div>
+       <div class="see-all see-name">
+        <a href="#">
+         Ver todos
+         <i class="far fa-chevron-double-right">
+         </i>
+        </a>
+       </div>
+      </div>
+      <ul class="name-ac-wrapper">
+      </ul>
+      <div class="header-search">
+       <div class="separator sep-theaters">
+        <a class="sep" href="">
+         Cines
+        </a>
+       </div>
+       <div class="see-all see-theaters">
+        <a href="#">
+         Ver todos
+         <i class="far fa-chevron-double-right">
+         </i>
+        </a>
+       </div>
+      </div>
+      <ul class="theaters-ac-wrapper">
+      </ul>
+     </div>
+    </div>
+    <!-- o-container -->
+   </div>
+   <!-- overflow-wrapper -->
+  </div>
+  <!-- main-search -->
+  <!-- cpanel -->
+  <script crossorigin="anonymous" data-cf-beacon='{"rayId":"81ee8cba4b5f665f","b":1,"version":"2023.10.0","token":"e66d0238690a4858b1a351d312db03f2"}' defer="" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317">
+  </script>
+ </body>
+</html>
