@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 import time
 from lxml import etree
 import csv
-import numpy
+from dtos import ClasePeliculaDTO
 
 
 
@@ -40,28 +40,24 @@ def login_FillmAffinity_And_Navegation_To_TopFA(url, usuario, password):
     irTopFA = browser.find_element(By.XPATH, '/html/body/header/div[2]/div/ul/li[1]/a').click()
     time.sleep(3)
     
-    current_url = browser.current_url
-    return current_url
+    browser.get("https://www.filmaffinity.com/es/topgen.php?genres=&chv=0&orderby=avg&movietype=movie%7C&country=&fromyear=2013&toyear=2023&ratingcount=3&runtimemin=0&runtimemax=4")
+    return browser
     
 
 
 
-def return_html_after_scrape_movie_info_from_summary_page(current_url, num_clics):
+def return_html_after_scrape_movie_info_from_summary_page(browser, num_clics):
     """
     Obtiene el código fuente HTML tras la ejecución de JavaScript y extrae los datos de las películas.
     Parámetros:
+        browser: Con los datos de la conexión HTTP establecida y la web cargada.
         num_clics: El número de veces para hacer clic en la flecha para cargar más películas.
                    Por defecto, hacemos clic 33 veces para cargar 1020 películas.
     Return:
         html: El código fuente HTML como una cadena de texto.
     """
     
-    options = webdriver.FirefoxOptions()
-    options.headless = True
-    browser = webdriver.Firefox(options=options)
-    current_url = browser.current_url
-    # Navegamos a la URL especificada
-    browser.get(current_url)
+    
     # Bucle para hacer 33 veces scroll hacia abajo y click en la flecha que con javascrip sigue mostrando más películas
     for i in range(num_clics):
         # Esperamos para evitar sobrecargar el servidor
@@ -83,17 +79,17 @@ def return_html_after_scrape_movie_info_from_summary_page(current_url, num_clics
 
     return html
 
-def write_in_file_the_dataset(html):
+def write_in_file_the_dataset(obj):
     """
     A partir del HTML extraido, se localizan los datos de interés y se escriben en un fichero CSV.
     Parámetros:
         html: El código fuente en HTML que se extrajo de la web.
     Return:
-        void.
+        obj_detalles_peliculas: objeto de tipo "ClasePeliculasDTO"
     """
 
     # Analizamos el HTML con lxml
-    root = etree.HTML(html)
+    root = etree.HTML(obj.get_html())
     
     # Creamos listas para guardar los valores de cada variable
     movie_titles = []
@@ -131,7 +127,8 @@ def write_in_file_the_dataset(html):
         movie_directors.append(", ".join(director))
         movie_cast.append(", ".join(cast))
         movie_links.append(link)
-        
+    obj.set_movie_links(movie_links)
+
     # Recorremos todos los lis con la clase "data"
     for li in root.xpath('//li[@class="data"]'):
         # Extraemos la puntuación media y el número de puntuaciones
@@ -140,7 +137,8 @@ def write_in_file_the_dataset(html):
         
         movie_ratings.append(rating)
         movie_rating_counts.append(rating_count)
-    
+
+
     # Escribimos todo en un archivo CSV
     with open('movie_info_from_summary_page.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
@@ -152,17 +150,37 @@ def write_in_file_the_dataset(html):
                 break
             writer.writerow([title, year, country, rating, rating_count, director, cast, link])
 
-    return html
+    return obj_detalles_peliculas
 
 
 
 
 
 # Ejecución
+
+obj_detalles_peliculas = ClasePeliculaDTO("",[])
+t0 = time.perf_counter_ns()
 url = "https://www.filmaffinity.com/"
 usuario = "jtoracanouoc"
 password = "1234aA"
 current_url = login_FillmAffinity_And_Navegation_To_TopFA(url, usuario, password)
 html = return_html_after_scrape_movie_info_from_summary_page(current_url, 33)
-write_in_file_the_dataset(html)
+obj_detalles_peliculas.set_html(html)
+t1 = time.perf_counter_ns()
+tiempo_final_raspando = (t1 - t0) / 10**9
+
+
+print("El tiempo que tardamos en raspar todos los datos generales es de: ",tiempo_final_raspando," (segundos)")
+objeto_devuelto= write_in_file_the_dataset(obj_detalles_peliculas)
+t2 = time.perf_counter_ns()
+tiempo_escribiendo_csv = (t2 - t1) / 10**9
+print("El tiempo que tardamos en volcar los datos raspados a fichero CSV: ",tiempo_escribiendo_csv," (segundos)")
+obj_detalles_peliculas.get_movie_links()
+
+print("links de películas recuperados: ")
+for pelicula in obj_detalles_peliculas.get_movie_links():
+    print(pelicula)
+
+
+
 
