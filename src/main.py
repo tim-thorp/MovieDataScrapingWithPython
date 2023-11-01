@@ -70,6 +70,8 @@ def capture_details_from_all_filmPage(obj_pelicula):
         except Exception as e:
             sinopsis.append("")
             print(i)
+        finally:
+            time.sleep(3)
         
     obj_pelicula.set_titulo_original(titulo_original)
     obj_pelicula.set_duracion(duracion)
