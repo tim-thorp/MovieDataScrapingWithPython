@@ -8,6 +8,7 @@ from libreria_funciones_propias import return_html_after_scrape_movie_info_from_
 from threading import Thread
 import requests
 from bs4 import BeautifulSoup
+from lxml import etree
 
 
 def capture_details_from_all_filmPage(obj_pelicula):
@@ -71,12 +72,82 @@ def capture_details_from_all_filmPage(obj_pelicula):
         finally:
             time.sleep(3)
         
+    # Seteamos las listas de vuelta al objeto para retornarlas en él
     obj_pelicula.set_titulo_original(titulo_original)
     obj_pelicula.set_duracion(duracion)
     obj_pelicula.set_genero(genero)
     obj_pelicula.set_sinopsis(sinopsis)
     return obj_pelicula
 
+
+
+
+
+
+def pruebalxml(obj_pelicula):
+    links = obj_pelicula.get_movie_links()
+    titulo_original     = []
+    duracion            = []
+    genero              = []
+    sinopsis            = []
+    
+    print("Recopilando datos de película específica, de la 0 a la 1029...")
+
+    for i in range(len(links)):
+        try:
+            response = requests.get(links[i])
+            soup = BeautifulSoup(response.content, "html.parser")
+            html = soup.prettify()
+            # Analizamos el HTML con lxml
+            root = etree.HTML(html)
+            
+            try:
+                # Consiguiendo valor de "Título original"
+                value = root.xpath('/html/body/div[2]/div/div/main/div[2]/div/div[3]/dl[1]/dd[1]').text()
+                value = value.replace("\t", "")
+                value = value.replace(" ", "")
+                value = value.replace("\n", "")
+                titulo_original.append(value)
+            except Exception as e:
+                titulo_original.append("")
+
+            try:
+                # Consiguiendo valor de "Título original"
+                value = root.xpath('/html/body/div[2]/div/div/main/div[2]/div/div[3]/dl[1]/dd[3]').text()
+                duracion.append(value)
+            except Exception as e:
+                duracion.append("")
+
+            try:
+                # Conseguimos los generos
+                div = soup.find("div", id="left-column")
+                dd  = div.find("dd", _class="card-genres")
+                for span in dd.findall("span", itemprop="genre"):
+                    a = span.find(a)
+                    value = a.text()
+                    genero.append(value)
+                genero.append("")
+            except Exception as e:
+                genero.append("")
+
+            try:   
+                # Conseguimos la sinopsis
+                value = root.xpath('/html/body/div[2]/div/div/main/div[2]/div/div[3]/dl[1]/dd[13]').text()
+                sinopsis.append(value)
+            except Exception as e:
+                sinopsis.append("")
+            finally:
+                print("Recopilada Película ",i)
+                time.sleep(3)
+        except Exception as e:
+            print("Time Out en Película ",i)
+        
+    # Seteamos las listas de vuelta al objeto para retornarlas en él
+    obj_pelicula.set_titulo_original(titulo_original)
+    obj_pelicula.set_duracion(duracion)
+    obj_pelicula.set_genero(genero)
+    obj_pelicula.set_sinopsis(sinopsis)
+    return obj_pelicula
 
 
 
@@ -123,7 +194,7 @@ obj_detalles_peliculas = capture_data_from_sumaryPage(obj_detalles_peliculas)
 print("El tiempo que tardamos en raspar todos los datos generales es de: ",tiempo_raspando_inicial," (segundos)")
 
 # Recopilamos los datos detallados de cada película
-obj_detalles_peliculas = capture_details_from_all_filmPage(obj_detalles_peliculas)
+obj_detalles_peliculas = pruebalxml(obj_detalles_peliculas)
 
 # Creación del DATASET
 write_data_in_csv(obj_detalles_peliculas)
