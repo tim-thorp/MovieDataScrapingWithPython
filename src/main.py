@@ -13,10 +13,10 @@ from bs4 import BeautifulSoup
 def capture_details_from_all_filmPage(obj_pelicula):
     
     links = obj_pelicula.get_movie_links()
-    titulo_original = obj_pelicula.get_titulo_original()
-    duracion = obj_pelicula.get_duracion()
-    genero = obj_pelicula.get_genero()
-    sinopsis = obj_pelicula.get_sinopsis()
+    titulo_original     = []
+    duracion            = []
+    genero              = []
+    sinopsis            = []
     print("Recopilando datos de película específica, de la 0 a la 1029...")
 
     for i in range(len(links)):
@@ -49,14 +49,12 @@ def capture_details_from_all_filmPage(obj_pelicula):
 
         try:
             # Conseguimos los generos
-            #div = soup.find("div", id="left-column")
-            #dd  = div.find("dd", _class="card-genres")
-            #generos = []
-            #for span in dd.findall("span", itemprop="genre"):
-            #    a = span.find(a)
-            #    value = a.value
-            #    generos.append(value)
-            #print("Géneros: ", generos)
+            div = soup.find("div", id="left-column")
+            dd  = div.find("dd", _class="card-genres")
+            for span in dd.findall("span", itemprop="genre"):
+                a = span.find(a)
+                value = a.value
+                genero.append(value)
             genero.append("")
         except Exception as e:
             genero.append("")
