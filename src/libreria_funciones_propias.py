@@ -10,6 +10,73 @@ import csv
 
 
 
+def capture_details_from_all_filmPage(obj_pelicula):
+    
+    links = obj_pelicula.get_movie_links()
+    titulo_original     = []
+    duracion            = []
+    genero              = []
+    sinopsis            = []
+    
+    print("Recopilando datos de película específica, de la 0 a la 1029...")
+
+    for i in range(len(links)):
+        
+        try:
+            response = requests.get(links[i])
+            soup = BeautifulSoup(response.content, "html.parser")
+            html = soup.prettify()
+            # Analizamos el HTML con lxml
+            root = etree.HTML(html)
+            
+            try:
+                # Consiguiendo valor de "Título original"
+                value = root.xpath('/html/body/div[2]/div/div/main/div[2]/div/div[3]/dl[1]/dd[1]')[0].text
+                value = value.replace(" ", "")
+                value = value.replace("\n", "")
+                titulo_original.append(value)
+            except Exception as e:
+                titulo_original.append("")
+            
+            try:
+                # Consiguiendo valor de "Título original"
+                value = root.xpath('/html/body/div[2]/div/div/main/div[2]/div/div[3]/dl[1]/dd[3]')[0].text
+                value = value.replace(" ", "")
+                value = value.replace("\n", "")
+                duracion.append(value)
+            except Exception as e:
+                duracion.append("")
+
+            try:
+                # Conseguimos los generos
+                value = root.xpath('/html/body/div[2]/div/div/main/div[2]/div/div[3]/dl[1]/dd[11]/span[@itemprop="genre"/a/text()')
+                value = value.replace(" ", "")
+                value = value.replace("\n", "")
+                genero.append(value)
+            except Exception as e:
+                genero.append("")
+
+            try:
+                # Conseguimos la sinopsis
+                value = root.xpath('/html/body/div[2]/div/div/main/div[2]/div/div[3]/dl[1]/dd[13]')[0].text
+                value = value.replace("\n", "")
+                sinopsis.append(value)
+            except Exception as e:
+                sinopsis.append("")
+            finally:
+                time.sleep(3)
+                print("Analizada película ", i)
+        except Exception as e:
+            print("Ocurrió TimeOut en Película ", i)
+    # Seteamos las listas de vuelta al objeto para retornarlas en él
+    obj_pelicula.set_titulo_original(titulo_original)
+    obj_pelicula.set_duracion(duracion)
+    obj_pelicula.set_genero(genero)
+    obj_pelicula.set_sinopsis(sinopsis)
+    return obj_pelicula
+
+
+
 def return_html_after_scrape_movie_info_from_summary_page(browser, num_clics):
     """
     Obtiene el código fuente HTML tras la ejecución de JavaScript y extrae los datos de las películas.
@@ -37,6 +104,8 @@ def return_html_after_scrape_movie_info_from_summary_page(browser, num_clics):
     
     # Obtenemos todo el código fuente HTML de la página con las 1000-1030 películas ya cargadas, incluidos los cambios realizados por JavaScript
     html = browser.page_source
+    with open('html_sumary_page.txt', 'w', newline='', encoding='utf-8') as f:
+        f.write(html)
     
     # Cerramos el navegador para liberar recursos
     browser.quit()
@@ -46,46 +115,6 @@ def return_html_after_scrape_movie_info_from_summary_page(browser, num_clics):
 
 
 
-
-def recoger_detalles_concretos_pelicula_HTML(url, nombre_txt, obj_pelicula):
-    response = requests.get(url)
-    soup = BeautifulSoup(response.content, "html.parser")
-    html = soup.prettify()
-
-    with open(str(nombre_txt), "w",  encoding="utf-8") as f:
-        f.write(html)
-
-    # Consiguiendo valor de "Título original"
-    div = soup.find(id="left-column")
-    dl  = div.find("dl", class_="movie-info")
-    dd = dl.find("dd")
-    value = dd.text
-    value = value.replace("\t", "")
-    value = value.replace(" ", "")
-    value = value.replace("\n", "")
-    print("Título original: ",value)
-
-     # Consiguiendo valor de "Título original"
-    div = soup.find(id="left-column")
-    dl  = div.find("dl", class_="movie-info")
-    dd = dl.find_all("dd")[2]
-    value = dd.text
-    print("Duración: ",value)
-
-    # Conseguimos los generos
-    #div = soup.find("div", id="left-column")
-    #dd  = div.find("dd", _class="card-genres")
-    #generos = []
-    #for span in dd.findall("span", itemprop="genre"):
-    #    a = span.find(a)
-    #    value = a.value
-    #    generos.append(value)
-    #print("Géneros: ", generos)
-
-    # Conseguimos la sinopsis
-    sinopsis = soup.find("dd", class_="", itemprop="description")
-    value = sinopsis.text
-    print("Sinopsis: ", value)
 
 
 
@@ -185,6 +214,4 @@ def write_data_in_csv(obj_pelicula):
     
 
 
-if __name__ == "__main__":
-    obj_detalles_peliculas = ClasePeliculaDTO("",[],[],[],[],[],[],[],[],[],[],[],[])
-    recoger_detalles_concretos_pelicula_HTML("https://www.filmaffinity.com/es/film893369.html", "fichero.txt", obj_detalles_peliculas)
+
