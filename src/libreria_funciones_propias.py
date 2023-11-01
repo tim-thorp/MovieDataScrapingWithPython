@@ -10,6 +10,66 @@ import csv
 
 
 
+def scrape_movie_details(obj_pelicula):
+    """
+    Esta función se encarga de extraer detalles específicos de películas a partir de una lista de URLs.
+    Los detalles incluyen el título original, la duración, el género y el sinopsis de cada película.
+    
+    Args:
+        input_csv (str): Ruta al archivo CSV que contiene la columna 'Enlace' con las URLs de las películas.
+        output_csv (str): Ruta al archivo CSV donde se guardarán los detalles extraídos.
+    
+    Returns:
+        None: La función guarda los detalles directamente en un archivo CSV y no devuelve ningún valor.
+    """
+    
+    # Cargamos el archivo CSV que contiene los enlaces a las páginas de las películas
+    # Convertimos la columna de enlaces en una lista
+    # Inicializamos listas vacías donde almacenaremos la información extraída
+    url_list = obj_pelicula.get_movie_links()
+    
+    movie_original_titles       = []
+    movie_durations             = []
+    movie_genres                = []
+    movie_synopses              = []
+    
+    # Iteramos a través de cada URL en la lista
+    for i, url in enumerate(url_list):
+        print("Extrayendo información de la película {}/{}...".format(i+1, len(url_list)))
+        
+        # Hacemos una petición GET para obtener el contenido de la página
+        response = requests.get(url)
+        html_content = response.text
+        
+        # Utilizamos lxml para analizar el contenido HTML
+        root = etree.HTML(html_content)
+        
+        # Utilizamos xpath para extraer el título original, la duración, el género y el sinopsis
+        original_title = root.xpath('.//dt[text()="Título original"]/following-sibling::dd[1]/text()')[0].strip()
+        duration = root.xpath('.//dt[text()="Duración"]/following-sibling::dd[1]/text()')[0].split()[0].strip()
+        genre = root.xpath('.//dt[text()="Género"]/following-sibling::dd[1]//span[@itemprop="genre"]/a/text()')
+        synopsis = root.xpath('.//dt[text()="Sinopsis"]/following-sibling::dd[1]/text()')[0].strip()
+        
+        # Añadimos la información extraída a las listas correspondientes
+        movie_original_titles.append(original_title)
+        movie_durations.append(duration)
+        movie_genres.append(", ".join(genre))
+        movie_synopses.append(synopsis)
+        
+        # Hacemos una pausa para no sobrecargar el servidor
+        time.sleep(3)
+    
+    obj_pelicula.set_titulo_original(movie_original_titles)
+    obj_pelicula.set_duracion(movie_durations)
+    obj_pelicula.set_genero(movie_genres)
+    obj_pelicula.set_sinopsis(movie_synopses)
+    print("Extracción completa.")
+
+    return obj_pelicula
+
+
+
+
 def capture_details_from_all_filmPage(obj_pelicula):
     
     links = obj_pelicula.get_movie_links()

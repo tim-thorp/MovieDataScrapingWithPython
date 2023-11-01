@@ -1,20 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-from lxml import etree
-import csv
 from dtos import ClasePeliculaDTO
-from libreria_funciones_propias import return_html_after_scrape_movie_info_from_summary_page, capture_details_from_all_filmPage, capture_data_from_sumaryPage, write_data_in_csv
+from libreria_funciones_propias import return_html_after_scrape_movie_info_from_summary_page, scrape_movie_details, capture_details_from_all_filmPage, capture_data_from_sumaryPage, write_data_in_csv
 from threading import Thread
-import requests
-from bs4 import BeautifulSoup
-from lxml import etree
-
-
-
-
-
-
 
 
 
@@ -59,7 +48,7 @@ obj_detalles_peliculas = capture_data_from_sumaryPage(obj_detalles_peliculas)
 print("El tiempo que tardamos en raspar todos los datos generales es de: ",tiempo_raspando_inicial," (segundos)")
 
 # Recopilamos los datos detallados de cada película
-obj_detalles_peliculas = capture_details_from_all_filmPage(obj_detalles_peliculas)
+obj_detalles_peliculas = scrape_movie_details(obj_detalles_peliculas)
 
 # Creación del DATASET
 write_data_in_csv(obj_detalles_peliculas)
