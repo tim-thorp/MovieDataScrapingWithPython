@@ -6,28 +6,75 @@ import csv
 from dtos import ClasePeliculaDTO
 from libreria_funciones_propias import return_html_after_scrape_movie_info_from_summary_page, recoger_detalles_concretos_pelicula_HTML, capture_data_from_sumaryPage, write_data_in_csv
 from threading import Thread
-
+import requests
+from bs4 import BeautifulSoup
 
 
 def capture_details_from_all_filmPage(obj_pelicula):
+    
     links = obj_pelicula.get_movie_links()
-    cantidadLink = len(links)
-    division = cantidadLink / 30
-    i = 0
-    pos_links = 0
-    while i < division:
-        hilos = []
-        for i in range(30):
-            obj_pelicula = hilos.append(Thread(target=recoger_detalles_concretos_pelicula_HTML, args=(str(links[pos_links]), "ficheroDesdeMain.txt", obj_pelicula)))
+    titulo_original = obj_pelicula.get_titulo_original()
+    duracion = obj_pelicula.get_duracion()
+    genero = obj_pelicula.get_genero()
+    sinopsis = obj_pelicula.get_sinopsis()
+    print("Recopilando datos de película específica, de la 0 a la 1029...")
 
-        for hilo in hilos:
-            hilo.start()
+    for i in range(len(links)):
+        response = requests.get(links[i])
+        soup = BeautifulSoup(response.content, "html.parser")
+        html = soup.prettify()
 
-        for hilo in hilos:
-            hilo.join()
+        try:
+            # Consiguiendo valor de "Título original"
+            div = soup.find(id="left-column")
+            dl  = div.find("dl", class_="movie-info")
+            dd = dl.find("dd")
+            value = dd.text
+            value = value.replace("\t", "")
+            value = value.replace(" ", "")
+            value = value.replace("\n", "")
+            titulo_original.append(value)
+        except Exception as e:
+            titulo_original.append("")
 
-        print("Todos los hilos han terminado")
-   
+        try:
+            # Consiguiendo valor de "Título original"
+            div = soup.find(id="left-column")
+            dl  = div.find("dl", class_="movie-info")
+            dd = dl.find_all("dd")[2]
+            value = dd.text
+            duracion.append(value)
+        except Exception as e:
+            duracion.append("")
+
+        try:
+            # Conseguimos los generos
+            #div = soup.find("div", id="left-column")
+            #dd  = div.find("dd", _class="card-genres")
+            #generos = []
+            #for span in dd.findall("span", itemprop="genre"):
+            #    a = span.find(a)
+            #    value = a.value
+            #    generos.append(value)
+            #print("Géneros: ", generos)
+            genero.append("")
+        except Exception as e:
+            genero.append("")
+
+        try:   
+            # Conseguimos la sinopsis
+            elementoHtml = soup.find("dd", class_="", itemprop="description")
+            value = elementoHtml.text
+            sinopsis.append(value)
+            print(i)
+        except Exception as e:
+            sinopsis.append("")
+            print(i)
+        
+    obj_pelicula.set_titulo_original(titulo_original)
+    obj_pelicula.set_duracion(duracion)
+    obj_pelicula.set_genero(genero)
+    obj_pelicula.set_sinopsis(sinopsis)
     return obj_pelicula
 
 
@@ -73,9 +120,10 @@ tiempo_raspando_inicial = (t1 - t0) / 10**9
 
 # Recopilamos los datos del sumaryPage
 obj_detalles_peliculas = capture_data_from_sumaryPage(obj_detalles_peliculas)
+print("El tiempo que tardamos en raspar todos los datos generales es de: ",tiempo_raspando_inicial," (segundos)")
 
 # Recopilamos los datos detallados de cada película
-obj_detalles_peliculas = multiHilos(obj_detalles_peliculas)
+obj_detalles_peliculas = capture_details_from_all_filmPage(obj_detalles_peliculas)
 
 # Creación del DATASET
 write_data_in_csv(obj_detalles_peliculas)
@@ -85,11 +133,6 @@ t2 = time.perf_counter_ns()
 tiempo_escribiendo_csv = (t2 - t1) / 10**9
 
 # Imprimo información de los costes temporales por consola
-print("El tiempo que tardamos en raspar todos los datos generales es de: ",tiempo_raspando_inicial," (segundos)")
 print("El tiempo que tardamos en volcar los datos raspados a fichero CSV: ",tiempo_escribiendo_csv," (segundos)")
-
-# 
-url = str(obj_detalles_peliculas.get_movie_links()[0])
-html = captura_detalle_pelicula_HTML(url, "0.txt")
 
 
