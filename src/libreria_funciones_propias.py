@@ -66,7 +66,7 @@ def ejecucion_programa():
     t2 = time.perf_counter_ns()
     obj_detalles_peliculas = scrape_movie_details(obj_detalles_peliculas)
     t3 = time.perf_counter_ns()
-    tiempo_raspando_datos_especificos_de_cada_pelicula = (t4 - t3) / 10**9
+    tiempo_raspando_datos_especificos_de_cada_pelicula = (t3 - t2) / 10**9
     
 
     # Creación del DATASET
