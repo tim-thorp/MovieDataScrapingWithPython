@@ -18,8 +18,9 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 ## Ficheros relevantes de código fuente
 
 * **src/main.py**: debe ejecutarse este archivo, y así arrancar el programa de raspado web que consigue el dataset deseado (en formato CSV). Para ello llamará a las funciones propias que necesite, llamado al fichero "funciones.py".
-* **src/funciones.py**: aquí se encuentran todas las funciones propias, creadas por nosotros durante la práctica. 
-* **funcionalidadesPequenhas**: contiene códigos de diversos ejemplos que hemos creado nosotros mismos, que exceden al tema central de la práctica, pero que completan algunos puntos de dificultad adicional abordados fuera de la PR1.
+* **src/libreria_funciones_propias.py**: aquí se encuentran todas las funciones propias, creadas por nosotros durante la práctica. 
+* **src/dtos.py**: aquí se define el objeto/clase llamada "ClasePeliculaDTO". Se utilizará como objeto DTO (Data Tansfer Object) en "libreria_funciones_propias.py".
+* **otras_funcionalidades**: contiene códigos de diversos ejemplos que hemos creado nosotross, porque: (1)exceden al tema central de la práctica; o (2)porque creamos inicialmente la funcionalidad local y luego se incorporó a PR1.
 
 ## Bibliografía Utilizada
 
