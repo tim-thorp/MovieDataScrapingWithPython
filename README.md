@@ -15,7 +15,7 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 * **Juan Antonio Tora Cánovas** 
 * **Tim Thorp**
 
-## Ficheros relevantes de código fuente
+## CÓDIGO FUENTE
 ### -Directorios clave-
 * **src/main**: directorio donde encontramos el código principal de la práctica.
 * **src/main**: directorio donde encontramos el código principal de la práctica.
