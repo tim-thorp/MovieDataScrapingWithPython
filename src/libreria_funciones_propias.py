@@ -79,9 +79,9 @@ def ejecucion_programa():
     t4 = time.perf_counter_ns()
     tiempo_escribiendo_csv = (t4 - t3) / 10**9
     print("-----------------------------------------------\nInformeme de tiempos:")
-    print("El tiempo raspando SumaryPage: ",tiempo_raspando_inicial," (segundos)")
-    print("El tiempo raspando datos específicos de cada película: ",tiempo_raspando_datos_especificos_de_cada_pelicula," (segundos)")
-    print("El tiempo volcando tpdps los datos raspado, en fichero CSV: ",tiempo_escribiendo_csv," (segundos)")
+    print("Tiempo raspando datos del SumaryPage: ",tiempo_raspando_inicial," (segundos)")
+    print("Tiempo raspando datos específicos de cada película: ",tiempo_raspando_datos_especificos_de_cada_pelicula," (segundos)")
+    print("Tiempo escribiendo todos los datos raspados en fichero CSV: ",tiempo_escribiendo_csv," (segundos)")
 
 ####################################################### FIN PROGRAMA ####################################################
 
