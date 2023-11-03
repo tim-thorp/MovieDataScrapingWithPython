@@ -23,7 +23,7 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 * **src/main/main.py**: es el punto de entrada del programa central de la PR1, y el responsable de llamar a otros 2 archivos .py.
 * **src/main/libreria_funciones_propias.py**: aquí se encuentran todas las funciones propias, creadas por nosotros durante la práctica. 
 * **src/main/dtos.py**: aquí se define el objeto/clase llamado "ClasePeliculaDTO". Se utilizará como objeto DTO (Data Tansfer Object) en "libreria_funciones_propias.py".
-* **src/otras_funcionalidades/5loginConSelenium.py**: aquí realiza un registro de login simultáneamente en 2 navegadores distintos (Chrome y Firefox).
+* **src/otras_funcionalidades/6loginConSeleniumEnChromeYSeleniumSimultaneamente.py**: aquí realizan 2 registros de login _concurrentes,_ en 2 navegadores distintos (Chrome y Firefox).
 * **src/otras_funcionalidades/2descargaImagenes.py**: aquí realiza una gestión de recursos audiovisuales, en concreto descarga de imágenes de los productos disponibles de Amazon (bajo cierta búsqueda).
 
 ## Bibliografía Utilizada
