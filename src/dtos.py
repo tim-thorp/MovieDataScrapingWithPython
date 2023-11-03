@@ -1,22 +1,21 @@
-
-
 class ClasePeliculaDTO:
-    '''Este clase cumpple una función de Data Transfer Object.
-    Contiene todas las propiedades del Data Set, con todos sus setters y getters.
     '''
-    _html               = ""
-    _movie_titles       = []
-    _movie_years        = []
-    _movie_countries    = []
-    _movie_ratings      = []
-    _movie_rating_counts= []
-    _movie_directors    = []
-    _movie_cast         = []
-    _movie_links        = []
-    _titulo_original    = []
-    _duracion           = []
-    _genero             = []
-    _sinopsis           = []
+    Esta clase cumple una función de Data Transfer Object (DTO).
+    Contiene todas las propiedades de un conjunto de datos de películas, con sus respectivos setters y getters.
+    '''
+    _html                = ""
+    _movie_titles        = []
+    _movie_years         = []
+    _movie_countries     = []
+    _movie_ratings       = []
+    _movie_rating_counts = []
+    _movie_directors     = []
+    _movie_cast          = []
+    _movie_links         = []
+    _titulo_original     = []
+    _duracion            = []
+    _genero              = []
+    _sinopsis            = []
 
     
     def __init__(self, html, movie_titles, movie_years, movie_countries, movie_ratings, 
@@ -93,6 +92,3 @@ class ClasePeliculaDTO:
         self._genero = genero
     def set_sinopsis(self, sinopsis):
         self._sinopsis = sinopsis
-
-
-
