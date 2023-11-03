@@ -1,6 +1,4 @@
-from requests_html import HTMLSession
 import requests
-from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -16,7 +14,7 @@ import csv
 ##################################### FUNCIÓN CON EL FLUJO GENERAL DEL PROGRAMA ###########################################
 ###########################################################################################################################
 
-def ejecucion_programa():
+def execute_program():
     """
     Función de entrada al programa, donde se encuentra el flujo general del programa y las llamadas a las funcionalidades.
     
@@ -26,62 +24,62 @@ def ejecucion_programa():
         None.
     """
     
-    # capturo instante temporal inicial (t0)
+    # Capturo instante temporal inicial (t0)
     t0 = time.perf_counter_ns()
 
-    # se inicializa objeto DTO de "ClasePeliculaDTO"
-    url = "https://www.filmaffinity.com/"
+    # Se inicializa objeto DTO de "ClasePeliculaDTO"
+    url = "https://www.filmaffinity.com/es/topgen.php?genres=&chv=0&orderby=avg&movietype=movie%7C&country=&fromyear=2013&toyear=2023&ratingcount=3&runtimemin=0&runtimemax=4"
     obj_detalles_peliculas = ClasePeliculaDTO("",[],[],[],[],[],[],[],[],[],[],[],[])
 
-    # Abrir navegador Firefox y acceder a URL general
+    # Abrimos navegador Firefox en modo headless
     options = webdriver.FirefoxOptions()
     options.headless = True
     browser = webdriver.Firefox(options=options)
+
+    # Accedemos a la página de FilmAffinity con un resumen de las mejores películas de los años 2013–2023
     browser.get(url)
     time.sleep(5)
 
     # Busca el botón «ACEPTO» y lo clica automáticamente
     button = browser.find_element(By.CLASS_NAME, "css-v43ltw")
     button.click()
-
-    # Navegación a la sección "TopFA" y recargar página con filtro [Películas, Años: 2013-2023]
-    browser.find_element(By.XPATH, '/html/body/header/div[2]/div/ul/li[1]/a').click()
     time.sleep(3)
-    browser.get("https://www.filmaffinity.com/es/topgen.php?genres=&chv=0&orderby=avg&movietype=movie%7C&country=&fromyear=2013&toyear=2023&ratingcount=3&runtimemin=0&runtimemax=4")
 
     # Realizar 33 veces scroll hasta conseguir 1020 películas generadas dinámicamente.
     # Luego guardar HTML de todo la página con las 1020 películas.
-    html = return_html_after_scrape_movie_info_from_summary_page(browser, 33)
+    html = return_html_after_scraping_movie_info_from_summary_page(browser, 33)
     obj_detalles_peliculas.set_html(html)
 
-    # Tomo instante de tiempo (t1) después del raspado de la sumaryPage (con las 1020 películas)
+    # Tomo instante de tiempo (t1) después del raspado de la página de resumen (con las 1020 películas)
     t1 = time.perf_counter_ns()
     tiempo_raspando_inicial = (t1 - t0) / 10**9
 
-    # Recopilamos los datos de interés del HTML del sumaryPage (con las 1020 películas).
+    # Recopilamos los datos de interés del HTML de la página de resumen (con las 1020 películas).
     # Datos recogidos se almacenan en objeto DTO "ClasePeliculaDTO"
-    obj_detalles_peliculas = capture_data_from_sumaryPage(obj_detalles_peliculas)
+    obj_detalles_peliculas = scrape_data_from_summary_page(obj_detalles_peliculas)
 
     # Ahora recopilamos datos específicos de cada película.
     t2 = time.perf_counter_ns()
-    obj_detalles_peliculas = scrape_movie_details(obj_detalles_peliculas)
+
+    # Dos parámetros de entra: 
+    #                   1) el DTO con los enlaces de las 1020 películas
+    #                   2) el nº de películas máximas que se quieren escribir en el dataset
+    obj_detalles_peliculas = scrape_movie_details(obj_detalles_peliculas, 1000)
     t3 = time.perf_counter_ns()
     tiempo_raspando_datos_especificos_de_cada_pelicula = (t3 - t2) / 10**9
     
 
     # Creación del DATASET
-    # Dos parámetros de entra: 
-    #                   1) el DTO con los datos de las 1020 películas
-    #                   2) el nº de películas máximas que se quieren escribir en el dataset
-    write_data_in_csv(obj_detalles_peliculas, 1000)
+    write_data_in_csv(obj_detalles_peliculas)
 
     # Se toma instante de tiempo t3 y se calcula el tiempo que cuesta escribir el dataset el fichero TXT
     t4 = time.perf_counter_ns()
     tiempo_escribiendo_csv = (t4 - t3) / 10**9
-    print("-----------------------------------------------\nInformeme de tiempos:")
-    print("Tiempo raspando datos del SumaryPage: ",tiempo_raspando_inicial," (segundos)")
-    print("Tiempo raspando datos específicos de cada película: ",tiempo_raspando_datos_especificos_de_cada_pelicula," (segundos)")
-    print("Tiempo escribiendo todos los datos raspados en fichero CSV: ",tiempo_escribiendo_csv," (segundos)")
+    print("-----------------------------------------------")
+    print("Informe de tiempos:")
+    print("Tiempo raspando datos de la página de resumen: {} segundos".format(tiempo_raspando_inicial))
+    print("Tiempo raspando datos específicos de cada película: {} segundos".format(tiempo_raspando_datos_especificos_de_cada_pelicula))
+    print("Tiempo escribiendo todos los datos raspados en fichero CSV: {} segundos".format(tiempo_escribiendo_csv))
 
 ####################################################### FIN PROGRAMA ####################################################
 
@@ -102,9 +100,9 @@ def ejecucion_programa():
 
 ############## SE GUARDAN EN EL DTO LOS DATOS GENERALES DE CADA PELÍCULA ###########################
 
-def capture_data_from_sumaryPage(obj_pelicula):
+def scrape_data_from_summary_page(obj_pelicula):
     """
-    A partir del HTML, extraido de SumaryPage, se localizan los datos de interés.
+    A partir del HTML, extraído de la página de resumen, se localizan los datos de interés.
     
     Args:
         Objeto tipo "ClasePeliculaDTO": Objeto entrada como DTO para rellenar las propiedades de los datos recopilados.
@@ -112,7 +110,7 @@ def capture_data_from_sumaryPage(obj_pelicula):
         Objeto tipo "ClasePeliculaDTO": Devolución del objeto entrante con los valores nuevos guardados.
     """
     
-    print("Raspando datos de la Sumary Page...")
+    print("Raspando datos de la página de resumen...")
    
     # Creamos listas para guardar los valores de cada variable
     movie_titles = []
@@ -180,26 +178,29 @@ def capture_data_from_sumaryPage(obj_pelicula):
 
 ############## SE GUARDAN EN EL DTO LOS DATOS ESPECÍFICOS DE CADA PELÍCULA ###########################
 
-def scrape_movie_details(obj_pelicula):
+def scrape_movie_details(obj_pelicula, tuplas_de_datos_maximas):
     """
-    Esta función se encarga de extraer detalles específicos de películas a partir de una lista de URLs previamente conseguida de la SumaryPage.
-    Gracias a las URL conseguidas, podemos acceder al interior de cada película de la SumaryPage.
+    Esta función se encarga de extraer detalles específicos de películas a partir de una lista de URLs previamente conseguida de la página de resumen.
+    Gracias a las URL conseguidas, podemos acceder al interior de cada película de la página de resumen.
     Los datos concretos del interior de cada película son: título original, duración, género y sinopsis.
     
     Args:
-        input_csv (str): Ruta al archivo CSV que contiene la columna 'Enlace' con las URLs de las películas.
-        output_csv (str): Ruta al archivo CSV donde se guardarán los detalles extraídos.
+        Objeto tipo "ClasePeliculaDTO": Objeto entrada como DTO con los enlaces a las películas para raspar.
+        tuplas_de_datos_maximas: Filas de datos que queremos escribir en el fichero CSV (en el caso de esta práctica serán 1000).
     Return:
-        None: La función guarda los detalles directamente en un archivo CSV y no devuelve ningún valor.
+        Objeto tipo "ClasePeliculaDTO": Devolución del objeto entrante con los valores nuevos guardados.
     """
     
     print("Raspando datos específicos...")
 
-    # Cargamos el archivo CSV que contiene los enlaces a las páginas de las películas
-    # Convertimos la columna de enlaces en una lista
-    # Inicializamos listas vacías donde almacenaremos la información extraída
+    # Accedemos al DTO y cargamos los enlaces a las páginas de las películas
     url_list = obj_pelicula.get_movie_links()
+
+    # Ponemos un límite al número de páginas para raspar
+    if len(url_list) > tuplas_de_datos_maximas:
+        url_list = url_list[:tuplas_de_datos_maximas]
     
+    # Inicializamos listas vacías donde almacenaremos la información extraída
     movie_original_titles       = []
     movie_durations             = []
     movie_genres                = []
@@ -236,7 +237,7 @@ def scrape_movie_details(obj_pelicula):
                 synopsis = root.xpath('.//dt[text()="Sinopsis"]/following-sibling::dd[1]/text()')[0].strip()
             except Exception as e_synopsis:
                 synopsis=""
-        except Exception as e_conection:
+        except Exception as e_connection:
             original_title, duration, genre, synopsis = "", "", "", ""
         
         # Añadimos la información extraída a las listas correspondientes
@@ -248,10 +249,10 @@ def scrape_movie_details(obj_pelicula):
         # Hacemos una pausa para no sobrecargar el servidor
         time.sleep(3)
     
-    obj_pelicula.set_titulo_original(movie_original_titles)
-    obj_pelicula.set_duracion(movie_durations)
-    obj_pelicula.set_genero(movie_genres)
-    obj_pelicula.set_sinopsis(movie_synopses)
+    obj_pelicula.set_movie_original_titles(movie_original_titles)
+    obj_pelicula.set_movie_durations(movie_durations)
+    obj_pelicula.set_movie_genres(movie_genres)
+    obj_pelicula.set_movie_synopses(movie_synopses)
     print("Extracción completa.")
 
     return obj_pelicula
@@ -262,23 +263,23 @@ def scrape_movie_details(obj_pelicula):
 
 
 
-#################### SE CONSIGUE HTML DE LA SUMARY PAGE TRAS GENERAR LOS 1020 LINK DE PELÍCULAS #################
+#################### SE CONSIGUE HTML DE LA PÁGINA DE RESUMEN TRAS GENERAR LOS 1020 LINK DE PELÍCULAS #################
 
-def return_html_after_scrape_movie_info_from_summary_page(browser, num_clics):
+def return_html_after_scraping_movie_info_from_summary_page(browser, num_clics):
     """
-    Función que obtiene el código fuente HTML tras la ejecución de JavaScript de la SumaryPage.
+    Función que obtiene el código fuente HTML tras la ejecución de JavaScript de la página de resumen.
     
     Args:
         browser:    Con los datos de la conexión HTTP establecida y la web cargada.
         num_clics:  El número de veces para hacer clic en la flecha para cargar más películas.
-                    Por defecto, se diseña para qye haga clic 33 veces y así cargar 1020 películas.
+                    Por defecto, se diseña para que haga clic 33 veces y así cargar 1020 películas.
     Return:
         html: El código fuente HTML como una cadena de texto.
     """
     
-    print("Generando HTML del código fuente del Sumary Page y almacenándolo en una variable...")
+    print("Generando HTML del código fuente de la página de resumen y almacenándolo en una variable...")
 
-    # Bucle para hacer 33 veces scroll hacia abajo y click en la flecha que con javascrip sigue mostrando más películas
+    # Bucle para hacer 33 veces scroll hacia abajo y click en la flecha que con javascript sigue mostrando más películas
     for i in range(num_clics):
         # Esperamos para evitar sobrecargar el servidor
         time.sleep(3)
@@ -291,7 +292,7 @@ def return_html_after_scrape_movie_info_from_summary_page(browser, num_clics):
     # Esperamos para que las últimas 30 películas carguen
     time.sleep(3)
     
-    # Obtenemos todo el código fuente (HTML) de la SumaryPage (con las 1020 películas ya generadas)
+    # Obtenemos todo el código fuente (HTML) de la Summary Page (con las 1020 películas ya generadas)
     html = browser.page_source
 
     # Cerramos el navegador para liberar recursos
@@ -307,9 +308,9 @@ def return_html_after_scrape_movie_info_from_summary_page(browser, num_clics):
 
 ###################### FUNCIÓN DE ESCRITURA DEL DATA SET COMPLETO EN ARCHIVO TXT ############################
 
-def write_data_in_csv(obj_pelicula, tuplas_de_datos_maximas):
+def write_data_in_csv(obj_pelicula):
     """
-    Función que escribe el DATA SET definitivo en un archivo llamado "dataset_movie_info.csv"
+    Función que escribe el DATASET definitivo en un archivo llamado "dataset_movie_info.csv"
     
     Args:
         obj_película:               Objeto tipo "ClasePeliculaDTO" con todos los datos conocidos del dataset.
@@ -322,30 +323,28 @@ def write_data_in_csv(obj_pelicula, tuplas_de_datos_maximas):
     # Escribimos todo en un archivo CSV
     with open('dataset_movie_info.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(['Título', 'Año', 'País', 'Puntuación Media', 'Número de Puntuaciones', "Director", "Reparto", "Enlace", "Título Original", "Duración", "Género", "Sinopsis"])
+        writer.writerow(['Título', 'Título Original', 'Año', 'Duración', 'Género', 'País', 'Puntuación Media', 'Número de Puntuaciones', 'Director', 'Reparto', 'Sinopsis', 'Enlace'])
+
         try:
-            for i, (title, year, country, rating, rating_count, director, cast, link, originalTitle, duration, gender, synopsis) in enumerate(zip(obj_pelicula.get_movie_titles(), 
-                                                                                                    obj_pelicula.get_movie_years(), 
-                                                                                                    obj_pelicula.get_movie_countries(), 
-                                                                                                    obj_pelicula.get_movie_ratings(), 
-                                                                                                    obj_pelicula.get_movie_rating_counts(), 
-                                                                                                    obj_pelicula.get_movie_directors(), 
-                                                                                                    obj_pelicula.get_movie_cast(), 
-                                                                                                    obj_pelicula.get_movie_links(), 
-                                                                                                    obj_pelicula.get_titulo_original(), 
-                                                                                                    obj_pelicula.get_duracion(), 
-                                                                                                    obj_pelicula.get_genero(), 
-                                                                                                    obj_pelicula.get_sinopsis())
-                                                                                                    ):
-                # Detenemos el proceso si hemos escrito 1000 filas
-                if i >= tuplas_de_datos_maximas:
-                    break
-                writer.writerow([title, year, country, rating, rating_count, director, cast, link, originalTitle, duration, gender, synopsis])
+            for i, (title, original_title, year, duration, genre, country, 
+                    rating, rating_count, director, cast, synopsis, link) in enumerate(
+                zip(
+                    obj_pelicula.get_movie_titles(),
+                    obj_pelicula.get_movie_original_titles(),
+                    obj_pelicula.get_movie_years(),
+                    obj_pelicula.get_movie_durations(),
+                    obj_pelicula.get_movie_genres(),
+                    obj_pelicula.get_movie_countries(),
+                    obj_pelicula.get_movie_ratings(),
+                    obj_pelicula.get_movie_rating_counts(),
+                    obj_pelicula.get_movie_directors(),
+                    obj_pelicula.get_movie_cast(),
+                    obj_pelicula.get_movie_synopses(),
+                    obj_pelicula.get_movie_links()
+                )
+            ):
+                writer.writerow([title, original_title, year, duration, genre, country, rating, rating_count, director, cast, synopsis, link])
+
         except Exception as e:
             # Al llegar a un tope de tuplas superior a las disponible, entra aqui y para de escribir (sin abortar programa)
             pass
-        
-
-
-
-
