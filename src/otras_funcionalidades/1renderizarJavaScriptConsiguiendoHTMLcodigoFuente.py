@@ -16,7 +16,7 @@ def consigueCodigoFuente(url):
     soup = BeautifulSoup(resp.html.html, "html.parser")
     html =soup.prettify()
 
-    archivo = open("./sourceCodeAMAZON.txt","w")
+    archivo = open('./src/otras_funcionalidades/1sourceCodeAMAZON.txt',"w",newline='', encoding='utf-8')
     archivo.write(str((html)))
     archivo.close()
     return html

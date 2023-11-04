@@ -15,12 +15,21 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 * **Juan Antonio Tora Cánovas** 
 * **Tim Thorp**
 
-## Ficheros relevantes de código fuente
+## DIRECTORIOS
+* **src**: directorio donde puede encontrarse todo el código fuente
+* **documentos**: directorio donde puede encontrarse la memoria.pdf, requirements.txt (con info de librerías) y el dataset.
 
-* **src/main.py**: debe ejecutarse este archivo, y así arrancar el programa de raspado web que consigue el dataset deseado (en formato CSV). Para ello llamará a las funciones propias que necesite, llamado al fichero "funciones.py".
-* **src/libreria_funciones_propias.py**: aquí se encuentran todas las funciones propias, creadas por nosotros durante la práctica. 
-* **src/dtos.py**: aquí se define el objeto/clase llamada "ClasePeliculaDTO". Se utilizará como objeto DTO (Data Tansfer Object) en "libreria_funciones_propias.py".
-* **otras_funcionalidades**: contiene códigos de diversos ejemplos que hemos creado nosotross, porque: (1)exceden al tema central de la práctica; o (2)porque creamos inicialmente la funcionalidad local y luego se incorporó a PR1.
+## CÓDIGO FUENTE
+### -Directorios clave-
+* **src/main**: directorio donde encontramos el código principal de la práctica.
+* **src/otras_funcionalidades**: directorio donde encontramos el código que añade funcionalidad, pero excede el contexto de la práctica.
+### -Ficheros clave-
+* **src/main/main.py**: es el punto de entrada del programa central de la PR1, y el responsable de llamar a otros 2 archivos .py.
+* **src/main/librerias_propias.py**: aquí se encuentran todas las funciones propias, creadas por nosotros durante la práctica. 
+* **src/main/dtos.py**: aquí se define el objeto/clase llamado "ClasePeliculaDTO". Se utilizará como objeto DTO (Data Tansfer Object) en "libreria_funciones_propias.py".
+### -Ficheros con otras funcionalidades logradas, pero que excenden el contexto de proyecto-
+* **src/otras_funcionalidades/6loginConSeleniumEnChromeYSeleniumSimultaneamente.py**: aquí realizan 2 registros de login _concurrentes,_ en 2 navegadores distintos (Chrome y Firefox).
+* **src/otras_funcionalidades/2descargaImagenes.py**: aquí realiza una gestión de recursos audiovisuales, en concreto descarga de imágenes de los productos disponibles de Amazon (bajo cierta búsqueda).
 
 ## Bibliografía Utilizada
 

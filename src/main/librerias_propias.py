@@ -1,10 +1,9 @@
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
+import time, csv, os
 from lxml import etree
 from dtos import ClasePeliculaDTO
-import csv
 
 
 
@@ -98,7 +97,59 @@ def execute_program():
 ########################## FUNCIONES Y LIBRERÍAS PROPIAS PARA FUNCIONALIDAD ESPECÍFICA ####################################
 ###########################################################################################################################
 
-############## SE GUARDAN EN EL DTO LOS DATOS GENERALES DE CADA PELÍCULA ###########################
+#################### SE CONSIGUE HTML DE LA PÁGINA DE RESUMEN TRAS GENERAR LOS 1020 LINK DE PELÍCULAS #################
+
+def return_html_after_scraping_movie_info_from_summary_page(browser, num_clics):
+    """
+    Función que obtiene el código fuente HTML tras la ejecución de JavaScript de la página de resumen.
+    
+    Args:
+        browser:    Con los datos de la conexión HTTP establecida y la web cargada.
+        num_clics:  El número de veces para hacer clic en la flecha para cargar más películas.
+                    Por defecto, se diseña para que haga clic 33 veces y así cargar 1020 películas.
+    Return:
+        html: El código fuente HTML como una cadena de texto.
+    """
+    
+    print("Generando HTML del código fuente de la página de resumen y almacenándolo en una variable...")
+
+    # Bucle para hacer 33 veces scroll hacia abajo y click en la flecha que con javascript sigue mostrando más películas
+    for i in range(num_clics):
+        # Esperamos para evitar sobrecargar el servidor
+        time.sleep(3)
+
+        # Hacemos clic en la flecha para cargar más películas
+        button = browser.find_element(By.ID, "load-more-bt")
+        browser.execute_script("arguments[0].scrollIntoView(true);", button)
+        browser.execute_script("arguments[0].click();", button)
+    
+    # Esperamos para que las últimas 30 películas carguen
+    time.sleep(3)
+    
+    # Obtenemos todo el código fuente (HTML) de la Summary Page (con las 1020 películas ya generadas)
+    html = browser.page_source
+
+    # Cerramos el navegador para liberar recursos
+    browser.quit()
+    return html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+############## SE RASPAN EN EL DTO LOS DATOS GENERALES DE CADA PELÍCULA ###########################
 
 def scrape_data_from_summary_page(obj_pelicula):
     """
@@ -176,7 +227,7 @@ def scrape_data_from_summary_page(obj_pelicula):
 
 
 
-############## SE GUARDAN EN EL DTO LOS DATOS ESPECÍFICOS DE CADA PELÍCULA ###########################
+############## SE RASPAN EN EL DTO LOS DATOS ESPECÍFICOS DE CADA PELÍCULA ###########################
 
 def scrape_movie_details(obj_pelicula, tuplas_de_datos_maximas):
     """
@@ -263,47 +314,6 @@ def scrape_movie_details(obj_pelicula, tuplas_de_datos_maximas):
 
 
 
-#################### SE CONSIGUE HTML DE LA PÁGINA DE RESUMEN TRAS GENERAR LOS 1020 LINK DE PELÍCULAS #################
-
-def return_html_after_scraping_movie_info_from_summary_page(browser, num_clics):
-    """
-    Función que obtiene el código fuente HTML tras la ejecución de JavaScript de la página de resumen.
-    
-    Args:
-        browser:    Con los datos de la conexión HTTP establecida y la web cargada.
-        num_clics:  El número de veces para hacer clic en la flecha para cargar más películas.
-                    Por defecto, se diseña para que haga clic 33 veces y así cargar 1020 películas.
-    Return:
-        html: El código fuente HTML como una cadena de texto.
-    """
-    
-    print("Generando HTML del código fuente de la página de resumen y almacenándolo en una variable...")
-
-    # Bucle para hacer 33 veces scroll hacia abajo y click en la flecha que con javascript sigue mostrando más películas
-    for i in range(num_clics):
-        # Esperamos para evitar sobrecargar el servidor
-        time.sleep(3)
-
-        # Hacemos clic en la flecha para cargar más películas
-        button = browser.find_element(By.ID, "load-more-bt")
-        browser.execute_script("arguments[0].scrollIntoView(true);", button)
-        browser.execute_script("arguments[0].click();", button)
-    
-    # Esperamos para que las últimas 30 películas carguen
-    time.sleep(3)
-    
-    # Obtenemos todo el código fuente (HTML) de la Summary Page (con las 1020 películas ya generadas)
-    html = browser.page_source
-
-    # Cerramos el navegador para liberar recursos
-    browser.quit()
-    return html
-
-
-
-
-
-
 
 
 ###################### FUNCIÓN DE ESCRITURA DEL DATA SET COMPLETO EN ARCHIVO TXT ############################
@@ -320,8 +330,12 @@ def write_data_in_csv(obj_pelicula):
     """
 
     print("Escribiendo DATASET en archivo CSV...")
+    
     # Escribimos todo en un archivo CSV
-    with open('dataset_movie_info.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    ruta = "./documentos"
+    if not os.path.exists(ruta):
+        os.makedirs(ruta)
+    with open('./documentos/dataset_movie_info.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['Título', 'Título Original', 'Año', 'Duración', 'Género', 'País', 'Puntuación Media', 'Número de Puntuaciones', 'Director', 'Reparto', 'Sinopsis', 'Enlace'])
 

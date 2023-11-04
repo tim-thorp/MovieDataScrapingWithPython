@@ -23,7 +23,7 @@ def get_source_code_using_selenium(url):
     html = navegador.page_source
     
     # Escribimos el código fuente HTML en un archivo de texto
-    with open("sourceCodeAMAZON.txt", "w", encoding='utf-8') as archivo:
+    with open('./src/otras_funcionalidades/4sourceCodeAMAZON.txt', "w", encoding='utf-8') as archivo:
         archivo.write(html)
         
     # Cerramos la instancia del navegador para liberar recursos

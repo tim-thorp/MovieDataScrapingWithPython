@@ -2,11 +2,6 @@ import threading
 import sys
 import time
 
-########### Código para el import de carpeta superior a la actual ################
-sys.path.append("C:\\Users\\Juan Antonio\\Desktop\\UOC\\entrega PR1\\PR1-WebScraping-TipologiaYCicloDeVidaDeLosDatos\\funcionalidadesPequenhas\\2descargaImagenes")
-print(sys.path)
-from descargaImagenes import descargar_imagenes_contenidas_en_html_source, consigueCodigoFuente
-
 
 
 ########### Código de paralelismo de 2 en 2 procesos a la vez ################
