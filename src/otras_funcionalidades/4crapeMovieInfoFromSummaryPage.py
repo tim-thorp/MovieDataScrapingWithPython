@@ -100,7 +100,7 @@ def scrape_movie_info_from_summary_page(url, num_clics=33):
         movie_rating_counts.append(rating_count)
     
     # Escribimos todo en un archivo CSV
-    with open('7movie_info_from_summary_page.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('./src/otras_funcionalidades/4movie_info_from_summary_page.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['Título', 'Año', 'País', 'Puntuación Media', 'Número de Puntuaciones', "Director", "Reparto", "Enlace"])
 
