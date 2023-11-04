@@ -24,8 +24,8 @@ def descargar_imagenes_contenidas_en_html_source(html):
         imgs.append(imgActual)
 
     # Crea el directorio de imagenes descargas
-    if not os.path.exists("imagenesProductos/"):
-        os.mkdir("imagenesProductos/")
+    if not os.path.exists('./src/otras_funcionalidades/2imagenesProductos/'):
+        os.mkdir('./src/otras_funcionalidades/2imagenesProductos/')
 
     # Descarga y guarda las imágenes
     imagenes = {}
@@ -33,12 +33,12 @@ def descargar_imagenes_contenidas_en_html_source(html):
     for img in imgs:
         src = img["src"]
         filename = str(i)+".jpg"
-        with open("imagenesProductos/" + filename, "wb") as f:
+        with open('./src/otras_funcionalidades/2imagenesProductos/' + filename, "wb") as f:
             f.write(requests.get(src).content)
         imagenes[filename] = src
         i+=1
     # Creo fichero para guardar lista de imagenes descargadas
-    archivo = open("imagenesProductos/" + "registroImgsDescargas.txt", "w")
+    archivo = open("./src/otras_funcionalidades/2imagenesProductos/" + "registroImgsDescargas.txt", "w")
     archivo.write(str((imagenes)))
     archivo.close()
     
