@@ -1,4 +1,4 @@
-from libreria_funciones_propias import execute_program
+from librerias_propias import execute_program
 
 ################## Entrada al Programa solo si ejecutamos "main.py" ###################
 
