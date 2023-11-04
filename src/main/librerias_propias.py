@@ -1,6 +1,7 @@
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
 import time, csv, os
 from lxml import etree
 from dtos import ClasePeliculaDTO
@@ -31,15 +32,24 @@ def execute_program():
     obj_detalles_peliculas = ClasePeliculaDTO("",[],[],[],[],[],[],[],[],[],[],[],[])
 
     # Abrimos navegador Firefox en modo headless
-    options = webdriver.FirefoxOptions()
-    options.headless = True
+    print("Abriendo el navegador Firefox en modo 'headless'...")
+    options = Options()
+    # Modificamos el user-agent para evitar detección
+    options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36')
+    options.add_argument("--headless")
     browser = webdriver.Firefox(options=options)
 
+    # Comprobamos que el user-agent se ha cambiado correctamente
+    user_agent = browser.execute_script("return navigator.userAgent;")
+    print("El 'User-Agent' es:", user_agent)
+
     # Accedemos a la página de FilmAffinity con un resumen de las mejores películas de los años 2013–2023
+    print("Accediendo a la página de FilmAffinity...")
     browser.get(url)
     time.sleep(5)
 
     # Busca el botón «ACEPTO» y lo clica automáticamente
+    print("Clicando en el botón 'ACEPTO'...")
     button = browser.find_element(By.CLASS_NAME, "css-v43ltw")
     button.click()
     time.sleep(3)
@@ -111,10 +121,10 @@ def return_html_after_scraping_movie_info_from_summary_page(browser, num_clics):
         html: El código fuente HTML como una cadena de texto.
     """
     
-    print("Generando HTML del código fuente de la página de resumen y almacenándolo en una variable...")
-
     # Bucle para hacer 33 veces scroll hacia abajo y click en la flecha que con javascript sigue mostrando más películas
     for i in range(num_clics):
+        print("Realizando scroll hacia abajo y clicando en la flecha para mostrar más películas {}/{}...".format(i+1, num_clics))
+
         # Esperamos para evitar sobrecargar el servidor
         time.sleep(3)
 
@@ -127,6 +137,7 @@ def return_html_after_scraping_movie_info_from_summary_page(browser, num_clics):
     time.sleep(3)
     
     # Obtenemos todo el código fuente (HTML) de la Summary Page (con las 1020 películas ya generadas)
+    print("Generando HTML del código fuente de la página de resumen y almacenándolo en una variable...")
     html = browser.page_source
 
     # Cerramos el navegador para liberar recursos
@@ -263,8 +274,11 @@ def scrape_movie_details(obj_pelicula, tuplas_de_datos_maximas):
         
         # Gestión de errores general cuando falla la conexión web
         try:
+            # Modificamos el user-agent para evitar detección
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'}
+
             # Hacemos una petición GET para obtener el contenido de la página
-            response = requests.get(url)
+            response = requests.get(url, headers=headers)
             html_content = response.text
             
             # Utilizamos lxml para analizar el contenido HTML
