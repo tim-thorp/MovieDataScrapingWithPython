@@ -68,4 +68,4 @@ def scrape_movie_details(input_csv: str, output_csv: str) -> None:
     print("Extracción completa.")
 
 # Llamamos a la función
-scrape_movie_details(input_csv='7movie_info_from_summary_page.csv', output_csv='8movie_details.csv')
+scrape_movie_details(input_csv='./src/otras_funcionalidades/4movie_info_from_summary_page.csv', output_csv='./src/otras_funcionalidades/5movie_details.csv')
