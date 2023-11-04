@@ -5,7 +5,7 @@
 En este repositorio podrá encontrar los códigos relacionados con la práctica PR1, que se centra en poner en práctica técnicas de Web Scraping, usando Python.
 Esta práctica está dentro de la asignatura "Tipología y ciclo de Vida de los Datos", de la UOC. 
 
-El objetivo final de nuestra práctica es "conseguir un DataSet de películas, con diferentes columnas o atributos de interés, siendo este DataSet escrito en un fichero CSV.
+El objetivo final de nuestra práctica es conseguir un dataset de películas, con diferentes columnas o atributos de interés, siendo este dataset escrito en un fichero CSV.
 Inicialmente se recopian los atributos generales de aproximadamente 1000 películas y el link a cada película; después se usa el link de cada película para recopilar datos concretos de cada película.
 Finalmente, se unifican todos los datos recopilados de todas las películas y se escribe el dataset final, en un fichero CSV.
 
@@ -18,7 +18,7 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 
 ## DIRECTORIOS
 * **src/main**: aquí se encuentra todo el código fuente de la práctica PR1.
-* **src/otras_funcionalidades**: aquí se encuentra todo el código que, aun quedando fuera de la PR1, ha sido de utilidad para la MEMORIA.PDF o practicar para la PR1.
+* **src/otras_funcionalidades**: aquí se encuentra todo el código que, aún quedando fuera de la PR1, ha sido de utilidad para la MEMORIA.PDF o practicar para la PR1.
 * **documentos**: directorio donde puede encontrarse la memoria.pdf, requirements.txt (con info de librerías) y el dataset.
 
 ## ARCHIVOS
@@ -34,6 +34,6 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 
 ## Bibliografía Utilizada
 
-1. Subirats, L., Calvo, M. (2018). Web Scraping. Editorial UOC.
-2. Lawson, R. (2015). Web Scraping with Python. Packt Publishing Ltd. Chapter 2.
-Scraping the Data
+1. Subirats, L., Calvo, M. (2018). *Web Scraping.* Editorial UOC.
+2. Lawson, R. (2015). Scraping the Data. En *Web Scraping with Python* (Capítulo 2). Packt Publishing Ltd.
+3. Selenium. (2023). *Getting started.* Recuperado de https://www.selenium.dev/documentation/webdriver/getting_started/
