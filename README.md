@@ -46,7 +46,7 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 * **Memoria.Rmd**: plantilla codificada en R Markdown.
 * **memoria.pdf**: memoria de la práctica PR1 en formato PDF, que es también el PDF resultado de codificar el anterior archivo "Momoria.Rmd".
 * **requirements.txt**: fichero txt que incluye todas las librerías instaladas en nuestro PC, entre las que se encuentran las utilizadas en este proyecto.
-Las librerías usadas en este proyecto son las siguientes: **requests**, **time**, **csv**, **os** y **lxml**.
+Las librerías usadas en este proyecto son las siguientes: **requests**, **pandas**, **selenium**, **time**, **csv**, **os**, **builtwith**, **whois** y **lxml**.
 
 
 ## EJECUCIÓN Y USO DEL CÓDIGO
