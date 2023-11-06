@@ -24,7 +24,7 @@ header-includes:
 )
 - Repositorio con el código de la práctica: [**GitHub**](https://github.com/juanantoniotora/PR1-WebScraping-TCVD)
 - Dataset publicado en Zenodo: [**Enlace DOI**](https://doi.org/10.5281/zenodo.10072733)
-- Vídeo de presentación de la práctica: [**Google Drive**](https://drive.google.com/drive/folders/1EInfbrKzBEe3Lx-FukgP-cQh7qsU0_zV?usp=drive_link)
+- Vídeo de presentación de la práctica: [**Google Drive**](https://drive.google.com/file/d/1hcbE0JrdedY1XCBaO_i1H0akcYGF2CFh/view?usp=sharing)
 
 # Contexto
 
@@ -266,7 +266,7 @@ El dataset está disponible en 2 sitios:
 
 # Video
 
-Para acceder al video de presentación de la práctica, clic aquí: [**Google Drive**](https://drive.google.com/drive/folders/1EInfbrKzBEe3Lx-FukgP-cQh7qsU0_zV?usp=drive_link)
+Para acceder al video de presentación de la práctica, clic aquí: [**Google Drive**](https://drive.google.com/file/d/1hcbE0JrdedY1XCBaO_i1H0akcYGF2CFh/view?usp=sharing)
 
 \pagebreak
 
