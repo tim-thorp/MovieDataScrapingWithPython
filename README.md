@@ -51,9 +51,9 @@ Las librerías usadas en este proyecto son las siguientes: `requests`, `pandas`,
 ## EJECUCIÓN Y USO DEL CÓDIGO
 ### Código principal
 Podrá ejecutarse el código principal desde `/source/main/main.py`.
-Sin parámetros de entrada // Genera como salida el  dataset en formato CSV, en el directorio `/dataset`.
+No requiere parámetros de entrada y genera como salida el dataset en formato CSV, ubicado en el directorio `/dataset`.
 ### Códigos de funcionalidades aisladas
-Podrá encontrar 6 archivos de código python en `/source/otras:funcionalidades`.
+Podrá encontrar 6 archivos de código python en `/source/otras_funcionalidades`.
 Los 3 primeros códigos se utilizaron para probar rendimientos de código básico vs avanzado con Selenium.
 Los códigos nº 4 y 5 se realizan primero de manera aislada, y luego se añadieron estos en el código principal (o una variante de los mismos).
 Por último, el código nº 6 se utiliza para conocer la tecnología y el propietario de la web (información muy útil para decidir el tipo de web scraping que conviene realizar).
