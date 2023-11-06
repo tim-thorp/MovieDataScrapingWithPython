@@ -1,16 +1,30 @@
 ---
 title: "Práctica 1: Web Scraping"
 subtitle: "Las 1.000 Películas Mejor Valoradas en FilmAffinity (2013–2023)"
-author: "*Juan Antonio Tora Cánovas* y *Tim Thorp*"
 date: "Noviembre 2023"
 output: 
   pdf_document:
     toc: yes
+    toc_depth: 1
     number_sections: yes
+header-includes:
+  - \renewcommand{\contentsname}{Índice de contenidos}
 ---
 
+\section*{Integrantes del Grupo}
 
-\pagebreak
+- Juan Antonio Tora Cánovas
+- Tim Thorp
+
+\section*{Enlaces Importantes}
+
+- Página de resumen en el sitio web elegido: [**FilmAffinity**](https://www.filmaffinity.com/es/topgen.php?genres=&chv=0&orderby=avg&movietype=movie%7C&country=&fromyear=2013&toyear=2023&ratingcount=3&runtimemin=0&runtimemax=4
+)
+- Detalles de la película número 1/1000 del conjunto de datos: [**FilmAffinity**](https://www.filmaffinity.com/es/topgen.php?genres=&chv=0&orderby=avg&movietype=movie%7C&country=&fromyear=2013&toyear=2023&ratingcount=3&runtimemin=0&runtimemax=4
+)
+- Repositorio con el código de la práctica: [**GitHub**](https://github.com/juanantoniotora/PR1-WebScraping-TCVD)
+- Dataset publicado en Zenodo: [**Enlace DOI**](https://doi.org/10.5281/zenodo.10072733)
+- Vídeo de presentación de la práctica: [**Google Drive**](https://drive.google.com/drive/folders/1EInfbrKzBEe3Lx-FukgP-cQh7qsU0_zV?usp=drive_link)
 
 # Contexto
 
@@ -18,11 +32,15 @@ output:
 
 Los datos se han recolectado con el propósito de analizar tendencias y preferencias en la industria cinematográfica a lo largo de la última década. FilmAffinity es un reconocido agregador de reseñas y calificaciones de películas que cuenta con una vasta base de usuarios activos. Las calificaciones en FilmAffinity se generan por millones de usuarios, lo que proporciona una muestra representativa de la recepción de las películas. La dirección web desde donde se han extraído los datos es [www.filmaffinity.com](https://www.filmaffinity.com).
 
+---
+
 # Título
 
 *Definir un título conciso y que sea descriptivo para el dataset.*  
   
 Aunque ya se ha presentado en la portada, se incluye aquí también para mantener la enumeración del enunciado: **Las 1.000 Películas Mejor Valoradas en FilmAffinity (2013–2023)**
+
+---
 
 # Descripción del dataset
 
@@ -30,11 +48,15 @@ Aunque ya se ha presentado en la portada, se incluye aquí también para mantene
 
 El conjunto de datos extraído para este estudio comprende las 1.000 películas mejor valoradas en FilmAffinity desde el año 2013 hasta 2023. Este periodo de tiempo se seleccionó para capturar las tendencias contemporáneas en la valoración de películas y para reflejar los cambios en las preferencias de la audiencia a lo largo de los últimos diez años.
 
+---
+
 # Representación gráfica
 
 *Dibujar un esquema o diagrama que refleje visualmente el dataset y el proyecto elegido.*
 
-(Escribir respuesta aquí)
+![Esquema del proyecto](Esquema.png)
+
+\pagebreak
 
 # Contenido
 
@@ -90,17 +112,43 @@ La `Sinopsis` ofrece un breve resumen del argumento de la película. Este campo 
 
 El `Enlace` es la URL a la página específica de FilmAffinity para la película en cuestión. Este campo es de tipo cadena de caracteres.
 
+---
+
 # Propietario
 
 *Presentar al propietario del conjunto de datos. Es necesario incluir citas de análisis anteriores o, en su defecto, justificar esta búsqueda con análisis similares. Indicar qué pasos se han seguido para actuar de acuerdo con los principios éticos y legales en el contexto del proyecto elegido.*
 
-(Escribir respuesta aquí)
+El propietario del conjunto de datos utilizado en este proyecto es FilmAffinity, una plataforma destacada en la crítica y valoración de películas.
+
+## Revisión de Políticas y Términos de Uso
+
+Se llevó a cabo un análisis detallado de los términos de uso y la política de privacidad de FilmAffinity antes de comenzar la extracción de datos. De acuerdo con el archivo `robots.txt` de la plataforma y las condiciones estipuladas en su sitio web, el scraping de datos no está explícitamente prohibido siempre que no se haga con la intención de manipular las puntuaciones o en maneras que violen las políticas de privacidad y protección de datos personales de los usuarios. Se ha realizado la recolección exclusivamente de datos agregados y públicos, evitando cualquier manipulación y excluyendo todo tipo de información personal de los usuarios.
+
+## Limitación de la Frecuencia de Acceso
+
+Las solicitudes de extracción de datos se programaron para ejecutarse con intervalos de 3 segundos entre cada una, como medida preventiva para evitar sobrecargar los servidores de FilmAffinity y no afectar negativamente la experiencia de otros usuarios en el sitio.
+
+## Análisis Similares
+
+Aunque no se han encontrado estudios previos que analicen específicamente las valoraciones de FilmAffinity, sí existen investigaciones relevantes en plataformas análogas. Por ejemplo, Bristi et al. (2019) implementaron técnicas de machine learning para estimar las calificaciones en IMDb. Del mismo modo, Firmanto y Sarno (2018) y Harish et al. (2019) investigaron el análisis de sentimientos en las reseñas de Rotten Tomatoes e IMDb, respectivamente.
+
+---
 
 # Inspiración
 
 *Explicar por qué puede ser interesante este conjunto de datos y qué preguntas se pretenden responder con ellos. Es necesario comparar con los análisis anteriores o análisis similares presentados en el apartado 6.*
 
-(Escribir respuesta aqui)
+El estudio de Bristi et al. (2019) compartía varias variables con nuestro estudio, como `Título`, `Director`, `Género`, `País`, `Año` y `Puntuación Media`. Tal como ellos lo hicieron, nuestro conjunto de datos también podría utilizarse para predecir las valoraciones de las películas basándonos en sus características, añadiendo variables como `Duración` y `Reparto`.
+
+Aunque los estudios de Firmanto y Sarno (2018) y de Harish et al. (2019) se enfocaron en el análisis de sentimientos de las reseñas, con nuestro conjunto de datos podríamos aplicar esta técnica al análisis de las sinopsis para descubrir si existen palabras o temas recurrentes en aquellas películas con altas calificaciones. También es posible identificar grupos de películas con tramas similares mediante análisis de texto de las sinopsis.
+
+Otras preguntas de interés podrían ser:
+
+- ¿Cómo han evolucionado los géneros cinematográficos en popularidad a lo largo de la última década?
+- ¿Qué directores tienden a trabajar con frecuencia con los mismos actores?
+- ¿Las películas cuyos títulos originales no se traducen directamente al castellano tienen un rendimiento diferente en cuanto a puntuaciones en comparación con aquellas cuyos títulos se han adaptado?
+
+---
 
 # Licencia
 
@@ -112,7 +160,9 @@ El `Enlace` es la URL a la página específica de FilmAffinity para la película
 + *Database released under Open Database License, individual contents under Database Contents License.*
 + *Otra (especificar cuál).*
 
-(Escribir respuesta aquí)
+Hemos decidido asignar al conjunto de datos de este proyecto la licencia **CC BY-SA 4.0**. Esta licencia permite que otros remezclen, adapten y construyan sobre este trabajo, incluso con fines comerciales, siempre y cuando otorguen el reconocimiento adecuado y distribuyan sus trabajos derivados bajo una licencia idéntica. Dado que nuestro conjunto de datos se compone de información pública, y que nuestra intención es alentar un análisis y uso abierto, esta licencia fomenta la compartición y la creatividad en el uso del contenido (Creative Commons, 2023).
+
+---
 
 # Código
 
@@ -122,7 +172,9 @@ El `Enlace` es la URL a la página específica de FilmAffinity para la película
 + *Se deben indicar las librerías y versiones utilizadas. P. ej., en Python pueden obtenerse mediante el comando `pip3 freeze > requirements.txt`*
 + *En la memoria en PDF, se deben comentar los aspectos más relevantes sobre cómo el código realiza el proceso de recolección de datos, qué dificultades presenta el sitio web elegido, y cómo se han resuelto.*
 
-(Escribir respuesta aquí)
+(escribir la respuesta aquí)
+
+---
 
 # Dataset
 
@@ -132,17 +184,38 @@ a. *Comentar esta circunstancia y justificar el motivo.*
 b. *Generar un dataset simulado y publicarlo en Zenodo, obteniendo el enlace del DOI*
 c. *Comunicar al profesor el dataset real de forma privada (p. ej., en el repositorio privado o en una carpeta de Google Drive privada)*
 
-(Escribir respuesta aquí)
+El dataset está disponible tanto en el repositorio de GitHub como en Zenodo, a través del siguiente enlace DOI: https://doi.org/10.5281/zenodo.10072733.
+
+---
 
 # Video
 
 *Realizar un breve vídeo explicativo de la práctica **(máximo 10 minutos)**, que deberá contar con la participación de los dos integrantes del grupo. En el vídeo se deberá realizar una presentación del proyecto, destacando los puntos más relevantes, tanto de las respuestas a los apartados como del código utilizado para extraer los datos. Indicar el enlace del vídeo (https://drive.google.com/), que deberá ubicarse en el Google Drive de la UOC.*
 
-(Escribir respuesta aquí)
+En este vídeo, realizamos un breve video explicativo de la práctica. Subrayamos los puntos más relevantes, abarcando tanto el contenido de este documento como el código que hemos utilizado para extraer los datos: [**Google Drive**](https://drive.google.com/drive/folders/1EInfbrKzBEe3Lx-FukgP-cQh7qsU0_zV?usp=drive_link)
 
+\pagebreak
+
+\section*{Tabla de Contribuciones}
+
+Las iniciales representan la confirmación por parte del grupo de que el integrante ha participado en dicho apartado.
+
+| Contribuciones                   | Firma            |
+|----------------------------------|------------------|
+| Investigación previa             | JATC, TT         |
+| Redacción de las respuestas      | JATC, TT         |
+| Desarrollo del código            | JATC, TT         |
+| Participación en el vídeo        | JATC, TT         |
+
+
+---
 
 \section*{Bibliografía Utilizada}
 
-1. Subirats, L., Calvo, M. (2018). *Web Scraping.* Editorial UOC.
-2. Lawson, R. (2015). Scraping the Data. En *Web Scraping with Python* (Capítulo 2). Packt Publishing Ltd.
-3. Selenium. (2023). *Getting started.* Recuperado de https://www.selenium.dev/documentation/webdriver/getting_started/
+1. Bristi, W. R., Zaman, Z., & Sultana, N. (2019). Predicting IMDb rating of movies by machine learning techniques. *2019 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT)*, 1-5. IEEE.
+2. Creative Commons. (2023). Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Recuperado de https://creativecommons.org/licenses/by-sa/4.0/deed.es
+3. Firmanto, A., & Sarno, R. (2018). Prediction of movie sentiment based on reviews and score on Rotten Tomatoes using SentiWordNet. *2018 International Seminar on Application for Technology of Information and Communication*, 202-206. IEEE.
+4. Harish, B. S., Kumar, K., & Darshan, H. K. (2019). Sentiment analysis on IMDb movie reviews using hybrid feature extraction method.
+5. Lawson, R. (2015). Scraping the Data. En *Web Scraping with Python* (Capítulo 2). Packt Publishing Ltd.
+6. Selenium. (2023). Getting started. Recuperado de https://www.selenium.dev/documentation/webdriver/getting_started/
+7. Subirats, L., & Calvo, M. (2018). *Web Scraping*. Editorial UOC.
