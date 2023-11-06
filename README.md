@@ -20,7 +20,7 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 
 ## ¿Dónde puede encontrar el DATASET?
 * **1. En Zenodo:** a través del siguiente enlace DOI: _https://doi.org/10.5281/zenodo.10072733_
-* **2. En este repositorio de GitHub:** bajo el directorio `/dataset ` desde la raiz de este repositorio, donde tendrá el fichero CSV que sería nuestro dataset.
+* **2. En este repositorio de GitHub:** bajo el directorio `/dataset` desde la raiz de este repositorio, donde tendrá el fichero CSV que sería nuestro dataset.
 
 
 ## DIRECTORIOS
