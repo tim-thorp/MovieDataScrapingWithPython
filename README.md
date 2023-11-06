@@ -19,8 +19,8 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 
 
 ## ¿Dónde puede encontrar el DATASET?
-* **1. En Zenodo:** a través del siguiente enlace DOI: _https://doi.org/10.5281/zenodo.10072733_
-* **2. En este repositorio de GitHub:** bajo el directorio `/dataset` desde la raiz de este repositorio, donde tendrá el fichero CSV que sería nuestro dataset.
+1. **En Zenodo:** a través del siguiente enlace DOI: _https://doi.org/10.5281/zenodo.10072733_
+2. **En este repositorio de GitHub:** bajo el directorio `/dataset` desde la raiz de este repositorio, donde tendrá el fichero CSV que sería nuestro dataset.
 
 
 ## DIRECTORIOS
@@ -45,15 +45,15 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 * **Memoria.Rmd**: plantilla codificada en R Markdown.
 * **Memoria.pdf**: memoria de la práctica PR1 en formato PDF, que es también el PDF resultado de codificar el anterior archivo `Memoria.Rmd`.
 * **requirements.txt**: fichero txt que incluye todas las librerías instaladas en nuestro PC, entre las que se encuentran las utilizadas en este proyecto.
-Las librerías usadas en este proyecto son las siguientes: **requests**, **pandas**, **selenium**, **time**, **csv**, **os**, **builtwith**, **whois** y **lxml**.
+Las librerías usadas en este proyecto son las siguientes: `requests`, `pandas`, `selenium`, `time`, `csv`, `os`, `builtwith`, `whois` y `lxml`.
 
 
 ## EJECUCIÓN Y USO DEL CÓDIGO
 ### Código principal
 Podrá ejecutarse el código principal desde `/source/main/main.py`.
-Sin parámetros de entrada // Genera como salida el  dataset en formato CSV, en el directorio `/dataset`.
+No requiere parámetros de entrada y genera como salida el dataset en formato CSV, ubicado en el directorio `/dataset`.
 ### Códigos de funcionalidades aisladas
-Podrá encontrar 6 archivos de código python en `/source/otras:funcionalidades`.
+Podrá encontrar 6 archivos de código python en `/source/otras_funcionalidades`.
 Los 3 primeros códigos se utilizaron para probar rendimientos de código básico vs avanzado con Selenium.
 Los códigos nº 4 y 5 se realizan primero de manera aislada, y luego se añadieron estos en el código principal (o una variante de los mismos).
 Por último, el código nº 6 se utiliza para conocer la tecnología y el propietario de la web (información muy útil para decidir el tipo de web scraping que conviene realizar).
