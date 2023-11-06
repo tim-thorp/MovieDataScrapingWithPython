@@ -28,15 +28,11 @@ header-includes:
 
 # Contexto
 
-*Explicar en qué contexto específico se han recolectado los datos y argumentar por qué el sitio web seleccionado es una fuente pertinente y fiable de esa información. Indicar la dirección del sitio web.*
-
 Los datos se han recolectado con el propósito de analizar tendencias y preferencias en la industria cinematográfica a lo largo de la última década. FilmAffinity es un reconocido agregador de reseñas y calificaciones de películas que cuenta con una vasta base de usuarios activos. Las calificaciones en FilmAffinity se generan por millones de usuarios, lo que proporciona una muestra representativa de la recepción de las películas. La dirección web desde donde se han extraído los datos es [www.filmaffinity.com](https://www.filmaffinity.com).
 
 ---
 
 # Título
-
-*Definir un título conciso y que sea descriptivo para el dataset.*  
   
 Aunque ya se ha presentado en la portada, se incluye aquí también para mantener la enumeración del enunciado: **Las 1.000 Películas Mejor Valoradas en FilmAffinity (2013–2023)**
 
@@ -44,15 +40,11 @@ Aunque ya se ha presentado en la portada, se incluye aquí también para mantene
 
 # Descripción del dataset
 
-*Desarrollar una breve descripción del conjunto de datos que se ha extraído. Es necesario que esta descripción sea coherente con el título elegido.*
-
 El conjunto de datos extraído para este estudio comprende las 1.000 películas mejor valoradas en FilmAffinity desde el año 2013 hasta 2023. Este periodo de tiempo se seleccionó para capturar las tendencias contemporáneas en la valoración de películas y para reflejar los cambios en las preferencias de la audiencia a lo largo de los últimos diez años.
 
 ---
 
 # Representación gráfica
-
-*Dibujar un esquema o diagrama que refleje visualmente el dataset y el proyecto elegido.*
 
 La representación gráfica la podemos ver en la Figura 1, a continuación:
 
@@ -61,8 +53,6 @@ La representación gráfica la podemos ver en la Figura 1, a continuación:
 \pagebreak
 
 # Contenido
-
-*Explicar los campos que se incluyen en el dataset y el período de tiempo al que pertenecen los datos.*
 
 El dataset abarca el período de 2013 a 2023 y los datos se extrajeron de FilmAffinity en Noviembre de 2023. A continuación, se detallan los campos incluidos:
 
@@ -118,8 +108,6 @@ El `Enlace` es la URL a la página específica de FilmAffinity para la película
 
 # Propietario
 
-*Presentar al propietario del conjunto de datos. Es necesario incluir citas de análisis anteriores o, en su defecto, justificar esta búsqueda con análisis similares. Indicar qué pasos se han seguido para actuar de acuerdo con los principios éticos y legales en el contexto del proyecto elegido.*
-
 El propietario del conjunto de datos es FilmAffinity, un reconocido sitio web de cine cuyo dominio está registrado bajo la empresa *Arsys Internet, S.L. dba NICLINE.COM*.
 
 ## Revisión de Políticas y Términos de Uso
@@ -138,8 +126,6 @@ Aunque no se han encontrado estudios previos que analicen específicamente las v
 
 # Inspiración
 
-*Explicar por qué puede ser interesante este conjunto de datos y qué preguntas se pretenden responder con ellos. Es necesario comparar con los análisis anteriores o análisis similares presentados en el apartado 6.*
-
 El estudio de Bristi et al. (2019) compartía varias variables con nuestro estudio, como `Título`, `Director`, `Género`, `País`, `Año` y `Puntuación Media`. Tal como ellos lo hicieron, nuestro conjunto de datos también podría utilizarse para predecir las valoraciones de las películas basándonos en sus características, añadiendo variables como `Duración` y `Reparto`.
 
 Aunque los estudios de Firmanto y Sarno (2018) y de Harish et al. (2019) se enfocaron en el análisis de sentimientos de las reseñas, con nuestro conjunto de datos podríamos aplicar esta técnica al análisis de las sinopsis para descubrir si existen palabras o temas recurrentes en aquellas películas con altas calificaciones. También es posible identificar grupos de películas con tramas similares mediante análisis de texto de las sinopsis.
@@ -154,25 +140,11 @@ Otras preguntas de interés podrían ser:
 
 # Licencia
 
-*Seleccionar una licencia adecuada para el dataset resultante y justificar el motivo de su elección. Ejemplos de licencias que pueden considerarse:*
-
-+ *Released Under CC0: Public Domain License.*
-+ *Released Under CC BY-NC-SA 4.0 License.*
-+ *Released Under CC BY-SA 4.0 License.*
-+ *Database released under Open Database License, individual contents under Database Contents License.*
-+ *Otra (especificar cuál).*
-
 Hemos decidido asignar al conjunto de datos de este proyecto la licencia **CC BY-SA 4.0**. Esta licencia permite que otros remezclen, adapten y construyan sobre este trabajo, incluso con fines comerciales, siempre y cuando otorguen el reconocimiento adecuado y distribuyan sus trabajos derivados bajo una licencia idéntica. Dado que nuestro conjunto de datos se compone de información pública, y que nuestra intención es alentar un análisis y uso abierto, esta licencia fomenta la compartición y la creatividad en el uso del contenido (Creative Commons, 2023).
 
 ---
 
 # Código
-
-*Código implementado para la obtención del dataset, preferiblemente en Python o, alternativamente, en R.*
-
-+ *El código deberá ubicarse en la carpeta `/source` del repositorio.*
-+ *Se deben indicar las librerías y versiones utilizadas. P. ej., en Python pueden obtenerse mediante el comando `pip3 freeze > requirements.txt`*
-+ *En la memoria en PDF, se deben comentar los aspectos más relevantes sobre cómo el código realiza el proceso de recolección de datos, qué dificultades presenta el sitio web elegido, y cómo se han resuelto.*
 
 ## Lenguaje de programación utilizado
 
@@ -238,13 +210,13 @@ El núcleo del programa se encuentra en tres archivos:
 
 Por lo tanto, `main.py` actúa como el punto de entrada del programa, `librerias_propias.py` contiene la lógica central, y `dtos.py` define la estructura de datos utilizada a través del programa.
 
-## Descripción de Funciones en “/source/main/librerias_propias.py”
+## Descripción de Funciones en `/source/main/librerias_propias.py`
 
-### execute_program()
+### `execute_program()`
 
 Esta es la función principal que dirige el flujo del programa. Administra el tiempo, gestiona el WebDriver con Selenium y LXML, maneja el “user-agent”, ejecuta las cuatro funciones principales y, finalmente, escribe la información resultante en la consola al concluir el programa.
 
-### return_html_after_scraping_movie_info_from_summary_page(browser, num_clics)
+### `return_html_after_scraping_movie_info_from_summary_page(browser, num_clics)`
 
 Esta función obtiene el HTML de la página de resumen mediante un proceso de cuatro pasos:
 
@@ -253,7 +225,7 @@ Esta función obtiene el HTML de la página de resumen mediante un proceso de cu
 3. Se captura y almacena el HTML generado.
 4. La variable que contiene el HTML se devuelve al final de la función.
 
-### scrape_data_from_summary_page(obj_pelicula)
+### `scrape_data_from_summary_page(obj_pelicula)`
 
 El objetivo de esta función es extraer datos de la página de resumen. Se sigue esta secuencia:
 
@@ -262,7 +234,7 @@ El objetivo de esta función es extraer datos de la página de resumen. Se sigue
 3. Los datos se asignan al objeto DTO a través de sus métodos "setters".
 4. Se devuelve el objeto DTO configurado.
 
-### scrape_movie_details(obj_pelicula, tuplas_de_datos_maximas)
+### `scrape_movie_details(obj_pelicula, tuplas_de_datos_maximas)`
 
 Esta función procesa cada enlace obtenido para extraer y acumular datos específicos:
 
@@ -273,7 +245,7 @@ Esta función procesa cada enlace obtenido para extraer y acumular datos especí
 5. El objeto DTO se actualiza con los datos recopilados.
 6. El objeto DTO se retorna al finalizar la función.
 
-### write_data_in_csv(obj_pelicula)
+### `write_data_in_csv(obj_pelicula)`
 
 Esta función es responsable de trasladar los datos recabados a un archivo CSV:
 
@@ -285,12 +257,6 @@ Esta función es responsable de trasladar los datos recabados a un archivo CSV:
 
 # Dataset
 
-*Publicar el dataset obtenido en formato CSV en Zenodo, incluyendo una breve descripción del mismo. Obtener y adjuntar el enlace del DOI del dataset (https://doi.org/). El dataset también deberá incluirse en la carpeta `/dataset` del repositorio. Si existe alguna circunstancia que impida publicar abiertamente el dataset real en Zenodo, se deberá:*
-
-a. *Comentar esta circunstancia y justificar el motivo.*
-b. *Generar un dataset simulado y publicarlo en Zenodo, obteniendo el enlace del DOI*
-c. *Comunicar al profesor el dataset real de forma privada (p. ej., en el repositorio privado o en una carpeta de Google Drive privada)*
-
 El dataset está disponible en 2 sitios:
 
 1. En el repositorio privado de GitHub, con acceso para el profesor de la asignatura: [**Github Repository**](https://github.com/juanantoniotora/PR1-WebScraping-TCVD/tree/main/dataset)
@@ -299,8 +265,6 @@ El dataset está disponible en 2 sitios:
 ---
 
 # Video
-
-*Realizar un breve vídeo explicativo de la práctica **(máximo 10 minutos)**, que deberá contar con la participación de los dos integrantes del grupo. En el vídeo se deberá realizar una presentación del proyecto, destacando los puntos más relevantes, tanto de las respuestas a los apartados como del código utilizado para extraer los datos. Indicar el enlace del vídeo (https://drive.google.com/), que deberá ubicarse en el Google Drive de la UOC.*
 
 Para acceder al video de presentación de la práctica, clic aquí: [**Google Drive**](https://drive.google.com/drive/folders/1EInfbrKzBEe3Lx-FukgP-cQh7qsU0_zV?usp=drive_link)
 
