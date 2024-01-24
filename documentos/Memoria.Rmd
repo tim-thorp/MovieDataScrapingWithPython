@@ -22,7 +22,7 @@ header-includes:
 )
 - Detalles de la película número 1/1000 del conjunto de datos: [**FilmAffinity**](https://www.filmaffinity.com/es/topgen.php?genres=&chv=0&orderby=avg&movietype=movie%7C&country=&fromyear=2013&toyear=2023&ratingcount=3&runtimemin=0&runtimemax=4
 )
-- Repositorio con el código de la práctica: [**GitHub**](https://github.com/juanantoniotora/PR1-WebScraping-TCVD)
+- Repositorio con el código de la práctica: [**GitHub**](https://github.com/tim-thorp/MovieDataScrapingWithSelenium)
 - Dataset publicado en Zenodo: [**Enlace DOI**](https://doi.org/10.5281/zenodo.10072733)
 - Vídeo de presentación de la práctica: [**Google Drive**](https://drive.google.com/file/d/1hcbE0JrdedY1XCBaO_i1H0akcYGF2CFh/view?usp=sharing)
 
@@ -116,7 +116,7 @@ Se llevó a cabo un análisis detallado de los términos de uso y la política d
 
 ## Limitación de la Frecuencia de Acceso
 
-Para evitar la sobrecarga de los servidores de FilmAffinity (*hal.ns.cloudflare.com* y *jule.ns.cloudflare.com*) y mantener un servicio estable para otros usuarios, las solicitudes de extracción de datos se realizaron con intervalos de 3 segundos entre cada una. Información adicional sobre el propietario y los detalles técnicos pueden ser consultados ejecutando el código 6 del directorio `source/otras_funcionalidades` en nuestro repositorio de Github.
+Para evitar la sobrecarga de los servidores de FilmAffinity (*hal.ns.cloudflare.com* y *jule.ns.cloudflare.com*) y mantener un servicio estable para otros usuarios, las solicitudes de extracción de datos se realizaron con intervalos de 3 segundos entre cada una. Información adicional sobre el propietario y los detalles técnicos pueden ser consultados ejecutando el código 6 del directorio `src/otras_funcionalidades` en nuestro repositorio de Github.
 
 ## Análisis Similares
 
@@ -152,13 +152,13 @@ El proyecto se desarrolló utilizando Python.
 
 ## Repositorio de GitHub
 
-El código fuente está alojado en un repositorio privado de GitHub, al que únicamente tiene acceso el profesor. Se encuentra en el siguiente enlace, bajo el directorio `/source/`: [**GitHub Repository**](https://github.com/juanantoniotora/PR1-WebScraping-TCVD/tree/main).
+El código fuente está alojado en un repositorio de GitHub. Se encuentra en el siguiente enlace, bajo el directorio `/src/`: [**GitHub Repository**](https://github.com/tim-thorp/MovieDataScrapingWithSelenium).
 
-### Estructura del Directorio de Código Fuente en `/source/`
+### Estructura del Directorio de Código Fuente en `/src/`
 
-- `/source/`: Contiene dos directorios adicionales: uno para el código fuente del programa principal y otro para seis scripts de funcionalidades independientes que complementan la práctica.
-- `/source/main`: Aloja el código principal de la práctica PR1, que incluye tres scripts: `main.py`, `librerias_propias.py`, y `dtos.py`.
-- `/source/otras_funcionalidades`: Contiene seis scripts independientes de Python utilizados para pruebas de rendimiento, la creación de dos funciones complejas y la extracción de datos del propietario y la tecnología web utilizada por el sitio web.
+- `/src/`: Contiene dos directorios adicionales: uno para el código fuente del programa principal y otro para seis scripts de funcionalidades independientes que complementan la práctica.
+- `/src/main`: Aloja el código principal de la práctica PR1, que incluye tres scripts: `main.py`, `librerias_propias.py`, y `dtos.py`.
+- `/src/otras_funcionalidades`: Contiene seis scripts independientes de Python utilizados para pruebas de rendimiento, la creación de dos funciones complejas y la extracción de datos del propietario y la tecnología web utilizada por el sitio web.
 
 ### Contenidos en la Raíz del Directorio de GitHub
 
@@ -197,11 +197,11 @@ Para visitar el sitio web de FilmAffinity, haga clic [**aquí**](https://www.fil
 - **Problema 9:** Necesidad de información sobre el propietario del sitio web.
   - **Solución:** Obtención de datos del propietario mediante la librería `whois`.
 
-## Detalles del Código en `/source/otras_funciones`
+## Detalles del Código en `/src/otras_funciones`
 
 En este directorio, encontrarás seis scripts que ofrecen funcionalidades específicas y altamente focalizadas. Aunque los archivos 1, 2, 3 y 6 van más allá del alcance de nuestra práctica principal, han sido esenciales para la elaboración de la memoria y la comprensión de los tiempos de respuesta entre distintas tecnologías.
 
-## Visión General de las Funcionalidades en `/source/main`
+## Visión General de las Funcionalidades en `/src/main`
 
 El núcleo del programa se encuentra en tres archivos:
 
@@ -210,7 +210,7 @@ El núcleo del programa se encuentra en tres archivos:
 
 Por lo tanto, `main.py` actúa como el punto de entrada del programa, `librerias_propias.py` contiene la lógica central, y `dtos.py` define la estructura de datos utilizada a través del programa.
 
-## Descripción de Funciones en `/source/main/librerias_propias.py`
+## Descripción de Funciones en `/src/main/librerias_propias.py`
 
 ### `execute_program()`
 
@@ -259,7 +259,7 @@ Esta función es responsable de trasladar los datos recabados a un archivo CSV:
 
 El dataset está disponible en 2 sitios:
 
-1. En el repositorio privado de GitHub, con acceso para el profesor de la asignatura: [**Github Repository**](https://github.com/juanantoniotora/PR1-WebScraping-TCVD/tree/main/dataset)
+1. En el repositorio privado de GitHub, con acceso para el profesor de la asignatura: [**Github Repository**](https://github.com/tim-thorp/MovieDataScrapingWithSelenium)
 2. En Zenodo, a través del siguiente enlace DOI: [**Enlace DOI**](https://doi.org/10.5281/zenodo.10072733)
 
 ---
