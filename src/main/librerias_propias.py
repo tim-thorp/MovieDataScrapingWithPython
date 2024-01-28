@@ -50,7 +50,7 @@ def execute_program():
 
     # Busca el botón «ACEPTO» y lo clica automáticamente
     print("Clicando en el botón 'ACEPTO'...")
-    button = browser.find_element(By.CLASS_NAME, "css-v43ltw")
+    button = browser.find_element(By.CLASS_NAME, "css-xlut8b")
     button.click()
     time.sleep(3)
 
