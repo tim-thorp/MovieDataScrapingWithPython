@@ -70,7 +70,7 @@ def execute_program():
     # Ahora recopilamos datos específicos de cada película.
     t2 = time.perf_counter_ns()
 
-    # Dos parámetros de entra: 
+    # Dos parámetros de entra:
     #                   1) el DTO con los enlaces de las 1020 películas
     #                   2) el nº de películas máximas que se quieren escribir en el dataset
     obj_detalles_peliculas = scrape_movie_details(obj_detalles_peliculas, 1000)
@@ -346,10 +346,10 @@ def write_data_in_csv(obj_pelicula):
     print("Escribiendo DATASET en archivo CSV...")
     
     # Escribimos todo en un archivo CSV
-    ruta = "./dataset"
+    ruta = "./data"
     if not os.path.exists(ruta):
         os.makedirs(ruta)
-    with open('./dataset/dataset_movie_info.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('./data/dataset_movie_info.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['Título', 'Título Original', 'Año', 'Duración', 'Género', 'País', 'Puntuación Media', 'Número de Puntuaciones', 'Director', 'Reparto', 'Sinopsis', 'Enlace'])
 

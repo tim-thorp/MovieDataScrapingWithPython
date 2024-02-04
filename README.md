@@ -16,30 +16,30 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 ## ¿Dónde puede encontrar el DATASET?
 
 1. **En Zenodo:** a través del siguiente enlace DOI: _https://doi.org/10.5281/zenodo.10072733_
-2. **En este repositorio de GitHub:** bajo el directorio `/dataset` desde la raíz de este repositorio, donde encontrará el fichero CSV correspondiente a nuestro dataset.
+2. **En este repositorio de GitHub:** bajo el directorio `/data` desde la raíz de este repositorio, donde encontrará el fichero CSV correspondiente a nuestro dataset.
 
 ## DIRECTORIOS
 
-- **/source/main**: Aquí se encuentra todo el código fuente de la práctica PR1.
-- **/source/otras_funcionalidades**: Aquí se encuentra todo el código que, aunque no es parte de la PR1, ha sido útil para la `Memoria.pdf` o para practicar para la PR1.
-- **/dataset**: Aquí se encuentra el archivo CSV con los datos extraídos.
+- **/src/main**: Aquí se encuentra todo el código fuente de la práctica PR1.
+- **/src/otras_funcionalidades**: Aquí se encuentra todo el código que, aunque no es parte de la PR1, ha sido útil para la `Memoria.pdf` o para practicar para la PR1.
+- **/data**: Aquí se encuentra el archivo CSV con los datos extraídos.
 - **/documentos**: Directorio donde se pueden encontrar la `Memoria.pdf` y `Requirements.txt` (con información de las librerías).
 
 ## ARCHIVOS
 
-### - De /source/main -
+### - De /src/main -
 
-- **/source/main/main.py**: Es el punto de entrada del programa central de la PR1, y es responsable de llamar a otros dos archivos .py.
-- **/source/main/librerias_propias.py**: Aquí se encuentran todas las funciones propias creadas durante la PR1.
-- **/source/main/dtos.py**: Aquí se define el objeto/clase llamado `ClasePeliculaDTO`, que se utiliza como un Data Transfer Object (DTO) en `libreria_funciones_propias.py`.
+- **/src/main/main.py**: Es el punto de entrada del programa central de la PR1, y es responsable de llamar a otros dos archivos .py.
+- **/src/main/librerias_propias.py**: Aquí se encuentran todas las funciones propias creadas durante la PR1.
+- **/src/main/dtos.py**: Aquí se define el objeto/clase llamado `ClasePeliculaDTO`, que se utiliza como un Data Transfer Object (DTO) en `libreria_funciones_propias.py`.
 
-### - De /source/otras_funcionalidades -
+### - De /src/otras_funcionalidades -
 
 - **Los 3 primeros códigos**: Creados para probar tiempos y funcionalidades entre Selenium y métodos básicos.
 - **Los códigos 4 y 5**: Realizados para crear las dos funciones de raspado de datos que posteriormente se incorporaron a la PR1.
 - **El código 6**: Utilizado para obtener la tecnología del sitio web y los datos del propietario, información útil para decidir el tipo de web scraping a realizar.
 
-### - De /dataset -
+### - De /data -
 
 - **dataset_movie_info.csv**: Este archivo corresponde a nuestro dataset generado con nuestro código.
 
@@ -53,11 +53,11 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 
 ### Código principal
 
-El código principal puede ejecutarse desde `/source/main/main.py`. No requiere parámetros de entrada y genera como salida el dataset en formato CSV, ubicado en el directorio `/dataset`.
+El código principal puede ejecutarse desde `/src/main/main.py`. No requiere parámetros de entrada y genera como salida el dataset en formato CSV, ubicado en el directorio `/data`.
 
 ### Códigos de funcionalidades aisladas
 
-Se pueden encontrar seis archivos de código Python en `/source/otras_funcionalidades`. Los tres primeros códigos se usaron para probar el rendimiento del código básico versus el avanzado con Selenium. Los códigos nº 4 y 5 se realizaron de manera aislada y, posteriormente, se integraron en el código principal (o una variante de los mismos). Por último, el código nº 6 se utiliza para conocer la tecnología y el propietario de la web, información muy útil para decidir el tipo de web scraping a realizar.
+Se pueden encontrar seis archivos de código Python en `/src/otras_funcionalidades`. Los tres primeros códigos se usaron para probar el rendimiento del código básico versus el avanzado con Selenium. Los códigos nº 4 y 5 se realizaron de manera aislada y, posteriormente, se integraron en el código principal (o una variante de los mismos). Por último, el código nº 6 se utiliza para conocer la tecnología y el propietario de la web, información muy útil para decidir el tipo de web scraping a realizar.
 
 ## Bibliografía Utilizada
 
