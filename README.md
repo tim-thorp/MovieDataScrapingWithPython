@@ -23,7 +23,7 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 - **/src/main**: Aquí se encuentra todo el código fuente de la práctica PR1.
 - **/src/otras_funcionalidades**: Aquí se encuentra todo el código que, aunque no es parte de la PR1, ha sido útil para la `Memoria.pdf` o para practicar para la PR1.
 - **/data**: Aquí se encuentra el archivo CSV con los datos extraídos.
-- **/documentos**: Directorio donde se pueden encontrar la `Memoria.pdf` y `Requirements.txt` (con información de las librerías).
+- **/docs**: Directorio donde se pueden encontrar la `Memoria.pdf` y `Requirements.txt` (con información de las librerías).
 
 ## ARCHIVOS
 
@@ -43,7 +43,7 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 
 - **dataset_movie_info.csv**: Este archivo corresponde a nuestro dataset generado con nuestro código.
 
-### - De /documentos -
+### - De /docs -
 
 - **Memoria.Rmd**: Plantilla codificada en R Markdown.
 - **Memoria.pdf**: Memoria de la práctica PR1 en formato PDF, que es también el resultado de compilar el archivo `Memoria.Rmd`.

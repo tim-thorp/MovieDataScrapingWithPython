@@ -167,7 +167,7 @@ El código fuente está alojado en un repositorio de GitHub. Se encuentra en el 
 
 - `README.md`: Documento con detalles exhaustivos sobre el contenido del repositorio y las instrucciones para el uso y ejecución del código.
 - `/dataset`: Directorio que incluye el conjunto de datos, denominado `dataset_movie_info.csv`.
-- `/documentos`: Directorio con tres archivos: `memoria.pdf` y `memoria.Rmd` (la plantilla para el PDF) y `requirements.txt`, que lista todas las librerías de Python instaladas y utilizadas en el proyecto.
+- `/docs`: Directorio con tres archivos: `memoria.pdf` y `memoria.Rmd` (la plantilla para el PDF) y `requirements.txt`, que lista todas las librerías de Python instaladas y utilizadas en el proyecto.
 
 ### Librerías de Python Utilizadas en el Proyecto
 
