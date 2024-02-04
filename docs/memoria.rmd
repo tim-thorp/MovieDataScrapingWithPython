@@ -265,12 +265,6 @@ El dataset está disponible en 2 sitios:
 1. En el repositorio privado de GitHub, con acceso para el profesor de la asignatura: [**Github Repository**](https://github.com/tim-thorp/MovieDataScrapingWithSelenium)
 2. En Zenodo, a través del siguiente enlace DOI: [**Enlace DOI**](https://doi.org/10.5281/zenodo.10072733)
 
----
-
-# Video
-
-Para acceder al video de presentación de la práctica, clic aquí: [**Google Drive**](https://drive.google.com/file/d/1hcbE0JrdedY1XCBaO_i1H0akcYGF2CFh/view?usp=sharing)
-
 \pagebreak
 
 \section*{Tabla de Contribuciones}
