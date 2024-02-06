@@ -22,7 +22,7 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 
 - **/src**: Aquí se encuentra todo el código fuente de la práctica PR1.
 - **/data**: Aquí se encuentra el archivo CSV con los datos extraídos.
-- **/docs**: Directorio donde se pueden encontrar la `memoria.pdf` y `requirements.txt` (con información de las librerías).
+- **/docs**: Directorio donde se puede encontrar la `memoria.pdf` junto con los ficheros utilizados para su creación.
 
 ## ARCHIVOS
 
@@ -40,7 +40,7 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 
 - **memoria.rmd**: Plantilla codificada en R Markdown.
 - **memoria.pdf**: Memoria de la práctica PR1 en formato PDF, que es también el resultado de compilar el archivo `memoria.rmd`.
-- **requirements.txt**: Fichero que incluye todas las librerías instaladas en nuestro PC, entre las cuales se encuentran las utilizadas en este proyecto. Las librerías usadas en este proyecto son: `requests`, `pandas`, `selenium`, `time`, `csv`, `os`, `builtwith`, `whois`, y `lxml`.
+- **requirements.txt**: Fichero que incluye todas las librerías instaladas en nuestro PC, entre las cuales se encuentran las utilizadas en este proyecto. Las librerías usadas en este proyecto son: `requests`, `selenium` y `lxml`.
 
 ## EJECUCIÓN Y USO DEL CÓDIGO
 

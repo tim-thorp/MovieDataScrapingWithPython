@@ -1,8 +1,10 @@
 import requests
+import time
+import csv
+import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
-import time, csv, os
 from lxml import etree
 from dtos import ClasePeliculaDTO
 
