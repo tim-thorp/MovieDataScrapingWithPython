@@ -25,18 +25,12 @@ header-includes: \renewcommand{\contentsname}{Índice de contenidos}
 )
 - Detalles de la película número 1/1000 del conjunto de datos: [**FilmAffinity**](https://www.filmaffinity.com/es/topgen.php?genres=&chv=0&orderby=avg&movietype=movie%7C&country=&fromyear=2013&toyear=2023&ratingcount=3&runtimemin=0&runtimemax=4
 )
-- Repositorio con el código de la práctica: [**GitHub**](https://github.com/tim-thorp/MovieDataScrapingWithSelenium)
+- Repositorio con el código de la práctica: [**GitHub**](https://github.com/tim-thorp/MovieDataScrapingWithPython)
 - Dataset publicado en Zenodo: [**Enlace DOI**](https://doi.org/10.5281/zenodo.10072733)
 
 # Contexto
 
 Los datos se han recolectado con el propósito de analizar tendencias y preferencias en la industria cinematográfica a lo largo de la última década. FilmAffinity es un reconocido agregador de reseñas y calificaciones de películas que cuenta con una vasta base de usuarios activos. Las calificaciones en FilmAffinity se generan por millones de usuarios, lo que proporciona una muestra representativa de la recepción de las películas. La dirección web desde donde se han extraído los datos es [www.filmaffinity.com](https://www.filmaffinity.com).
-
----
-
-# Título
-  
-Aunque ya se ha presentado en la portada, se incluye aquí también para mantener la enumeración del enunciado: **Las 1.000 Películas Mejor Valoradas en FilmAffinity (2013–2023)**
 
 ---
 
@@ -118,11 +112,11 @@ Se llevó a cabo un análisis detallado de los términos de uso y la política d
 
 ## Limitación de la Frecuencia de Acceso
 
-Para evitar la sobrecarga de los servidores de FilmAffinity (*hal.ns.cloudflare.com* y *jule.ns.cloudflare.com*) y mantener un servicio estable para otros usuarios, las solicitudes de extracción de datos se realizaron con intervalos de 3 segundos entre cada una. Información adicional sobre el propietario y los detalles técnicos pueden ser consultados ejecutando el código 6 del directorio `src/otras_funcionalidades` en nuestro repositorio de Github.
+Para evitar la sobrecarga de los servidores de FilmAffinity (*hal.ns.cloudflare.com* y *jule.ns.cloudflare.com*) y mantener un servicio estable para otros usuarios, las solicitudes de extracción de datos se realizaron con intervalos de 3 segundos entre cada una.
 
 ## Análisis Similares
 
-Aunque no se han encontrado estudios previos que analicen específicamente las valoraciones de FilmAffinity, sí existen investigaciones relevantes en plataformas análogas. Por ejemplo, Bristi et al. (2019) implementaron técnicas de machine learning para estimar las calificaciones en IMDb. Del mismo modo, Firmanto y Sarno (2018) y Harish et al. (2019) investigaron el análisis de sentimientos en las reseñas de Rotten Tomatoes e IMDb, respectivamente.
+Aunque no se han encontrado estudios previos que analicen específicamente las valoraciones de FilmAffinity, sí existen investigaciones relevantes en plataformas análogas. Por ejemplo, Bristi et al. (2019) implementaron técnicas de *machine learning* para estimar las calificaciones en IMDb. Del mismo modo, Firmanto y Sarno (2018) y Harish et al. (2019) investigaron el análisis de sentimientos en las reseñas de Rotten Tomatoes e IMDb, respectivamente.
 
 ---
 
@@ -154,7 +148,7 @@ El proyecto se desarrolló utilizando Python.
 
 ## Repositorio de GitHub
 
-El código fuente está alojado en un repositorio de GitHub. Se encuentra en el siguiente enlace, bajo el directorio `/src/`: [**GitHub Repository**](https://github.com/tim-thorp/MovieDataScrapingWithSelenium).
+El código fuente está alojado en un repositorio de GitHub. Se encuentra en el siguiente enlace, bajo el directorio `/src/`: [**GitHub Repository**](https://github.com/tim-thorp/MovieDataScrapingWithPython).
 
 ### Estructura del Directorio de Código Fuente en `/src/`
 
@@ -165,7 +159,7 @@ Aloja el código principal de la práctica PR1, que incluye tres scripts: `main.
 - `README.md`: Documento con detalles exhaustivos sobre el contenido del repositorio y las instrucciones para el uso y ejecución del código.
 - `requirements.txt`: lista todas las librerías de Python instaladas y utilizadas en el proyecto.
 - `/data`: Directorio que incluye el conjunto de datos, denominado `dataset_movie_info.csv`.
-- `/docs`: Directorio con tres archivos: `memoria.pdf`, `memoria.Rmd` (la plantilla para el PDF) y esquema.png (el diagrama de flujo).
+- `/docs`: Directorio con tres archivos: `memoria.pdf`, `memoria.rmd` (la plantilla para el PDF) y esquema.png (el diagrama de flujo).
 
 ### Librerías de Python Utilizadas en el Proyecto
 
@@ -256,7 +250,7 @@ Esta función es responsable de trasladar los datos recabados a un archivo CSV:
 
 El dataset está disponible en 2 sitios:
 
-1. En el repositorio privado de GitHub, con acceso para el profesor de la asignatura: [**Github Repository**](https://github.com/tim-thorp/MovieDataScrapingWithSelenium)
+1. En el repositorio de GitHub: [**Github Repository**](https://github.com/tim-thorp/MovieDataScrapingWithPython)
 2. En Zenodo, a través del siguiente enlace DOI: [**Enlace DOI**](https://doi.org/10.5281/zenodo.10072733)
 
 \pagebreak
