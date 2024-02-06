@@ -346,10 +346,10 @@ def write_data_in_csv(obj_pelicula):
     print("Escribiendo DATASET en archivo CSV...")
     
     # Escribimos todo en un archivo CSV
-    ruta = "../../data"
+    ruta = "../data"
     if not os.path.exists(ruta):
         os.makedirs(ruta)
-    with open('../../data/dataset_movie_info.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('../data/dataset_movie_info.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['Título', 'Título Original', 'Año', 'Duración', 'Género', 'País', 'Puntuación Media', 'Número de Puntuaciones', 'Director', 'Reparto', 'Sinopsis', 'Enlace'])
 

@@ -20,24 +20,17 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 
 ## DIRECTORIOS
 
-- **/src/main**: Aquí se encuentra todo el código fuente de la práctica PR1.
-- **/src/otras_funcionalidades**: Aquí se encuentra todo el código que, aunque no es parte de la PR1, ha sido útil para la `Memoria.pdf` o para practicar para la PR1.
+- **/src**: Aquí se encuentra todo el código fuente de la práctica PR1.
 - **/data**: Aquí se encuentra el archivo CSV con los datos extraídos.
-- **/docs**: Directorio donde se pueden encontrar la `Memoria.pdf` y `Requirements.txt` (con información de las librerías).
+- **/docs**: Directorio donde se pueden encontrar la `memoria.pdf` y `requirements.txt` (con información de las librerías).
 
 ## ARCHIVOS
 
-### - De /src/main -
+### - De /src -
 
-- **/src/main/main.py**: Es el punto de entrada del programa central de la PR1, y es responsable de llamar a otros dos archivos .py.
-- **/src/main/librerias_propias.py**: Aquí se encuentran todas las funciones propias creadas durante la PR1.
-- **/src/main/dtos.py**: Aquí se define el objeto/clase llamado `ClasePeliculaDTO`, que se utiliza como un Data Transfer Object (DTO) en `libreria_funciones_propias.py`.
-
-### - De /src/otras_funcionalidades -
-
-- **Los 3 primeros códigos**: Creados para probar tiempos y funcionalidades entre Selenium y métodos básicos.
-- **Los códigos 4 y 5**: Realizados para crear las dos funciones de raspado de datos que posteriormente se incorporaron a la PR1.
-- **El código 6**: Utilizado para obtener la tecnología del sitio web y los datos del propietario, información útil para decidir el tipo de web scraping a realizar.
+- **/src/main.py**: Es el punto de entrada del programa central de la PR1, y es responsable de llamar a otros dos archivos .py.
+- **/src/librerias_propias.py**: Aquí se encuentran todas las funciones propias creadas durante la PR1.
+- **/src/dtos.py**: Aquí se define el objeto/clase llamado `ClasePeliculaDTO`, que se utiliza como un Data Transfer Object (DTO) en `libreria_funciones_propias.py`.
 
 ### - De /data -
 
@@ -45,19 +38,14 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 
 ### - De /docs -
 
-- **Memoria.Rmd**: Plantilla codificada en R Markdown.
-- **Memoria.pdf**: Memoria de la práctica PR1 en formato PDF, que es también el resultado de compilar el archivo `Memoria.Rmd`.
+- **memoria.rmd**: Plantilla codificada en R Markdown.
+- **memoria.pdf**: Memoria de la práctica PR1 en formato PDF, que es también el resultado de compilar el archivo `memoria.rmd`.
 - **requirements.txt**: Fichero que incluye todas las librerías instaladas en nuestro PC, entre las cuales se encuentran las utilizadas en este proyecto. Las librerías usadas en este proyecto son: `requests`, `pandas`, `selenium`, `time`, `csv`, `os`, `builtwith`, `whois`, y `lxml`.
 
 ## EJECUCIÓN Y USO DEL CÓDIGO
 
-### Código principal
 
-El código principal puede ejecutarse desde `/src/main/main.py`. No requiere parámetros de entrada y genera como salida el dataset en formato CSV, ubicado en el directorio `/data`.
-
-### Códigos de funcionalidades aisladas
-
-Se pueden encontrar seis archivos de código Python en `/src/otras_funcionalidades`. Los tres primeros códigos se usaron para probar el rendimiento del código básico versus el avanzado con Selenium. Los códigos nº 4 y 5 se realizaron de manera aislada y, posteriormente, se integraron en el código principal (o una variante de los mismos). Por último, el código nº 6 se utiliza para conocer la tecnología y el propietario de la web, información muy útil para decidir el tipo de web scraping a realizar.
+El código principal puede ejecutarse desde `/src/main.py`. No requiere parámetros de entrada y genera como salida el dataset en formato CSV, ubicado en el directorio `/data`.
 
 ## Bibliografía Utilizada
 
