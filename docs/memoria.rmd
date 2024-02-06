@@ -27,7 +27,6 @@ header-includes: \renewcommand{\contentsname}{Índice de contenidos}
 )
 - Repositorio con el código de la práctica: [**GitHub**](https://github.com/tim-thorp/MovieDataScrapingWithSelenium)
 - Dataset publicado en Zenodo: [**Enlace DOI**](https://doi.org/10.5281/zenodo.10072733)
-- Vídeo de presentación de la práctica: [**Google Drive**](https://drive.google.com/file/d/1hcbE0JrdedY1XCBaO_i1H0akcYGF2CFh/view?usp=sharing)
 
 # Contexto
 
@@ -159,19 +158,18 @@ El código fuente está alojado en un repositorio de GitHub. Se encuentra en el 
 
 ### Estructura del Directorio de Código Fuente en `/src/`
 
-- `/src/`: Contiene dos directorios adicionales: uno para el código fuente del programa principal y otro para seis scripts de funcionalidades independientes que complementan la práctica.
-- `/src/main`: Aloja el código principal de la práctica PR1, que incluye tres scripts: `main.py`, `librerias_propias.py`, y `dtos.py`.
-- `/src/otras_funcionalidades`: Contiene seis scripts independientes de Python utilizados para pruebas de rendimiento, la creación de dos funciones complejas y la extracción de datos del propietario y la tecnología web utilizada por el sitio web.
+Aloja el código principal de la práctica PR1, que incluye tres scripts: `main.py`, `librerias_propias.py`, y `dtos.py`.
 
 ### Contenidos en la Raíz del Directorio de GitHub
 
 - `README.md`: Documento con detalles exhaustivos sobre el contenido del repositorio y las instrucciones para el uso y ejecución del código.
-- `/dataset`: Directorio que incluye el conjunto de datos, denominado `dataset_movie_info.csv`.
-- `/docs`: Directorio con tres archivos: `memoria.pdf` y `memoria.Rmd` (la plantilla para el PDF) y `requirements.txt`, que lista todas las librerías de Python instaladas y utilizadas en el proyecto.
+- `requirements.txt`: lista todas las librerías de Python instaladas y utilizadas en el proyecto.
+- `/data`: Directorio que incluye el conjunto de datos, denominado `dataset_movie_info.csv`.
+- `/docs`: Directorio con tres archivos: `memoria.pdf`, `memoria.Rmd` (la plantilla para el PDF) y esquema.png (el diagrama de flujo).
 
 ### Librerías de Python Utilizadas en el Proyecto
 
-Las librerías específicas utilizadas son: `requests`, `pandas`, `selenium`, `time`, `csv`, `os`, `builtwith`, `whois`, y `lxml`, tal y como se especifica en el `README.md`
+Las librerías específicas utilizadas son: `requests`, `selenium` y `lxml`, tal y como se especifica en el `README.md`.
 
 ## Enlace al Sitio Web del Proyecto
 
@@ -200,11 +198,7 @@ Para visitar el sitio web de FilmAffinity, haga clic [**aquí**](https://www.fil
 - **Problema 9:** Necesidad de información sobre el propietario del sitio web.
   - **Solución:** Obtención de datos del propietario mediante la librería `whois`.
 
-## Detalles del Código en `/src/otras_funciones`
-
-En este directorio, encontrarás seis scripts que ofrecen funcionalidades específicas y altamente focalizadas. Aunque los archivos 1, 2, 3 y 6 van más allá del alcance de nuestra práctica principal, han sido esenciales para la elaboración de la memoria y la comprensión de los tiempos de respuesta entre distintas tecnologías.
-
-## Visión General de las Funcionalidades en `/src/main`
+## Visión General de las Funcionalidades en `/src/`
 
 El núcleo del programa se encuentra en tres archivos:
 
@@ -213,7 +207,7 @@ El núcleo del programa se encuentra en tres archivos:
 
 Por lo tanto, `main.py` actúa como el punto de entrada del programa, `librerias_propias.py` contiene la lógica central, y `dtos.py` define la estructura de datos utilizada a través del programa.
 
-## Descripción de Funciones en `/src/main/librerias_propias.py`
+## Descripción de Funciones en `/src/librerias_propias.py`
 
 ### `execute_program()`
 
