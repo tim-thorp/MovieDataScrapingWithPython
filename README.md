@@ -22,13 +22,13 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 1. **En Zenodo:** a través del siguiente enlace DOI: _https://doi.org/10.5281/zenodo.10072733_
 2. **En este repositorio de GitHub:** bajo el directorio `/data` desde la raíz de este repositorio, donde encontrará el fichero CSV correspondiente a nuestro dataset.
 
-## DIRECTORIOS
+## Directorios
 
 - **/src**: Aquí se encuentra todo el código fuente de la práctica PR1.
 - **/data**: Aquí se encuentra el archivo CSV con los datos extraídos.
 - **/docs**: Directorio donde se puede encontrar la `memoria.pdf` junto con los ficheros utilizados para su creación.
 
-## ARCHIVOS
+## Archivos
 
 ### - De /src -
 
@@ -46,12 +46,12 @@ La web de referencia y central de nuestro proyecto es: _https://www.filmaffinity
 - **memoria.pdf**: Memoria de la práctica PR1 en formato PDF, que es también el resultado de compilar el archivo `memoria.rmd`.
 - **requirements.txt**: Fichero que incluye todas las librerías utilizadas en este proyecto: `requests`, `selenium` y `lxml`.
 
-## EJECUCIÓN Y USO DEL CÓDIGO
+## Ejecución y uso del código
 
 
 El código principal puede ejecutarse desde `/src/main.py`. No requiere parámetros de entrada y genera como salida el dataset en formato CSV, ubicado en el directorio `/data`.
 
-## Bibliografía Utilizada
+## Bibliografía utilizada
 
 1. Bristi, W. R., Zaman, Z., & Sultana, N. (2019). Predicting IMDb rating of movies by machine learning techniques. *2019 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT)*, 1-5. IEEE.
 2. Creative Commons. (2023). Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Recuperado de https://creativecommons.org/licenses/by-sa/4.0/deed.es
@@ -106,7 +106,7 @@ The central reference website for our project is: https://www.filmaffinity.com/
 - **memoria.pdf**: Report of the PR1 assignment in PDF format, which is also the result of compiling the `memoria.rmd` file.
 - **requirements.txt**: File that includes all the libraries used in this project: `requests`, `selenium`, and `lxml`.
 
-## Code Execution
+## Code execution
 
 The main code can be run from `/src/main.py`. It does not require input parameters and generates as output the dataset in CSV format, located in the `/data` directory.
 
